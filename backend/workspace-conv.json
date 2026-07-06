@@ -1,0 +1,23 @@
+{
+  "messages": [
+    {
+      "id": "msg_1779550928869",
+      "userMessage": "hello",
+      "timeline": [
+        {
+          "type": "user",
+          "agentName": "👤 你",
+          "content": "hello",
+          "time": "2026-05-23T15:42:08.854Z"
+        },
+        {
+          "type": "ceo",
+          "agentName": "🤖 AI CEO",
+          "content": "❌ CEO响应异常",
+          "time": "2026-05-23T15:42:08.854Z"
+        }
+      ],
+      "time": "2026-05-23T15:42:08.869Z"
+    }
+  ]
+}

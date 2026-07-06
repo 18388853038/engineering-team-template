@@ -1,0 +1,9 @@
+{
+  "id": "tencent-docs",
+  "name": "腾讯文档",
+  "version": "1.0.0",
+  "description": "腾讯文档集成插件，支持在线文档创建、编辑、读取、搜索、知识库管理",
+  "author": "Tencent",
+  "category": "tencent-office",
+  "main": "index.js"
+}

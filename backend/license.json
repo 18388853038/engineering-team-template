@@ -1,0 +1,21 @@
+{
+  "tier": "personal",
+  "licenseKey": "EC-PER-TEST",
+  "activatedAt": 1777984653440,
+  "validUntil": 1809520653440,
+  "features": {
+    "name": "个人版",
+    "price": "¥98/年",
+    "maxAgents": 41,
+    "maxDailyTasks": 300,
+    "canWebSearch": true,
+    "canWeather": true,
+    "canFileBrowser": true,
+    "maxChannels": 3,
+    "canMultiModel": false,
+    "canCEOTools": false,
+    "canSandbox": false,
+    "canAPI": false,
+    "hasWatermark": false
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCompany · AI 虚拟公司</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'PingFang SC','Microsoft YaHei',sans-serif}
+body{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);min-height:100vh;display:flex;align-items:center;justify-content:center;color:#e0e0e0}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px;width:380px;text-align:center}
+.card h2{color:#fff;margin-bottom:8px;font-size:18px}
+.card p{color:#8892b0;font-size:12px;margin-bottom:20px}
+.qr-area{margin:16px auto;min-height:200px;display:flex;align-items:center;justify-content:center}
+.qr-area img{width:180px;height:180px;border-radius:8px}
+.qr-area .loading{color:#6b7294;font-size:13px}
+.btn{padding:8px 24px;border-radius:8px;border:none;cursor:pointer;font-size:14px;font-weight:600}
+.btn-primary{background:#4ecdc4;color:#0f0c29}
+.btn-primary:hover{background:#45b7aa}
+.btn-primary:disabled{opacity:0.5;cursor:not-allowed}
+.status{font-size:12px;margin-top:12px;min-height:20px}
+.back{margin-top:16px;display:inline-block;color:#4ecdc4;text-decoration:none;font-size:12px}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>📱 微信绑定</h2>
+<p>扫码绑定后，微信消息将直达 eCompany CEO</p>
+<div id="bindStatus"></div>
+<div class="qr-area" id="qrArea"><div class="loading" id="qrStatus">正在获取二维码...</div></div>
+<button class="btn btn-primary" id="qrBtn" onclick="getQR()">获取二维码</button>
+<div class="status" id="msg"></div>
+<a href="/settings" class="back">← 返回设置</a>
+</div>
+<script>
+var pt=null;
+function gi(i){return document.getElementById(i)}
+function ms(t,c){var e=gi('msg');e.textContent=t;e.className=c||''}
+function getQR(){
+  var btn=gi('qrBtn'),area=gi('qrArea');
+  btn.disabled=true;btn.textContent='获取中...';
+  ms('正在生成二维码...','wait');
+  var x=new XMLHttpRequest();
+  x.open('GET','/api/wechat/qrcode',true);
+  x.onload=function(){
+    try{
+      var d=JSON.parse(x.responseText);
+      if(d.ok&&d.qrcode){
+        ms('正在加载二维码...','wait');
+        // 显示二维码图片（data URL）
+        var img=document.createElement('img');
+        img.src=d.qrcode;
+        img.alt='二维码';
+        img.style.width='180px';
+        img.style.height='180px';
+        area.innerHTML='';
+        area.appendChild(img);
+        ms('请用微信扫码绑定','ok');
+        btn.textContent='刷新';btn.disabled=false;
+        if(pt){clearInterval(pt);pt=null;}
+        // 每2秒轮询扫码状态
+        pt=setInterval(function(){
+          var lp=new XMLHttpRequest();
+          lp.open('GET','/api/wechat/qrcode/status?token='+d.qrToken,true);
+          lp.onload=function(){
+            try{
+              var st=JSON.parse(lp.responseText);
+              if(st.ok&&(st.status==='bound'||st.bound)){
+                clearInterval(pt);pt=null;
+                ms('✅ 绑定成功','ok');
+                gi('bindStatus').innerHTML='<div style=color:#22c55e;font-size:12px;padding:8px>✅ 已绑定</div>';
+                btn.textContent='已绑定';btn.disabled=true;
+              }else if(st.status==='expired'||st.status==='canceled'){
+                clearInterval(pt);pt=null;
+                ms('❌ 二维码已过期，请重新获取','err');
+                btn.textContent='重新获取';btn.disabled=false;
+              }
+            }catch(e){}
+          };
+          lp.send();
+        },2000);
+      }else ms('❌ '+(d.error||'获取失败'),'err');
+    }catch(e){ms('❌ 解析失败','err');}
+  };
+  x.onerror=function(){ms('❌ 请求失败','err');};
+  x.send();
+}
+// 页面加载时自动检查绑定状态
+(function(){
+  getQR();
+})();
+</script>
+</body>
+</html>

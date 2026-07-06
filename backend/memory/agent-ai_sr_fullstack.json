@@ -1,0 +1,30 @@
+{
+  "decisions": [],
+  "notes": [],
+  "status": "idle",
+  "currentTask": null,
+  "lastActive": "2026-05-31T10:53:56.978Z",
+  "conversations": [
+    {
+      "role": "user",
+      "content": "【系统自动唤醒】检测到你有待办任务：「修复 Harness 调用计数统计 — 上报链路接入」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。",
+      "time": "2026-05-31T10:50:26.148Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-05-31T10:50:26.148Z"
+    },
+    {
+      "role": "user",
+      "content": "【系统自动唤醒】检测到你有待办任务：「修复 Harness 调用计数统计 — 上报链路接入」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。",
+      "time": "2026-05-31T10:53:56.978Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-05-31T10:53:56.978Z"
+    }
+  ],
+  "summary": "最近: 【系统自动唤醒】检测到你有待办任务：「修复 Harness 调用计数统计 — 上报链路接入」(优先级 -> "
+}

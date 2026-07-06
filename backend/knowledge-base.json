@@ -1,0 +1,461 @@
+[
+  {
+    "id": "929cce1d-9798-4c81-b67c-0c7839956a26",
+    "title": "OpenClaw 平台定位",
+    "content": "OpenClaw 是底层平台/基础设施，eCompany 系统运行在 OpenClaw 之上。两者关系：OpenClaw 提供运行环境和底层能力，eCompany 是上层业务系统。在 eCompany 的48名AI员工和系统组件中，不存在名为 openclaw 的独立 Agent——它不属于应用层组件，而是平台层。",
+    "tags": [
+      "OpenClaw",
+      "平台架构",
+      "基础设施",
+      "eCompany",
+      "技术架构",
+      "配置",
+      "系统"
+    ],
+    "category": "系统配置",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T12:20:42.435Z",
+    "updatedAt": "2026-05-29T12:20:42.435Z",
+    "history": []
+  },
+  {
+    "id": "727daf7f-6225-444f-8190-a6ce3f8f87e6",
+    "title": "OpenClaw 与 eCompany 架构关系",
+    "content": "OpenClaw 是底层平台/基础设施，eCompany 是运行在其上的应用系统。两者是平台-应用关系，不存在独立于 eCompany 的 OpenClaw。OpenClaw 不属于 eCompany 内部的 Agent 或 AI 员工，属于系统底层架构层。",
+    "tags": [
+      "架构",
+      "OpenClaw",
+      "eCompany",
+      "平台",
+      "基础设施",
+      "其他"
+    ],
+    "category": "未分类",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T12:20:42.427Z",
+    "updatedAt": "2026-05-29T12:20:42.427Z",
+    "history": []
+  },
+  {
+    "id": "08f0a1e1-83b0-4a07-8726-5b7797b3954e",
+    "title": "OpenClaw 与 eCompany 架构关系",
+    "content": "OpenClaw 是底层平台，eCompany 系统运行在 OpenClaw 之上。不存在\"独立于 eCompany 的 OpenClaw Agent\"。二者是平台层与应用层的层级关系，非并列系统。这是系统架构的基础认知。",
+    "tags": [
+      "架构",
+      "OpenClaw",
+      "eCompany",
+      "平台",
+      "底层",
+      "其他"
+    ],
+    "category": "未分类",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T12:20:40.836Z",
+    "updatedAt": "2026-05-29T12:20:40.836Z",
+    "history": []
+  },
+  {
+    "id": "33313aca-a048-4a43-bd54-ade75a817880",
+    "title": "OpenClaw 与 eCompany 架构关系",
+    "content": "OpenClaw 是底层平台，eCompany 运行在 OpenClaw 之上。不存在独立于 eCompany 的 OpenClaw Agent。两者是平台与应用的关系，而非并列独立的系统。",
+    "tags": [
+      "架构",
+      "OpenClaw",
+      "eCompany",
+      "平台",
+      "其他"
+    ],
+    "category": "未分类",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T12:20:38.739Z",
+    "updatedAt": "2026-05-29T12:20:38.739Z",
+    "history": []
+  },
+  {
+    "id": "098ba65d-9394-492b-9503-18471b692afb",
+    "title": "OpenClaw学习笔记 - TTS提供商与Persona人设机制",
+    "content": "# OpenClaw TTS 提供商配置与 Persona 人设机制详解\n\n## 一、TTS（文字转语音）提供商体系\n\nOpenClaw 支持 **14个TTS提供商**，分为三大类：\n\n### 1.1 云端API类\n| 提供商 | 特点 | 适用场景 |\n|:-------|:-----|:---------|\n| **OpenAI TTS** | 多语音风格(合金/回声/闪亮等)，支持中英日等6种语言 | 通用场景，质量稳定 |\n| **ElevenLabs** | 超逼真人声，支持声音克隆 | 需要特定人声/角色配音 |\n| **Azure TTS** | 微软神经网络语音，140+种语言和声音 | 多语言需求，企业级 |\n| **Google Cloud TTS** | WaveNet语音，220+声音 | 与GCP生态集成 |\n| **Deepgram** | 低延迟TTS，支持自定义发音 | 实时对话场景 |\n| **IBM Watson** | Watson风格语音 | 已用Watson生态的团队 |\n| **Play.ht** | 支持声音克隆的在线平台 | 播客/有声内容 |\n| **VoiceRSS** | 轻量级，免费额度高 | 低成本方案 |\n\n### 1.2 自托管/本地类\n| 提供商 | 特点 | 适用场景 |\n|:-------|:-----|:---------|\n| **Microsoft (edge-tts)** | 免费，通过Edge浏览器API调用 | **我们正在用的方案**，零成本 |\n| **Coqui TTS** | 开源，本地部署 | 数据隐私要求高的场景 |\n| **Piper TTS** | 极轻量，树莓派可跑 | 边缘设备/IoT场景 |\n| **Bark (Suno)** | 开源，支持非语言声音(笑/叹气) | 需要情感表达的语音 |\n\n### 1.3 专用工具类\n| 提供商 | 特点 | 适用场景 |\n|:-------|:-----|:---------|\n| **ElevenLabs (声音克隆)** | 用几分钟音频克隆任意人声 | 特定人物配音 |\n| **Microsoft Edge (免费)** | 中国区可直接访问，无需梯子 | **我们的主要方案** |\n\n### 1.4 配置示例（YAML格式）\n```yaml\ntts:\n  provider: microsoft  # 当前默认\n  microsoft:\n    voice: zh-CN-XiaoxiaoNeural  # 晓晓女声\n    rate: 0          # 语速 -50~50\n    pitch: 0         # 音调 -50~50\n  fallback:\n    - provider: openai\n      voice: alloy\n    - provider: elevenlabs\n      voice: 21m00Tcm4TlvDq8ikWAM\n```\n\n## 二、Auto-TTS 智能判断机制\n\nOpenClaw 的 Auto-TTS 是核心亮点，自动决策流程：\n\n```\nAI生成回复\n  → 判断是否需要TTS：\n    1. 消息长度 > 500字？ → 自动摘要后再TTS\n    2. 消息包含代码块/表格？ → 不TTS（纯文本更适合）\n    3. 用户设备支持语音？ → 自动适配\n    4. 连续TTS开关状态？ → 不重复\n  → 选择最佳TTS提供商\n  → 合成语音 → 发送\n```\n\n**超长摘要规则：**\n- 500-2000字：提取前2段+关键结论\n- 2000字以上：提取核心观点（≤300字）\n- 代码/数据：跳过，发纯文本\n\n## 三、Persona 人设机制（最值得借鉴）\n\n### 3.1 什么是Persona\nPersona 是**跨TTS提供商的稳定语音身份**。用户定义一个人设后，无论底层用的是OpenAI还是Microsoft，语音风格保持统一。\n\n### 3.2 人设配置参数\n```yaml\npersona:\n  name: \"小薇\"           # 人设名称\n  gender: female        # 性别\n  age: 28               # 年龄感\n  style: \"温柔专业\"       # 风格标签\n  speed: 1.0            # 语速倍率\n  pitch: 0              # 音调偏移\n  \n  # 跨提供商标记\n  provider_mapping:\n    microsoft: zh-CN-XiaoxiaoNeural\n    openai: alloy\n    elevenlabs: Rachel\n  \n  # 语气规则\n  tone_rules:\n    - type: greeting     # 问候时\n      style: \"温暖亲切\"\n    - type: technical    # 技术问答时\n      style: \"清晰准确\"\n    - type: error        # 报错时\n      style: \"抱歉但平静\"\n```\n\n### 3.3 人设优势\n1. **体验一致性**：切换TTS提供商后语音风格不变\n2. **上下文感知**：根据对话场景自动切换语气\n3. **跨渠道统一**：微信、QQ、网页端同一个人设\n\n## 四、对eCompany可借鉴的三个要点\n\n### 要点1：增加TTS提供商回退链\n```\n目前：Edge-TTS → 失败 → 无回复\n改后：Edge-TTS → OpenAI-TTS → ElevenLabs → 纯文字降级\n```\n实现简单，可靠性翻倍。\n\n### 要点2：引入回声转录提示\n用户发语音后，回复前先回显：\n```\n📝 你说了：\"我想查一下昨天的销售数据\"\n```\n用户体验从\"语音消失了\"变成\"语音被识别了\"。\n\n### 要点3：Auto-TTS 判断逻辑\n复制OpenClaw的规则，避免长文/代码被无意义合成语音：\n```\nif 含代码块 or 含表格 or 长度>800字 → 纯文字回复\nelse → 语音合成\n```\n\n## 五、总结\n\nOpenClaw 的TTS体系核心价值不在于多提供商，而在于**人设抽象层** + **上下文感知决策**。这两个机制让语音交互从\"能用\"升级为\"好用\"。eCompany当前只需增加一个回退链和一个回声转录，就能在现有Edge-TTS基础上大幅提升语音体验。\n",
+    "tags": [
+      "openclaw",
+      "TTS",
+      "语音合成",
+      "Persona",
+      "人设",
+      "提供商配置",
+      "技术借鉴",
+      "api",
+      "技术"
+    ],
+    "category": "技术-API",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T07:15:00.868Z",
+    "updatedAt": "2026-05-29T07:15:00.868Z",
+    "history": []
+  },
+  {
+    "id": "886a0971-d0f4-4509-914c-3ab36e4029d4",
+    "title": "OpenClaw学习笔记 - 架构与微信渠道",
+    "content": "# OpenClaw学习笔记\n\n## 架构\nOpenClaw 是一个自托管的 AI 多通道 Gateway 网关（MIT开源），核心思路是一个Gateway进程连接所有渠道，核心与渠道逻辑完全解耦。微信功能以外部插件形式存在，代码不在主仓库。\n\n## 微信渠道\n使用腾讯 iLink Bot 协议，二维码扫码登录，支持直接聊天和媒体（图片、语音等）。与我们正在做的 wechat-bridge 思路基本一致。\n\n## 语音/音频处理\n- STT（语音转文字）：自动检测顺序 - 模型自带音频理解 -> whisper-cli -> 提供商API（OpenAI/Groq/Deepgram），支持多模型回退\n- 回声转录（echoTranscript）：用户发语音后能看到\"📝 你说了...\"的转录确认\n- TTS（文字转语音）：14个提供商包括 OpenAI/ElevenLabs/Microsoft(edge-tts)/Azure，Microsoft提供商与我们用的Edge-TTS一致\n- Auto-TTS：自动判断回复是否需要合成语音，超长自动摘要后再TTS\n- 人设（Persona）：跨提供商的稳定语音身份，指定语音风格/语调/语速\n\n## 可直接借鉴的3个功能\n1. 回声转录：用户发语音后回显\"📝你说了xxx\"，用户体验直接提升\n2. 多模型回退：whisper卡死时自动降级到OpenAI API或Deepgram\n3. TTS auto模式：自动判断哪些回复需要转语音，超长自动摘要",
+    "tags": [
+      "openclaw",
+      "语音",
+      "架构",
+      "微信桥接",
+      "STT",
+      "TTS",
+      "api",
+      "技术"
+    ],
+    "category": "技术-API",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T07:13:58.070Z",
+    "updatedAt": "2026-05-29T07:13:58.070Z",
+    "history": []
+  },
+  {
+    "id": "kb-task-flow-20260529",
+    "title": "员工任务分配流程",
+    "content": "新任务流程：老板需求 → CEO判断任务类型 → 匹配职能线+最贴技能员工 → assign_task（明确路径/产出） → 员工执行(read_file→改代码→write_file) → agent-executor触发onTaskComplete → 邱晓琳代码审查（代码类） → CEO验收汇报老板。数字人24小时执行，无下班概念。",
+    "tags": [
+      "管理",
+      "流程",
+      "任务",
+      "标准作业"
+    ],
+    "category": "项目管理",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T04:21:30.000Z",
+    "updatedAt": "2026-05-29T04:21:30.000Z",
+    "history": []
+  },
+  {
+    "id": "kb-code-review-process-20260529",
+    "title": "代码审查流程-邱晓琳",
+    "content": "邱晓琳（原QA员工）已任命为代码审查员。所有代码类任务完成后需经过代码审查才能验收。审查标准：严重（0容忍）、中危（需修复）、建议（不阻塞）。审查结果归档知识库。",
+    "tags": [
+      "管理",
+      "流程",
+      "QA",
+      "代码审查"
+    ],
+    "category": "项目管理",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T04:21:15.000Z",
+    "updatedAt": "2026-05-29T04:21:15.000Z",
+    "history": []
+  },
+  {
+    "id": "kb-task-callback-hook-20260529",
+    "title": "任务完成回调通知机制",
+    "content": "task-callback-hook.js模块实现员工任务完成后的自动通知链路：员工完成任务 → agent-executor触发onTaskComplete → 写回调日志logs/task-callbacks.log → 推送通知队列logs/ceo-notify-queue.json → 更新CEO记忆库。完成任务自动通知CEO，不再手动汇报。",
+    "tags": [
+      "技术",
+      "系统",
+      "任务",
+      "通知"
+    ],
+    "category": "技术-架构",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T04:21:00.000Z",
+    "updatedAt": "2026-05-29T04:21:00.000Z",
+    "history": []
+  },
+  {
+    "id": "kb-agent-executor-v3-20260529",
+    "title": "Agent执行器v3-文件系统能力注入",
+    "content": "agent-executor.js v3版本新增文件系统写入能力（read_file/write_file/list_directory三个内置工具），AI员工生成的代码不再仅输出文本，而是实际写入磁盘文件。路径安全校验已实现，防止逃逸项目目录。",
+    "tags": [
+      "技术",
+      "系统",
+      "架构",
+      "agent"
+    ],
+    "category": "技术-架构",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T04:20:30.000Z",
+    "updatedAt": "2026-05-29T04:20:30.000Z",
+    "history": []
+  },
+  {
+    "id": "kb-team-matrix-20260529",
+    "title": "AI员工技能矩阵-12条职能线",
+    "content": "团队45人按12条职能线划分：管理层(10人)、合规审计(5人)、安全(4人)、前端(3人)、后端(5人)、全栈(9人)、移动端(2人)、DevOps(2人)、AI(1人)、数据(1人)、设计(1人)、文档QA(2人)。任务分配按技能匹配，不再乱派活。",
+    "tags": [
+      "管理",
+      "团队",
+      "技能",
+      "组织架构"
+    ],
+    "category": "项目管理",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-29T04:20:00.000Z",
+    "updatedAt": "2026-05-29T04:20:00.000Z",
+    "history": []
+  },
+  {
+    "id": "a1aa970c-7f8c-40b1-ab8f-1b91931724b7",
+    "title": "DeepSeek API配置指南",
+    "content": "DeepSeek V4 Flash和Pro的API配置方法，以及多模型路由策略",
+    "tags": [
+      "AI",
+      "配置",
+      "api",
+      "技术"
+    ],
+    "category": "技术-API",
+    "author": "system",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-28T08:21:02.919Z",
+    "updatedAt": "2026-05-28T08:21:02.919Z",
+    "history": []
+  },
+  {
+    "id": "30878a1b-2c11-4c62-a49d-4b9099b554b6",
+    "title": "多模型路由配置说明",
+    "content": "eCompany支持DeepSeek V4 Flash/Pro多模型路由，根据任务类型自动选择最优模型",
+    "tags": [
+      "技术",
+      "配置",
+      "AI",
+      "项目",
+      "管理"
+    ],
+    "category": "项目管理",
+    "author": "system",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-05-28T07:31:38.359Z",
+    "updatedAt": "2026-05-28T07:31:38.359Z",
+    "history": []
+  },
+  {
+    "id": "kb_1780029916200_xn5f",
+    "agentId": "ai_sr_fullstack3",
+    "summary": "语音对话渠道集成 - 对接微信/Web渠道",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-29T04:45:16.178Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：全双工语音对话 - 后端开发（待产品方案确认后启动）\\n任务描述：搭建WebSocket音频流服务器：1) WebSocket服务端接收音频流 2) 对接Whisper STT（语音→文字）3) 将文字传给CEO AI处理 4) 接收CEO回复文字后对接Sherpa-ONNX TTS（文字→语音）5) 将音频流传回前端播放。待赵启航产品方案确认后正式启动。\\n优先级：medium\\n\\n请执行以上任务并输出结果。\",\"time\":\"2026-05-28T15:30:14.738Z\"},{\"role\":\"assistant\",\"content\":\"好的，信息已获取！我来对「全双工语音对话 - 后端开发」任务进行完整的技术方案设计与预研输出。\\n\\n--",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-29T04:45:16.200Z",
+    "accessCount": 7
+  },
+  {
+    "id": "kb_1780030548420_achc",
+    "agentId": "ai_qa_dir",
+    "summary": "语音对话核心模块 voice-dialogue.js",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-29T04:55:48.370Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：test_cron\\n任务描述：test_cron\\n优先级：medium\\n\\n请执行以上任务并输出结果。\",\"time\":\"2026-05-24T09:10:43.934Z\"},{\"role\":\"assistant\",\"content\":\"收到，**test_cron 定时任务质量验证**！作为质量总监，我严格执行标准化全链路质量门禁检查流程。\\n\\n---\\n\\n## 📋 test_cron — 全链路QA验证报告\\n\\n| 项目 | 内容 |\\n| :--- | :--- |\\n| **报告编号** | QA-CRON-TEST-2025-0314-v72 |\\n| **执行人** | 吴文斌（质量总监） |\\n| **验证范围** | 系",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-29T04:55:48.420Z",
+    "accessCount": 29
+  },
+  {
+    "id": "kb_1780031973763_p4gm",
+    "agentId": "ai_fs_xuwenbin",
+    "summary": "配置 sherpa-onnx TTS 语音模型",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-29T05:19:33.738Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：配置 sherpa-onnx TTS 语音模型\\n任务描述：sherpa-onnx v1.13.2 已安装，但运行时需要下载 TTS 语音模型文件（也面临网络问题）。\\n\\n任务：\\n1. sherpa-onnx TTS 需要两个模型文件：\\n   - 声学模型（如 vits-melo-zh-zh/baker/model.onnx）\\n   - 分词器（tokens.txt）\\n2. 从国内源下载中文 TTS 模型：\\n   - ModelScope 上有 sherpa-onnx 相关模型\\n   - 或从 https://github.com/k2-fsa/sherpa-onnx/releases 找到模型包，用国内镜像加速下载\\n3. 推荐使用 ",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-29T05:19:33.763Z",
+    "accessCount": 20
+  },
+  {
+    "id": "kb_1780031975374_cl02",
+    "agentId": "ai_sr_ai",
+    "summary": "从国内镜像下载 whisper 模型文件",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-29T05:19:35.342Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：从国内镜像下载 whisper 模型文件\\n任务描述：whisper Python 包已安装（v20250625），但首次 import whisper 时会自动从 openaipublic.azureedge.net 下载模型文件（tiny.pt ~75MB），该域名在国内被墙，导致模型加载失败。\\n\\n任务：\\n1. 手动从国内可访问的镜像下载 whisper 模型文件。推荐源（按优先级）：\\n   - ModelScope（魔搭社区）：https://modelscope.cn/models 搜索 whisper\\n   - 清华镜像（如果可用）\\n   - 阿里云 OSS 镜像\\n2. whisper 模型文件列表（至少下载 tiny 和 b",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-29T05:19:35.374Z",
+    "accessCount": 12
+  },
+  {
+    "id": "kb_1780031992680_7hns",
+    "agentId": "ai_sre",
+    "summary": "安装 ffmpeg 并配置系统环境",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-29T05:19:52.658Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：安装 ffmpeg 并配置系统环境\\n任务描述：在 Windows 服务器上安装 ffmpeg。whisper 处理音频文件需要 ffmpeg 进行解码，没有它 whisper 无法读取任何音频格式。\\n\\n要求：\\n1. 从国内可访问的源下载 ffmpeg（推荐 https://www.gyan.dev/ffmpeg/builds/ 的 release 版本，或用清华镜像 https://mirrors.tuna.tsinghua.edu.cn 搜索 ffmpeg）\\n2. 安装到系统 PATH，确保命令行可执行 ffmpeg -version\\n3. 如果直接下载不了，用 winget install ffmpeg 或 choco install",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-29T05:19:52.680Z",
+    "accessCount": 5
+  },
+  {
+    "id": "kb_1780175463693_93e5",
+    "agentId": "ai_sr_frontend",
+    "summary": "排查 index-DFBPh7Eh.js 模板字符串语法错误",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-30T21:11:03.665Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：搜索最新前端性能优化工具和实践\\n任务描述：使用 web-search 技能，搜索最新的前端性能优化工具和实践，重点关注：1）2025-2026年新出现的性能优化工具；2）主流框架（React/Vue/Angular）的最佳性能实践；3）Web Vitals 优化策略；4）构建工具和打包优化方案。输出整理成文档。\\n优先级：emergency\\n\\n请执行以上任务并输出结果。\",\"time\":\"2026-05-21T15:24:06.213Z\"},{\"role\":\"assistant\",\"content\":\"好的，收到任务。立即执行。\\n\\n**任务执行报告：前端性能优化工具与实践（2025-2026）**\\n\\n**报告生成时间：** 2025年7",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-30T21:11:03.693Z",
+    "accessCount": 4
+  },
+  {
+    "id": "kb_1780175492719_76qs",
+    "agentId": "ai_fe_vue",
+    "summary": "排查修复 index-DFBPh7Eh.js SyntaxError: Unexpected template string",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-30T21:11:32.692Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：【催办】立即启动排查并修复登录页面Bug\\n任务描述：任务ID: 8d8186ee-1454-4c9b-8dcb-bc80970d1937。该任务截止日期为5/15，已逾期5天。原由苏雨晴负责，现转给你。请排查登录页Bug：1.登录按钮无响应；2.表单校验异常；3.页面白屏报错。定位根因并修复。\\n优先级：high\\n\\n请执行以上任务并输出结果。\",\"time\":\"2026-05-21T15:23:49.995Z\"},{\"role\":\"assistant\",\"content\":\"收到任务。立即开始排查并修复登录页面的三个问题。\\n\\n---\\n\\n## 执行报告：登录页面Bug排查与修复\\n\\n**任务ID:** 8d8186ee-1454-4c9",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-30T21:11:32.719Z",
+    "accessCount": 3
+  },
+  {
+    "id": "kb_1780222063871_ov73",
+    "agentId": "ai_test_manual",
+    "summary": "【验证测试】调度器 substring bug 回归验证",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-31T10:07:43.841Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：文档编写 - 任务#15\\n任务描述：测试任务 - 自动化压力测试\\n优先级：high\\n\\n请执行以上任务并输出结果。\",\"time\":\"2026-05-21T15:30:08.321Z\"},{\"role\":\"assistant\",\"content\":\"好的，收到任务指令。\\n\\n**任务#15：自动化压力测试 - 文档编写**\\n\\n**执行人：** 邱晓琳 (QA测试工程师)\\n\\n**任务状态：** 已完成\\n\\n---\\n\\n### 一、测试目标\\n\\n本次自动化压力测试旨在验证系统在高并发负载下的稳定性和响应性能，明确系统在峰值流量下的瓶颈点。目标包括：\\n1.  **并发能力**：确定系统在不出现错误或严重性能下降的情况下，能支持的最大",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-31T10:07:43.871Z",
+    "accessCount": 7
+  },
+  {
+    "id": "kb_1780222522486_ct19",
+    "agentId": "ai_be_go",
+    "summary": "🔴 [高优] 修复员工任务结果推送CEO链路",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-31T10:15:22.455Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：开发任务完成回调/通知机制\\n任务描述：实现AI员工完成任务后主动通知CEO的推送机制。具体要求：\\n1. 在正式版路径 F:\\\\eCompany-EXE\\\\eCompany-正式版\\\\ 下开发\\n2. 员工执行完任务后，自动触发通知到CEO端（支持实时消息）\\n3. 修改 task-dispatcher.js 或 agent-executor.js，在任务完成节点增加回调钩子\\n4. 通知方式建议：系统消息队列 + CEO控制台实时提醒\\n5. 完成时间：明天（5/30）18:00前\\n优先级：高\\n\\n\\n## 参考经验\\n- 【加急】前端音频采集与播放页面\\n  {\\\"reply\\\":\\\"好的，收到！**紧急任务**—前端音频采集与播放页面，我",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-31T10:15:22.486Z",
+    "accessCount": 9
+  },
+  {
+    "id": "kb_1780222524661_h80d",
+    "agentId": "ai_be_dir",
+    "summary": "🟡 [中优] 修复Harness调用计数统计异常",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-05-31T10:15:24.633Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"任务标题：【催办】立即执行eCompany-Dev打包exe任务\\n任务描述：紧急催办！今天截止的两个打包任务（普通版和紧急版）需要立即执行。请周泽宇马上开始将F:\\\\\\\\eCompany-Dev打包成Windows桌面exe安装包，使用pkg或electron-builder打包，输出到F:\\\\\\\\eCompany-Dev\\\\\\\\output目录。今晚前必须完成。\\n优先级：urgent\\n\\n请执行以上任务并输出结果。\",\"time\":\"2026-05-21T14:47:34.798Z\"},{\"role\":\"assistant\",\"content\":\"收到，任务已确认。立即开始执行 eCompany-Dev 打包任务。\\n\\n**任务执行状态：已启动**\\",
+    "tags": [
+      "priority:medium",
+      "scheduled"
+    ],
+    "sharedAt": "2026-05-31T10:15:24.661Z",
+    "accessCount": 1
+  },
+  {
+    "id": "kb_1780402785721_qps4",
+    "agentId": "ai_be_java",
+    "summary": "写一个贪吃蛇小游戏 — 心跳唤醒测试 v3",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-02T12:19:45.691Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"你有任务需要执行：「写一个贪吃蛇小游戏」\\n描述：用HTML+CSS+原生JavaScript写一个贪吃蛇小游戏，单个HTML文件，包含：1) 完整的游戏逻辑（蛇移动、吃食物、撞墙游戏结束、分数统计）；2) 键盘方向键控制；3) 界面简洁美观，深色主题；4) 游戏结束后显示分数并可按空格重启。验收标准：浏览器直接打开可玩，无外部依赖。\\n请立即开始执行，完成任务后调用 complete_claimed_task 提交。用 write_file 将成果写入文件。\",\"time\":\"2026-06-02T11:44:27.451Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:44:27.451Z",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-06-02T12:19:45.721Z",
+    "accessCount": 12
+  },
+  {
+    "id": "kb_1780487569340_zefg",
+    "agentId": "ai_fs_pengzihao",
+    "summary": "创建一个贪吃蛇小游戏HTML文件",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-03T11:52:49.296Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】创建一个贪吃蛇小游戏HTML文件。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-03T11:52:06.229Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-03T11:52:06.229Z\"},{\"role\":\"user\",\"content\":\"任务标题：创建一个贪吃蛇小游戏HTML文件\\n任务描述：请创建一个完整的贪吃蛇小游戏HTML文件，要求：\\n1. 纯前端实现，单HTML文件即可（包含CSS和JavaScript）\\n2. 使用Canvas绘制游戏区域\\n3. 键盘方向键控制蛇的移",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-06-03T11:52:49.340Z",
+    "accessCount": 2
+  },
+  {
+    "id": "kb_1780730681592_8dxp",
+    "agentId": "ai_test_auto",
+    "summary": "【调度链路测试】系统时间戳验证",
+    "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-06T07:24:41.571Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】【调度链路测试】系统时间戳验证。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-06T07:24:26.664Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-06T07:24:26.664Z\"},{\"role\":\"user\",\"content\":\"任务标题：【调度链路测试】系统时间戳验证\\n任务描述：这是一个调度器链路测试任务。请执行以下操作：\\n1. 确认当前系统时间（北京时间 2026-06-06 15:24）\\n2. 调用 system_health 确认系统各组件状态\\n3. 返回一份",
+    "tags": [
+      "priority:high",
+      "scheduled"
+    ],
+    "sharedAt": "2026-06-06T07:24:41.592Z",
+    "accessCount": 0
+  },
+  {
+    "id": "477ad495-d0de-42ec-9ade-ba11db54585d",
+    "title": "功能摸底测试记录",
+    "content": "2026-07-06 11:29 全系统功能摸底测试 - 知识库写入功能验证。记忆日志查询返回27条记录，知识库搜索返回0条（空库正常），写入本条作为验证。",
+    "tags": [
+      "测试",
+      "系统摸底",
+      "功能验证",
+      "质量"
+    ],
+    "category": "测试质量",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-07-06T03:29:06.540Z",
+    "updatedAt": "2026-07-06T03:29:06.540Z",
+    "history": []
+  },
+  {
+    "id": "13c56704-aa62-4435-88db-8f1bbf1e73a6",
+    "title": "功能摸底测试记录",
+    "content": "2026-07-06 11:29 全系统功能摸底测试 - 知识库写入功能验证。记忆日志查询返回27条记录，知识库搜索返回0条（空库正常），写入本条作为验证。",
+    "tags": [
+      "测试",
+      "系统摸底",
+      "功能验证",
+      "质量"
+    ],
+    "category": "测试质量",
+    "author": "ai_ceo",
+    "source": "manual",
+    "status": "active",
+    "version": 1,
+    "createdAt": "2026-07-06T03:29:06.553Z",
+    "updatedAt": "2026-07-06T03:29:06.553Z",
+    "history": []
+  }
+]

@@ -1,0 +1,1155 @@
+{
+  "stats": {
+    "totalDispatched": 83,
+    "totalCompleted": 81,
+    "totalFailed": 0,
+    "startedAt": "2026-07-01T11:28:52.310Z",
+    "lastCycleAt": "2026-07-01T11:33:22.377Z"
+  },
+  "cycleCount": 1652,
+  "agentStatus": {
+    "ai_ceo": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "ceo",
+      "name": "CEO（你）"
+    },
+    "ai_cto": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "c_suite",
+      "name": "张明远"
+    },
+    "ai_coo": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "c_suite",
+      "name": "李思源"
+    },
+    "ai_ciso": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "c_suite",
+      "name": "王浩然"
+    },
+    "ai_cpo": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "c_suite",
+      "name": "赵启航"
+    },
+    "ai_qa_dir": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "director",
+      "name": "吴文斌"
+    },
+    "ai_be_dir": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "director",
+      "name": "周泽宇"
+    },
+    "ai_architect": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "director",
+      "name": "孙立新"
+    },
+    "ai_sec_dir": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "director",
+      "name": "方浩铭"
+    },
+    "ai_fe_dir": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-06T04:46:04.008Z"
+    },
+    "ai_sr_ai": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "何晓峰"
+    },
+    "ai_sr_frontend": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "刘思远"
+    },
+    "ai_sr_mobile": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "宋明辉"
+    },
+    "ai_sr_sec": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "段志强"
+    },
+    "ai_sr_fullstack": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "郑文杰"
+    },
+    "ai_sr_data": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "马思远"
+    },
+    "ai_sr_devops": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "高天翔"
+    },
+    "ai_sr_backend": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "黄国栋"
+    },
+    "ai_be_go": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "吕海川"
+    },
+    "ai_fe_react": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "唐雅文"
+    },
+    "ai_be_python": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "曹振宇"
+    },
+    "ai_ui_design": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "朱一鸣"
+    },
+    "ai_doc_dev": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "欧阳明月"
+    },
+    "ai_test_auto": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "沈嘉文"
+    },
+    "ai_sre": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "白明宇"
+    },
+    "ai_sec_engineer1": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "程思远"
+    },
+    "ai_fe_vue": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "苏雨晴"
+    },
+    "ai_sec_engineer2": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "萧若兰"
+    },
+    "ai_db_admin": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "邓志远"
+    },
+    "ai_test_manual": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "邱晓琳"
+    },
+    "ai_mobile_android": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "陆子轩"
+    },
+    "ai_mobile_ios": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "韩旭东"
+    },
+    "ai_be_java": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "顾明杰"
+    },
+    "ai_fs_yesiqi": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "叶思琪"
+    },
+    "ai_fs_pengzihao": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "彭子豪"
+    },
+    "ai_sr_fullstack3": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "杨晓晨"
+    },
+    "ai_sr_fullstack2": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "林浩然"
+    },
+    "ai_fs_qinzixuan": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "秦子轩"
+    },
+    "ai_fs_luojiayin": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "罗嘉欣"
+    },
+    "ai_fs_fanzhiyuan": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "范志远"
+    },
+    "ai_fs_xuwenbin": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "fullstack",
+      "name": "许文彬"
+    },
+    "ai_compliance_dir": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "director",
+      "name": "方正明"
+    },
+    "ai_compliance_senior": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "senior",
+      "name": "陆雪瑶"
+    },
+    "ai_compliance_auditor": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "任志远"
+    },
+    "ai_compliance_data": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "白若溪"
+    },
+    "ai_compliance_legal": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "staff",
+      "name": "陈思敏"
+    },
+    "ai_security_audit": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "security",
+      "name": "安全审计Agent"
+    },
+    "ai_compliance": {
+      "status": "idle",
+      "taskId": null,
+      "startedAt": null,
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "autoRegistered": true,
+      "role": "compliance",
+      "name": "合规治理Agent"
+    },
+    "undefined": {
+      "status": "offline",
+      "lastHeartbeat": "2026-07-01T11:32:52.337Z",
+      "currentTask": null,
+      "offlineSince": "2026-06-04T08:24:55.976Z",
+      "taskId": null
+    }
+  },
+  "cycleHistory": [
+    {
+      "cycle": 943,
+      "time": "2026-06-04T09:33:06.223Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    },
+    {
+      "cycle": 943,
+      "time": "2026-06-04T09:33:21.724Z",
+      "dispatched": 0,
+      "pulled": 1,
+      "msg": "全部通过自主拉取完成:1"
+    },
+    {
+      "cycle": 944,
+      "time": "2026-06-04T09:33:23.255Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 945,
+      "time": "2026-06-04T09:33:53.226Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 946,
+      "time": "2026-06-04T09:34:23.231Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 947,
+      "time": "2026-06-04T09:34:53.286Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 948,
+      "time": "2026-06-04T09:35:23.331Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 949,
+      "time": "2026-06-04T09:35:53.235Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 950,
+      "time": "2026-06-04T09:36:23.302Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 951,
+      "time": "2026-06-04T09:36:53.256Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 952,
+      "time": "2026-06-04T09:37:23.294Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 953,
+      "time": "2026-06-04T09:37:53.271Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 954,
+      "time": "2026-06-04T09:38:23.331Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 955,
+      "time": "2026-06-04T09:38:53.291Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 956,
+      "time": "2026-06-04T09:39:23.356Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 957,
+      "time": "2026-06-04T09:39:53.365Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 958,
+      "time": "2026-06-04T09:40:23.371Z",
+      "dispatched": 1,
+      "pulled": 0,
+      "msg": "已分配1个任务（自主拉取:0）"
+    },
+    {
+      "cycle": 959,
+      "time": "2026-06-04T09:40:52.053Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 960,
+      "time": "2026-06-04T09:41:22.057Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 961,
+      "time": "2026-06-04T09:41:52.020Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 962,
+      "time": "2026-06-04T09:42:22.073Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 963,
+      "time": "2026-06-04T09:42:52.066Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 964,
+      "time": "2026-06-04T09:43:02.391Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 965,
+      "time": "2026-06-04T09:43:32.372Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 966,
+      "time": "2026-06-04T09:44:02.340Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 967,
+      "time": "2026-06-04T09:44:32.393Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 968,
+      "time": "2026-06-04T09:45:02.346Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 969,
+      "time": "2026-06-04T09:45:32.402Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 970,
+      "time": "2026-06-04T09:46:02.364Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 980,
+      "time": "2026-06-04T09:50:32.537Z",
+      "dispatched": 1,
+      "pulled": 0,
+      "msg": "已分配1个任务（自主拉取:0）"
+    },
+    {
+      "cycle": 983,
+      "time": "2026-06-04T09:52:35.443Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    },
+    {
+      "cycle": 983,
+      "time": "2026-06-04T09:52:46.048Z",
+      "dispatched": 0,
+      "pulled": 1,
+      "msg": "全部通过自主拉取完成:1"
+    },
+    {
+      "cycle": 984,
+      "time": "2026-06-04T09:52:50.091Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 985,
+      "time": "2026-06-04T09:53:20.124Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 986,
+      "time": "2026-06-04T09:53:50.103Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 987,
+      "time": "2026-06-04T09:54:20.142Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 988,
+      "time": "2026-06-04T09:54:50.103Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 989,
+      "time": "2026-06-04T09:55:20.152Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 990,
+      "time": "2026-06-04T09:55:47.820Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    },
+    {
+      "cycle": 992,
+      "time": "2026-06-04T09:56:20.149Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 993,
+      "time": "2026-06-04T09:56:50.127Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 994,
+      "time": "2026-06-04T09:57:20.157Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 995,
+      "time": "2026-06-04T09:57:50.159Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 996,
+      "time": "2026-06-04T09:58:20.229Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 997,
+      "time": "2026-06-04T09:58:50.193Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 998,
+      "time": "2026-06-04T09:59:20.242Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 999,
+      "time": "2026-06-04T09:59:50.193Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1021,
+      "time": "2026-06-04T10:10:27.095Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    },
+    {
+      "cycle": 1022,
+      "time": "2026-06-04T10:11:14.863Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    },
+    {
+      "cycle": 1037,
+      "time": "2026-06-04T10:18:19.773Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    },
+    {
+      "cycle": 1331,
+      "time": "2026-06-06T06:36:06.020Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1332,
+      "time": "2026-06-06T06:36:36.017Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1333,
+      "time": "2026-06-06T06:37:06.027Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1334,
+      "time": "2026-06-06T06:37:36.040Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1335,
+      "time": "2026-06-06T06:38:06.053Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1336,
+      "time": "2026-06-06T06:38:36.063Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1337,
+      "time": "2026-06-06T06:39:06.069Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1338,
+      "time": "2026-06-06T06:39:36.075Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1339,
+      "time": "2026-06-06T06:40:06.085Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1340,
+      "time": "2026-06-06T06:40:36.091Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1341,
+      "time": "2026-06-06T06:41:06.099Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1342,
+      "time": "2026-06-06T06:41:36.105Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1343,
+      "time": "2026-06-06T06:42:06.110Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1344,
+      "time": "2026-06-06T06:42:36.123Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1345,
+      "time": "2026-06-06T06:43:06.129Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1346,
+      "time": "2026-06-06T06:43:36.132Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1347,
+      "time": "2026-06-06T06:44:06.146Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1348,
+      "time": "2026-06-06T06:44:36.150Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1349,
+      "time": "2026-06-06T06:45:06.162Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1350,
+      "time": "2026-06-06T06:45:36.173Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1351,
+      "time": "2026-06-06T06:46:06.171Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1352,
+      "time": "2026-06-06T06:46:36.175Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1353,
+      "time": "2026-06-06T06:47:06.176Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1354,
+      "time": "2026-06-06T06:47:36.185Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1355,
+      "time": "2026-06-06T06:48:06.191Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1356,
+      "time": "2026-06-06T06:48:36.195Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1357,
+      "time": "2026-06-06T06:49:06.196Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1358,
+      "time": "2026-06-06T06:49:36.209Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1359,
+      "time": "2026-06-06T06:50:06.222Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1360,
+      "time": "2026-06-06T06:50:36.234Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1361,
+      "time": "2026-06-06T06:51:06.245Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1362,
+      "time": "2026-06-06T06:51:36.258Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1363,
+      "time": "2026-06-06T06:52:06.260Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1364,
+      "time": "2026-06-06T06:52:11.293Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1365,
+      "time": "2026-06-06T06:52:41.165Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1366,
+      "time": "2026-06-06T06:53:11.183Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1367,
+      "time": "2026-06-06T06:53:41.191Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1368,
+      "time": "2026-06-06T06:54:11.201Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1369,
+      "time": "2026-06-06T06:54:41.204Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1370,
+      "time": "2026-06-06T06:55:11.210Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1371,
+      "time": "2026-06-06T06:55:41.223Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1372,
+      "time": "2026-06-06T06:56:11.230Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1373,
+      "time": "2026-06-06T06:56:41.230Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1374,
+      "time": "2026-06-06T06:57:11.244Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1375,
+      "time": "2026-06-06T06:57:41.250Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1376,
+      "time": "2026-06-06T06:58:11.266Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1377,
+      "time": "2026-06-06T06:58:41.270Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1378,
+      "time": "2026-06-06T06:59:11.272Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1379,
+      "time": "2026-06-06T06:59:41.282Z",
+      "dispatched": 0,
+      "pulled": 0,
+      "msg": "无待办任务（自主拉取:0）"
+    },
+    {
+      "cycle": 1428,
+      "time": "2026-06-06T07:24:26.704Z",
+      "dispatched": 1,
+      "pulled": 1,
+      "msg": "已分配1个任务（自主拉取:1）"
+    }
+  ],
+  "pullStats": {
+    "totalPulled": 0,
+    "totalSkipped": 7,
+    "totalErrors": 7
+  }
+}

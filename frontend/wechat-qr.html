@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCompany 路 AI 铏氭嫙鍏徃</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a15;color:#ccc;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.card{background:#1a1a2e;border:1px solid #2a2a4a;border-radius:16px;padding:28px;max-width:420px;width:90%;text-align:center}
+.icon{font-size:48px;margin-bottom:12px}
+h2{color:#e0e0e0;font-size:18px;margin-bottom:8px}
+p{color:#888;font-size:13px;line-height:1.6;margin-bottom:16px}
+.status-area{background:#0f0f20;border:1px solid #2a2a4a;border-radius:12px;padding:24px;margin-bottom:16px;text-align:center;min-height:180px;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.status-area .loading{color:#555;font-size:13px}
+.status-ok{background:#1a2e1a;border:1px solid #2a4a2a;border-radius:8px;padding:12px;margin-bottom:12px;font-size:13px;color:#8f8}
+.status-ok .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#4caf50;margin-right:6px}
+.status-err{background:#2e1a1a;border:1px solid #4a2a2a;border-radius:8px;padding:12px;margin-bottom:12px;font-size:13px;color:#f88}
+.status-warn{background:#2e2a1a;border:1px solid #4a4a2a;border-radius:8px;padding:12px;margin-bottom:12px;font-size:13px;color:#ff8}
+.btn{display:block;width:100%;padding:10px;background:#6c63ff;color:#fff;border:none;border-radius:8px;font-size:14px;cursor:pointer;text-decoration:none}
+.btn:hover{background:#5a52e0}
+.btn-sm{display:inline-block;padding:8px 16px;background:#3a3a5e;color:#ccc;border:1px solid #4a4a6e;border-radius:8px;font-size:13px;cursor:pointer;text-decoration:none;margin:4px}
+.hint{font-size:11px;color:#555;margin-top:12px}
+.step{background:#1a1a30;border-radius:8px;padding:12px;margin-bottom:10px;text-align:left}
+.step-num{display:inline-block;width:22px;height:22px;background:#6c63ff;color:#fff;border-radius:50%;text-align:center;line-height:22px;font-size:12px;margin-right:8px}
+.step-text{color:#aaa;font-size:13px}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="icon">馃挰</div>
+<h2>寰俊闆嗘垚</h2>
+<p>缁戝畾寰俊鍚庡嵆鍙€氳繃寰俊涓嶢I鍛樺伐瀵硅瘽</p>
+
+<div id="statusArea" class="status-area">
+  <div class="loading">妫€娴嬭繛鎺ョ姸鎬佷腑...</div>
+</div>
+
+<div id="resultArea"></div>
+
+<div id="bindGuide" style="display:none">
+  <div class="step"><span class="step-num">1</span><span class="step-text">鎵撳紑 OpenClaw 鎺у埗鍙伴〉闈紙娴忚鍣ㄨ闂?localhost锛?/span></div>
+  <div class="step"><span class="step-num">2</span><span class="step-text">鍦ㄨ缃腑鎵惧埌銆屽井淇￠泦鎴愩€嶆彃浠?/span></div>
+  <div class="step"><span class="step-num">3</span><span class="step-text">鐐瑰嚮銆屾壂鐮佺粦瀹氥€嶏紝鐢ㄥ井淇℃壂鎻忎簩缁寸爜</span></div>
+  <div class="step"><span class="step-num">4</span><span class="step-text">缁戝畾鎴愬姛鍚庡洖姝ら〉闈㈢偣鍑汇€屽埛鏂扮姸鎬併€?/span></div>
+</div>
+
+<div style="margin-top:12px">
+  <button class="btn-sm" onclick="checkStatus()">馃攧 鍒锋柊鐘舵€?/button>
+  <a class="btn-sm" href="/" target="_blank">馃敆 杩斿洖棣栭〉</a>
+</div>
+<p class="hint" id="hintText">寰俊娑堟伅浼氳嚜鍔ㄨ浆鍙戝埌AI鍛樺伐澶勭悊</p>
+</div>
+
+<script>
+function checkStatus() {
+  var sa = document.getElementById('statusArea');
+  var ra = document.getElementById('resultArea');
+  var bg = document.getElementById('bindGuide');
+  
+  sa.innerHTML = '<div class="loading">杩炴帴妫€娴嬩腑...</div>';
+  ra.innerHTML = '';
+  bg.style.display = 'none';
+  
+  // 閫氳繃鍚庣鏌ヨ寰俊妗ユ帴鐘舵€?  fetch('/api/activation/wechat/status')
+    .then(function(r){ return r.json() })
+    .then(function(data){
+      if (data.success && data.connected) {
+        sa.innerHTML = '<div style="color:#8f8;font-size:28px;margin-bottom:8px">鉁?/div><div style="color:#8f8;font-size:15px">寰俊宸茶繛鎺?/div>';
+        var id = data.accountId || data.userId || '';
+        ra.innerHTML = '<div class="status-ok"><span class="dot"></span>宸茬粦瀹氳处鍙? ' + id + '</div>';
+        bg.style.display = 'none';
+        document.getElementById('hintText').textContent = '寰俊娑堟伅宸茶嚜鍔ㄦ帴鍏I鍛樺伐瀵硅瘽';
+      } else {
+        sa.innerHTML = '<div style="color:#fa0;font-size:28px;margin-bottom:8px">馃摫</div><div style="color:#fa0;font-size:15px">鏈粦瀹氬井淇?/div>';
+        ra.innerHTML = '<div class="status-warn">鈿狅笍 浣跨敤 OpenClaw 寰俊鎻掍欢鎵爜缁戝畾</div>';
+        bg.style.display = 'block';
+        document.getElementById('hintText').textContent = '缁戝畾鍚庡埛鏂板嵆鍙嚜鍔ㄨ繛鎺?;
+      }
+    })
+    .catch(function(err){
+      sa.innerHTML = '<div style="color:#e55;font-size:28px;margin-bottom:8px">鈿狅笍</div><div style="color:#e55;font-size:15px">鍚庣鏈嶅姟涓嶅彲鐢?/div>';
+      ra.innerHTML = '<div class="status-err">璇风‘淇濆悗绔湇鍔″凡鍚姩 (绔彛 8001)</div>';
+      bg.style.display = 'block';
+      document.getElementById('hintText').textContent = '鍚姩鍚庣鍚庡埛鏂伴〉闈?;
+    });
+}
+
+checkStatus();
+</script>
+</body>
+</html>

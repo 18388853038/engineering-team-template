@@ -1,0 +1,54 @@
+<template>
+  <div class="chat-layout"
+    @dragover.prevent="dragOver = true"
+    @dragleave.prevent="dragOver = false"
+    @drop.prevent="onFileDrop"
+    @paste="onPaste">
+    <!-- Main Chat Area -->
+    <div class="chat-main">
+      <!-- ä¸»èå¤©æ¡ææ½é®ç½© -->
+      <div v-if="dragOver" class="drag-overlay" @dragleave.prevent="dragOver=false" @drop.prevent="handleDrop">
+        <div class="drag-overlay-content">
+          <p>{{ $t('chat.drop_files') || 'éæ¾æä»¶å°ä¸»èå¤©æ¡' }}</p>
+        </div>
+      </div>
+      <div class="chat-hdr">
+        <span class="chi">{{ current ? (current.icon || 'ð') : 'ð' }}</span>
+        <div>
+          <div class="chn">å·¥ä½å°</div>
+          <div class="cht" style="display:none">{{ current ? current.title : $t('chat.ready', 'å°±ç»ª') }} <span class="xl-badge">å°é¾æ¨¡å¼</span></div>
+        </div>
+        <button class="create-avatar-btn" @click="showCreateAvatar = true" :title="$t('chat.new_avatar', 'åå»ºæ°åèº«')">+ {{ $t('chat.avatar_clone', 'åèº«') }}</button>
+        <select v-model="modelName" class="model-select" @change="onModelChange" title="éæ©æ¨¡å">
+          <option v-for="m in modelList" :key="m.value" :value="m.value">{{ m.label }}</option>
+        </select>
+        <button class="compress-btn" @click="compressHistory" title="åç¼©åå²æ¶æ¯" :disabled="messages.length < 50">ð¦</button>
+        <button class="refresh-btn" @click="refreshHistory" title="å·æ°æ¶æ¯">ð</button>
+        <span v-if="compressedCount" class="compress-badge" @click="compressHistory">å·²åç¼© {{ compressedCount }} æ¡</span>
+        <!-- WebSocket broadcast notifications -->
+        <div class="ws-notif-area" @mouseenter="wsNotifUnread = 0">
+          <button class="ws-notif-btn" :class="{ connected: wsConnected }"><span class="ws-dot"></span>ð</button>
+          <span v-if="wsNotifUnread > 0" class="ws-notif-badge">{{ wsNotifUnread > 99 ? '99+' : wsNotifUnread }}</span>
+          <div v-if="wsNotifications.length" class="ws-notif-dropdown" @mouseenter.stop>
+            <div class="ws-notif-header">å®æ¶å¨æ</div>
+            <div class="ws-notif-list">
+              <div v-for="(n,i) in wsNotifications.slice(-20).reverse()" :key="i" class="ws-notif-item">
+                <span class="ws-notif-icon">{{ n.source_icon || 'ð¡' }}</span>
+                <div class="ws-notif-body">
+                  <div class="ws-notif-text">{{ n.message || n.content || '' }}</div>
+                  <div class="ws-notif-meta">{{ n.channel }} Â· {{ n.from || '' }} Â· {{ formatMsgTime(n.time) }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-else class="ws-notif-dropdown" @mouseenter.stop>
+            <div class="ws-notif-header">å®æ¶å¨æ</div>
+            <div class="ws-notif-empty">ææ å®æ¶å¨æ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg-box" ref="msgBox">
+        <div class="msg-spacer"></div>
+        <div v-for="(m,i) in messages" :key="i" :class="'msg msg-' + m.role">
+          <!

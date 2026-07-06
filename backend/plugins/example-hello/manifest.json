@@ -1,0 +1,10 @@
+{
+  "id": "example-hello",
+  "name": "Hello World 示例插件",
+  "version": "1.0.0",
+  "description": "一个简单的示例插件，注册两个自定义工具",
+  "author": "eCompany",
+  "main": "index.js",
+  "website": "https://ecompany.local",
+  "tags": ["example", "demo"]
+}

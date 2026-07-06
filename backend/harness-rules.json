@@ -1,0 +1,390 @@
+[
+  {
+    "id": "rate_global_minute",
+    "type": "rate_limit",
+    "name": "全局每分钟上限",
+    "scope": {
+      "agent": null,
+      "tool": null
+    },
+    "condition": "agent.callsPerMinute >= 120",
+    "action": "block",
+    "reason": "Agent 每分钟最多调用 120 次（放宽至2倍）",
+    "severity": "medium",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "rate_global_hour",
+    "type": "rate_limit",
+    "name": "全局每小时上限",
+    "scope": {
+      "agent": null,
+      "tool": null
+    },
+    "condition": "agent.callsPerHour >= 600",
+    "action": "block",
+    "reason": "Agent 每小时最多调用 600 次（放宽至2倍）",
+    "severity": "medium",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "rate_global_day",
+    "type": "rate_limit",
+    "name": "全局每天上限",
+    "scope": {
+      "agent": null,
+      "tool": null
+    },
+    "condition": "agent.callsPerDay >= 1000",
+    "action": "block",
+    "reason": "Agent 每天最多调用 1000 次（放宽至2倍）",
+    "severity": "medium",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "rate_tool_search_web",
+    "type": "rate_limit",
+    "name": "搜索工具频率限制",
+    "scope": {
+      "agent": null,
+      "tool": "search_web"
+    },
+    "condition": "tool.callsPerMinute >= 5",
+    "action": "block",
+    "reason": "搜索工具每分钟最多调用 5 次",
+    "severity": "medium",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "rate_tool_write_file",
+    "type": "rate_limit",
+    "name": "写文件频率限制",
+    "scope": {
+      "agent": null,
+      "tool": "write_file"
+    },
+    "condition": "tool.callsPerMinute >= 60",
+    "action": "block",
+    "reason": "写文件工具每分钟最多调用 60 次（放宽至2倍）",
+    "severity": "medium",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "rate_tool_config_set",
+    "type": "rate_limit",
+    "name": "系统配置频率限制",
+    "scope": {
+      "agent": null,
+      "tool": "system_config_set"
+    },
+    "condition": "tool.callsPerMinute >= 2",
+    "action": "block",
+    "reason": "系统配置工具每分钟最多调用 2 次",
+    "severity": "high",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "perm_no_dangerous_ops",
+    "type": "permission",
+    "name": "禁止危险操作",
+    "scope": {
+      "agent": null,
+      "role": [
+        "staff",
+        "manager",
+        "director"
+      ],
+      "tool": "exec_terminal"
+    },
+    "condition": "agent.role in scope.role",
+    "action": "block",
+    "reason": "非 CEO 禁止执行终端操作",
+    "severity": "critical",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "perm_ceo_emergency",
+    "type": "permission",
+    "name": "紧急处置权 — 仅CEO",
+    "scope": {
+      "agent": null,
+      "role": [
+        "staff",
+        "manager",
+        "director",
+        "vp"
+      ],
+      "tool": [
+        "emergency_*",
+        "system_shutdown"
+      ]
+    },
+    "condition": "agent.role in scope.role",
+    "action": "block",
+    "reason": "紧急操作仅限 CEO",
+    "severity": "critical",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "comp_max_parrallel_tasks",
+    "type": "compliance",
+    "name": "并行任务数上限",
+    "scope": {
+      "agent": null
+    },
+    "condition": "agent.activeTasks >= 10",
+    "action": "warn",
+    "reason": "Agent 并行任务超过 10 个，建议先完成再开新任务",
+    "severity": "low",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "op_no_delete_production",
+    "type": "operation",
+    "name": "禁止直接操作生产数据",
+    "scope": {
+      "agent": null,
+      "role": [
+        "staff",
+        "manager",
+        "director"
+      ]
+    },
+    "condition": "tool.name in [\"delete_file\", \"drop_table\"] AND context.path matches \"production|prod\"",
+    "action": "block",
+    "reason": "非 CEO 禁止直接操作生产环境数据",
+    "severity": "critical",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "rule_mpdd9a3u_tiux",
+    "type": "compliance",
+    "name": "测试规则：每小时最大50次调用",
+    "scope": {
+      "agent": null,
+      "tool": null
+    },
+    "condition": "agent.callsPerHour >= 50",
+    "action": "warn",
+    "reason": "测试用规则",
+    "severity": "low",
+    "status": "active",
+    "proposedBy": "test_agent",
+    "confirmedBy": "test_security",
+    "rejectedBy": null,
+    "rejectReason": null,
+    "version": 2,
+    "createdAt": "2026-05-20T01:11:36.810Z",
+    "updatedAt": "2026-05-20T01:11:36.816Z",
+    "confirmNote": ""
+  },
+  {
+    "id": "compliance_tech_feasibility",
+    "type": "professional_review",
+    "name": "技术可行性审查",
+    "description": "所有涉及系统架构、性能、API的技术变更需经技术部门审查",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "write_file",
+        "exec",
+        "deploy",
+        "system_config_set"
+      ]
+    },
+    "condition": "action.risk === \"high\" || action.domain === \"tech\"",
+    "action": "require_review",
+    "reviewer": "ai_cto",
+    "reason": "需要技术总监评估可行性和架构影响",
+    "severity": "high",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_security_review",
+    "type": "professional_review",
+    "name": "安全审查",
+    "description": "涉及用户数据、认证系统、网络配置的变更需经安全部门审查",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "exec",
+        "write_file",
+        "system_config_set"
+      ]
+    },
+    "condition": "action.domain === \"security\" || action.domain === \"data\" || action.containsPII === true",
+    "action": "require_review",
+    "reviewer": "ai_ciso",
+    "reason": "涉及安全风险，需要安全总监评审",
+    "severity": "critical",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_legal_review",
+    "type": "professional_review",
+    "name": "法规合规审查",
+    "description": "涉及用户数据收集、隐私政策、跨境传输、金融功能的变更需经法务审查",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "write_file",
+        "exec"
+      ]
+    },
+    "condition": "action.domain === \"privacy\" || action.domain === \"finance\" || action.domain === \"legal\" || action.involvesUserData === true",
+    "action": "require_review",
+    "reviewer": "ai_compliance_dir",
+    "reason": "需要合规总监评估法律风险",
+    "severity": "critical",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_qa_signoff",
+    "type": "professional_review",
+    "name": "质量门禁",
+    "description": "所有发版、上线、重大变更需经质量部门签字",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "deploy",
+        "exec"
+      ]
+    },
+    "condition": "action.risk === \"high\" || action.type === \"release\" || action.type === \"deployment\"",
+    "action": "require_review",
+    "reviewer": "ai_qa_dir",
+    "reason": "上线前需要质量总监确认测试通过",
+    "severity": "high",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_product_approval",
+    "type": "professional_review",
+    "name": "产品方向审批",
+    "description": "涉及用户界面、功能逻辑、产品策略的变更需经产品部门审批",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "write_file",
+        "exec"
+      ]
+    },
+    "condition": "action.domain === \"ui\" || action.domain === \"product\" || action.domain === \"feature\"",
+    "action": "require_review",
+    "reviewer": "ai_cpo",
+    "reason": "需要产品总监确认需求方向",
+    "severity": "medium",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_data_protection",
+    "type": "professional_review",
+    "name": "数据保护审查",
+    "description": "涉及数据库变更、数据导出、数据迁移需经数据合规专员审查",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "write_file",
+        "exec"
+      ]
+    },
+    "condition": "action.domain === \"database\" || action.domain === \"data_export\" || action.domain === \"data_migration\"",
+    "action": "require_review",
+    "reviewer": "ai_compliance_data",
+    "reason": "需要数据合规专员评估数据保护合规性",
+    "severity": "high",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_ceo_approval",
+    "type": "professional_review",
+    "name": "CEO 最终审批",
+    "description": "跨部门重大变更、预算审批、战略决策需CEO最终批准",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "exec",
+        "write_file",
+        "system_config_set"
+      ]
+    },
+    "condition": "action.scope === \"cross_dept\" || action.scope === \"strategic\" || action.risk === \"critical\" || action.requiresCEO === true",
+    "action": "require_review",
+    "reviewer": "ai_ceo",
+    "reason": "重大事项需要CEO最终审批",
+    "severity": "critical",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  },
+  {
+    "id": "compliance_cost_control",
+    "type": "professional_review",
+    "name": "成本控制审查",
+    "description": "涉及新增资源、付费服务、扩容的变更需经运营总监审查",
+    "scope": {
+      "agent": null,
+      "tool": [
+        "exec"
+      ]
+    },
+    "condition": "action.domain === \"cost\" || action.domain === \"resource\" || action.involvesCost === true",
+    "action": "require_review",
+    "reviewer": "ai_coo",
+    "reason": "需要运营总监评估成本影响",
+    "severity": "high",
+    "status": "active",
+    "proposedBy": "system",
+    "confirmedBy": "system",
+    "version": 1
+  }
+]

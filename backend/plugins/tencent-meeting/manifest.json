@@ -1,0 +1,9 @@
+{
+  "id": "tencent-meeting",
+  "name": "腾讯会议",
+  "version": "1.0.0",
+  "description": "腾讯会议集成插件，支持会议创建、管理、参会人邀请、会议记录",
+  "author": "Tencent",
+  "category": "tencent-office",
+  "main": "index.js"
+}

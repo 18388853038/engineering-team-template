@@ -1,0 +1,9 @@
+{
+  "id": "lark-connector",
+  "name": "飞书/Lark连接器",
+  "version": "2026.5.7",
+  "description": "字节跳动飞书通道插件，支持消息收发、群组管理、日历、文档、审批",
+  "author": "ByteDance",
+  "category": "communication",
+  "main": "index.js"
+}

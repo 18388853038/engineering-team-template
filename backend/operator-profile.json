@@ -1,0 +1,11 @@
+{
+  "name": "Admin",
+  "name_en": "Admin",
+  "title": "系统运营者",
+  "icon": "👤",
+  "email": "",
+  "phone": "",
+  "bio": "eCompany 系统管理员",
+  "theme": "dark",
+  "lang": "zh-CN"
+}

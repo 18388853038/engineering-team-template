@@ -1,0 +1,9 @@
+{
+  "id": "tencent-survey",
+  "name": "腾讯问卷",
+  "version": "1.0.0",
+  "description": "腾讯问卷集成插件，支持问卷创建、数据收集、统计分析",
+  "author": "Tencent",
+  "category": "tencent-office",
+  "main": "index.js"
+}

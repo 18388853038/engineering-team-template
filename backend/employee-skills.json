@@ -1,0 +1,2237 @@
+{
+  "skills": [],
+  "employees": {
+    "ai_ceo": {
+      "id": "ai_ceo",
+      "name": "首席执行官",
+      "skills": [
+        {
+          "name": "战略决策",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "团队管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "审批授权",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "危机处理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "资源调配",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_cto": {
+      "id": "ai_cto",
+      "name": "首席技术官",
+      "skills": [
+        {
+          "name": "系统架构",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "技术选型",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "团队建设",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "研发流程",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "技术规划",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_coo": {
+      "id": "ai_coo",
+      "name": "运营总监",
+      "skills": [
+        {
+          "name": "项目管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "流程优化",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "资源调度",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "敏捷管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "质量管控",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_ciso": {
+      "id": "ai_ciso",
+      "name": "安全总监",
+      "skills": [
+        {
+          "name": "安全架构",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "渗透测试",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "合规审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "漏洞管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "加密技术",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_cpo": {
+      "id": "ai_cpo",
+      "name": "产品总监",
+      "skills": [
+        {
+          "name": "产品规划",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "需求分析",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "用户研究",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据分析",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "竞品分析",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_qa_dir": {
+      "id": "ai_qa_dir",
+      "name": "质量总监",
+      "skills": [
+        {
+          "name": "质量体系",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "自动化测试",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "性能测试",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "流程规范",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "DevOps",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_be_dir": {
+      "id": "ai_be_dir",
+      "name": "后端总监",
+      "skills": [
+        {
+          "name": "后端架构",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "API设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "微服务",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据建模",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "高并发",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_architect": {
+      "id": "ai_architect",
+      "name": "系统架构师",
+      "skills": [
+        {
+          "name": "分布式架构",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "微服务设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "性能优化",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "技术规范",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "系统设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sec_dir": {
+      "id": "ai_sec_dir",
+      "name": "安全总监",
+      "skills": [
+        {
+          "name": "安全架构",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全运营",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "团队管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "合规审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "应急响应",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fe_dir": {
+      "id": "ai_fe_dir",
+      "name": "前端总监",
+      "skills": [
+        {
+          "name": "前端架构",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "工程化建设",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "性能优化",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "组件设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "跨平台开发",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_ai": {
+      "id": "ai_sr_ai",
+      "name": "AI专家",
+      "skills": [
+        {
+          "name": "大模型应用",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "RAG系统",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Prompt工程",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "模型微调",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Python",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_frontend": {
+      "id": "ai_sr_frontend",
+      "name": "前端专家",
+      "skills": [
+        {
+          "name": "Vue 3",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "React",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "TypeScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Webpack/Vite",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "前端性能",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_mobile": {
+      "id": "ai_sr_mobile",
+      "name": "移动端专家",
+      "skills": [
+        {
+          "name": "iOS开发",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Android开发",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Flutter",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "React Native",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "跨平台",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_sec": {
+      "id": "ai_sr_sec",
+      "name": "安全专家",
+      "skills": [
+        {
+          "name": "渗透测试",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "代码审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全加固",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "应急响应",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全工具",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_fullstack": {
+      "id": "ai_sr_fullstack",
+      "name": "全栈专家",
+      "skills": [
+        {
+          "name": "全栈开发",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Node.js",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "React/Vue",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据库",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "项目管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_data": {
+      "id": "ai_sr_data",
+      "name": "数据专家",
+      "skills": [
+        {
+          "name": "数据仓库",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "ETL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "SQL优化",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "大数据",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据建模",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_devops": {
+      "id": "ai_sr_devops",
+      "name": "运维专家",
+      "skills": [
+        {
+          "name": "Kubernetes",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Docker",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "CI/CD",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "监控告警",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "云服务",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_backend": {
+      "id": "ai_sr_backend",
+      "name": "后端专家",
+      "skills": [
+        {
+          "name": "Python",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "分布式系统",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据库优化",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "API设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "系统调优",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_be_go": {
+      "id": "ai_be_go",
+      "name": "Go工程师",
+      "skills": [
+        {
+          "name": "Go",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "gRPC",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "K8s",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Redis",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "消息队列",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fe_react": {
+      "id": "ai_fe_react",
+      "name": "React前端工程师",
+      "skills": [
+        {
+          "name": "React",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Next.js",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "TypeScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Zustand",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Tailwind",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_be_python": {
+      "id": "ai_be_python",
+      "name": "Python工程师",
+      "skills": [
+        {
+          "name": "Python",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "FastAPI",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Django",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "SQLAlchemy",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Celery",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_ui_design": {
+      "id": "ai_ui_design",
+      "name": "UI/UX设计师",
+      "skills": [
+        {
+          "name": "Figma",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Sketch",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "原型设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "设计系统",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "用户研究",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_doc_dev": {
+      "id": "ai_doc_dev",
+      "name": "技术文档工程师",
+      "skills": [
+        {
+          "name": "技术写作",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "API文档",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Markdown",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "知识管理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "流程图",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_test_auto": {
+      "id": "ai_test_auto",
+      "name": "自动化测试工程师",
+      "skills": [
+        {
+          "name": "Selenium",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Pytest",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "JMeter",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Cypress",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Postman",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sre": {
+      "id": "ai_sre",
+      "name": "SRE工程师",
+      "skills": [
+        {
+          "name": "Linux",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Docker",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Prometheus",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "ELK",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Shell脚本",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sec_engineer1": {
+      "id": "ai_sec_engineer1",
+      "name": "安全工程师",
+      "skills": [
+        {
+          "name": "漏洞扫描",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Nmap/Wireshark",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全监控",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Python",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "基线检查",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fe_vue": {
+      "id": "ai_fe_vue",
+      "name": "Vue前端工程师",
+      "skills": [
+        {
+          "name": "Vue 3",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "TypeScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "CSS/SCSS",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Vite",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Pinia",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sec_engineer2": {
+      "id": "ai_sec_engineer2",
+      "name": "安全工程师",
+      "skills": [
+        {
+          "name": "Web安全",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "代码审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "OWASP",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全文档",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全培训",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_db_admin": {
+      "id": "ai_db_admin",
+      "name": "数据库管理员",
+      "skills": [
+        {
+          "name": "MySQL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "PostgreSQL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Redis",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "MongoDB",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "SQL优化",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_test_manual": {
+      "id": "ai_test_manual",
+      "name": "QA测试工程师",
+      "skills": [
+        {
+          "name": "测试用例设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Bug跟踪",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "回归测试",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "需求分析",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "文档编写",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_mobile_android": {
+      "id": "ai_mobile_android",
+      "name": "Android工程师",
+      "skills": [
+        {
+          "name": "Kotlin",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Jetpack Compose",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Android SDK",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Gradle",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Firebase",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_mobile_ios": {
+      "id": "ai_mobile_ios",
+      "name": "iOS工程师",
+      "skills": [
+        {
+          "name": "Swift",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "SwiftUI",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "UIKit",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Xcode",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Core Data",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_be_java": {
+      "id": "ai_be_java",
+      "name": "Java工程师",
+      "skills": [
+        {
+          "name": "Java",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Spring Boot",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "MyBatis",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "RabbitMQ",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "MySQL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fs_yesiqi": {
+      "id": "ai_fs_yesiqi",
+      "name": "全栈开发工程师",
+      "skills": [
+        {
+          "name": "React",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "TypeScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Python",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "PostgreSQL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "REST",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fs_pengzihao": {
+      "id": "ai_fs_pengzihao",
+      "name": "全栈开发工程师",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Node.js",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Vue 3",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "MySQL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Linux",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_fullstack3": {
+      "id": "ai_sr_fullstack3",
+      "name": "全栈资深工程师",
+      "skills": [
+        {
+          "name": "Go",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Vue 3",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "WebSocket",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Redis",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Docker",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_sr_fullstack2": {
+      "id": "ai_sr_fullstack2",
+      "name": "全栈资深工程师",
+      "skills": [
+        {
+          "name": "Node.js",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "React/Vue",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "微服务",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据库设计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "DevOps",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fs_qinzixuan": {
+      "id": "ai_fs_qinzixuan",
+      "name": "全栈开发工程师",
+      "skills": [
+        {
+          "name": "Python",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Vue",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "FastAPI",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Shell",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "CI/CD",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fs_luojiayin": {
+      "id": "ai_fs_luojiayin",
+      "name": "全栈开发工程师",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "React",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Node.js",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "CSS/SCSS",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Markdown",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fs_fanzhiyuan": {
+      "id": "ai_fs_fanzhiyuan",
+      "name": "全栈开发工程师",
+      "skills": [
+        {
+          "name": "Vue 3",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Java",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Spring Boot",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "MongoDB",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Docker",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_fs_xuwenbin": {
+      "id": "ai_fs_xuwenbin",
+      "name": "全栈开发工程师",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Vue",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Node.js",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "MySQL",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "Git",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_compliance_dir": {
+      "id": "ai_compliance_dir",
+      "name": "合规总监",
+      "skills": [
+        {
+          "name": "合规体系建设",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "任务审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "产品审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "质量审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "跨境合规",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "法规解读",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_compliance_senior": {
+      "id": "ai_compliance_senior",
+      "name": "合规审计专家",
+      "skills": [
+        {
+          "name": "深度审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "任务流程审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "产品审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "漏洞发现",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "整改方案",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        },
+        {
+          "name": "监管报告",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.879Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_compliance_auditor": {
+      "id": "ai_compliance_auditor",
+      "name": "合规审计师",
+      "skills": [
+        {
+          "name": "日常审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "任务质量审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "产品交付审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "流程检查",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "审计记录",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "整改跟踪",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_compliance_data": {
+      "id": "ai_compliance_data",
+      "name": "数据合规专员",
+      "skills": [
+        {
+          "name": "数据合规",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "隐私保护",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "GDPR",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "个保法",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "数据安全审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "产品数据审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_compliance_legal": {
+      "id": "ai_compliance_legal",
+      "name": "法规研究员",
+      "skills": [
+        {
+          "name": "法规研究",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "政策跟踪",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "合规解读",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "法律分析",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "风险评估",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "审计支撑",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_security_audit": {
+      "id": "ai_security_audit",
+      "name": "规则层 · 安全审计",
+      "skills": [
+        {
+          "name": "规则验证",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "安全审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "申诉审批",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "风险分析",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        }
+      ]
+    },
+    "ai_compliance": {
+      "id": "ai_compliance",
+      "name": "元规则层 · 合规治理",
+      "skills": [
+        {
+          "name": "合规审计",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "规则治理",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "策略制定",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        },
+        {
+          "name": "风险管控",
+          "description": "",
+          "category": "agent",
+          "level": "senior",
+          "registeredAt": "2026-07-04T15:16:07.880Z",
+          "lastUsed": null
+        }
+      ]
+    }
+  }
+}

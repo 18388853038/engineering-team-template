@@ -1,0 +1,38 @@
+[
+  {
+    "id": "job_mpj299wc_zxg4",
+    "name": "test_cron",
+    "cronExpr": "*/30 * * * *",
+    "agentId": "ai_ceo",
+    "taskTemplate": {
+      "title": "test_cron"
+    },
+    "options": {},
+    "enabled": true,
+    "lastRun": "2026-07-01T11:30:22.349Z",
+    "lastResult": {
+      "dispatched": true,
+      "taskId": "cron_job_mpj299wc_zxg4_mr1zuscu"
+    },
+    "runCount": 185,
+    "nextRun": "2026-07-01T12:00:00.000Z",
+    "createdAt": "2026-05-24T00:50:17.820Z"
+  },
+  {
+    "id": "cron_1780119488277_8yfv",
+    "name": "daily_report_workflow",
+    "schedule": "daily 09:00",
+    "action": "workflow",
+    "params": {
+      "workflowId": "wf_template_qa"
+    },
+    "enabled": true,
+    "createdAt": "2026-05-30T05:38:08.277Z",
+    "lastRun": "2026-07-06T01:00:00.132Z",
+    "nextRun": "2026-07-07T01:00:00.000Z",
+    "runCount": 2,
+    "lastResult": {
+      "error": "Cannot read properties of undefined (reading 'title')"
+    }
+  }
+]

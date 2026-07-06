@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCompany · AI 虚拟公司</title>
+    <meta name="description" content="eCompany — 41 名 AI 员工，你的数字合伙人" />
+    <script>
+      document.addEventListener('dragenter', function(e) { e.preventDefault(); }, false);
+      document.addEventListener('dragover', function(e) { e.preventDefault(); }, false);
+      document.addEventListener('dragleave', function(e) { e.preventDefault(); }, false);
+      document.addEventListener('drop', function(e) { e.preventDefault(); }, false);
+    </script>
+    <style>
+      .drag-overlay, .drag-hint, .drop-overlay, .drop-box,
+      [class*="drag-overlay"], [class*="drop-overlay"] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

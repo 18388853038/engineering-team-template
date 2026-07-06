@@ -1,0 +1,122 @@
+BEFORE LABEL:\nstant', content: '网络错误: ' + e.message, isError: true, time: new Date().toISOString() })
+        } finally {
+          this.loading = false
+          this.$nextTick(this.scrollToBottom)
+          if (this.$refs.chatInput) this.$refs.chatInput.focus();
+        }
+        return
+      }
+      
+      // \n\n=== CEO BLOCK ===\nCEO: SSE streaming
+      this.loading = true
+      this.streaming = true
+      this.streamContent = ''
+      var self = this
+      self.addThinkingMsg('AI CEO 正在分析你的问题')
+      
+      try {
+        const resp = await fetch('/api/chat/sse', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ agentId: 'ai_ceo', message: text, image: imageData, files: textFiles })
+        })
+        
+        if (!resp.ok) {
+          var errText = await resp.text()
+          self.messages.push({ role: 'assistant', content: '错误: ' + (errText || resp.statusText), isError: true, time: new Date().toISOString() })
+          self.saveMessages()
+          self.streaming = false
+          self.loading = false
+          self.removeLastThinking()
+          self.$nextTick(self.scrollToBottom)
+          return
+        }
+        
+        const reader = resp.body.getReader()
+        const decoder = new TextDecoder()
+        var buffer = ''
+        var finalReply = ''
+        
+        while (true) {
+          var { done, value } = await reader.read()
+          if (done) break
+          
+          buffer += decoder.decode(value, { stream: true })
+          var lines = buffer.split('\n')
+          buffer = lines.pop() || ''
+          
+          for (var _l = 0; _l < lines.length; _l++) {
+            var line = lines[_l].trim()
+            if (!line || !line.startsWith('data: ')) continue
+            var data
+            try { data = JSON.parse(line.substring(6)) } catch(e) { continue }
+            
+            if (data.type === 'thinking') self.addThinkingMsg(data.content)
+            else if (data.type === 'tool_call') { self.removeLastThinking(); self.addToolCall(data.name, data.args, data.summary); }
+            else if (data.type === 'tool_result') self.updateLastToolCall(data.status, data.result)
+            else if (data.type === 'file_read') { self.removeLastThinking(); self.addFileOp('read', data.path); }
+            else if (data.type === 'file_write') { self.removeLastThinking(); self.addFileOp('write', data.path); }
+            else if (data.type === 'message') { finalReply += data.content || ''; self.streamContent = finalReply; }
+            else if (data.type === 'done') { finalReply = data.reply || finalReply; self.streamContent = finalReply; }
+            self.$nextTick(self.scrollToBottom)
+          }
+        }
+        
+        self.streaming = false
+        self.loading = false
+        self.removeLastThinking()
+        if (finalReply) self.typewriterEffect(finalReply)
+        self.saveMessages()
+        self.$nextTick(self.scrollToBottom)
+      } catch(e) {
+        console.error('SSE error:', e)
+        self.messages.push({ role: 'assistant', content: '网络错误: ' + e.message, isError: true, time: new Date().toISOString() })
+        self.saveMessages()
+        self.streaming = false
+        self.loading = false
+        self.removeLastThinking()
+        self.$nextTick(self.scrollToBottom)
+      }
+      if (self.$refs.chatInput) self.$refs.chatInput.focus();
+    },
+    
+    addToolCall(name, args, summary) {
+      this.messages.push({ role: 'assistant', type: 'tool_call', toolName: name, args: args || {}, summary: summary || '', status: 'running', _expanded: false, time: new Date().toISOString() })
+      this.saveMessages()
+    },
+    updateLastToolCall(status, result) {
+      for (var i = this.messages.length - 1; i >= 0; i--) {
+        if (this.messages[i].type === 'tool_call') { this.messages[i].status = status || 'done'; if (result) this.messages[i].result = result; break; }
+      }
+    },
+    addThinkingMsg(text) {
+      this.messages.push({ role: 'assistant', type: 'thinking', content: text || '思考中...', time: new Date().toISOString() })
+    },
+    removeLastThinking() {
+      for (var i = this.messages.length - 1; i >= 0; i--) {
+        if (this.messages[i].type === 'thinking') { this.messages.splice(i, 1); break; }
+      }
+    },
+    addFileOp(op, path) {
+      this.messages.push({ role: 'assistant', type: 'file_op', op: op, path: path, status: 'running', time: new Date().toISOString() })
+      setTimeout(() => {
+        for (var i = this.messages.length - 1; i >= 0; i--) {
+          if (this.messages[i].type === 'file_op' && this.messages[i].op === op && this.messages[i].path === path) { this.messages[i].status = 'done'; break; }
+        }
+      }, 500)
+    },
+    typewriterEffect(text) {
+      var words = text.split('')
+      var chunkSize = 3
+      var idx = 0
+      var msg = { role: 'assistant', content: '', time: new Date().toISOString() }
+      this.messages.push(msg)
+      this.saveMessages()
+      var self = this
+      function typeNext() {
+        if (idx >= words.length) { msg.content = text; self.saveMessages(); self.$nextTick(self.scrollToBottom); return; }
+        var chunk = words.slice(idx, idx + chunkSize).join('')
+        idx += chunkSize
+        msg.content = (msg.content || '') + chunk
+        self.$nextTick(self.scrollToBottom)
+        var 

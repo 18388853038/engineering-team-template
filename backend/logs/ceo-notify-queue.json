@@ -1,0 +1,602 @@
+[
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mptnhkat",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T10:42:21.498Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【郑文杰】完成任务「修复 Harness 调用计数统计 — 上报链路接入」",
+    "taskId": "f4f81c1f-48a3-4bf7-8fc4-1b587099e78b",
+    "agentName": "郑文杰",
+    "completedAt": "2026-05-31T10:50:26.150Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「回调钩子增加触发CEO自动总结的逻辑（方案A）」",
+    "taskId": "e4c7a865-5442-4701-a5d6-15910b0061a6",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T10:54:06.022Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpto4pyr",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T11:00:29.537Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mptx848l",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T15:15:09.745Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu02224",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T16:48:27.202Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu1az0g",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T17:09:20.621Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu22g5l",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T17:30:42.378Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu34ipv",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T18:00:17.817Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu473ns",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T18:30:16.252Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu8vi9v",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T20:41:10.837Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu9k31l",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T21:00:16.108Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpu9kf8o",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T21:00:29.139Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpudicuy",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T23:47:43.289Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpufjbx0",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T23:47:43.574Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpudiat6",
+    "agentName": "吴文斌",
+    "completedAt": "2026-05-31T23:47:44.289Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpugnnyy",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-01T00:18:58.006Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpuh4ctc",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-01T00:32:06.420Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpv1yp05",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-01T10:15:33.664Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwaepwx",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T06:59:41.579Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwag07y",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T07:00:36.882Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwcxot2",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T08:10:23.941Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwdnc9q",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T08:30:18.373Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwjkz93",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T11:16:43.799Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【周泽宇】完成任务「派任务功能测试」",
+    "taskId": "f16cd219-ea50-43c7-b993-5146de637f6b",
+    "agentName": "周泽宇",
+    "completedAt": "2026-06-02T11:17:18.596Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【周泽宇】完成任务「调度器链路功能测试 v2」",
+    "taskId": "46fb676e-41a8-4363-8fbd-5a55931f9db0",
+    "agentName": "周泽宇",
+    "completedAt": "2026-06-02T11:30:21.850Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwk2vpm",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T11:30:35.218Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【周泽宇】完成任务「全链路实时测试任务」",
+    "taskId": "6402a217-a330-4c9c-9a62-86876ee29d49",
+    "agentName": "周泽宇",
+    "completedAt": "2026-06-02T11:33:43.446Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「写一个贪吃蛇小游戏」",
+    "taskId": "8f225fa0-259a-4c34-b424-f6c36166fb00",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-02T11:43:36.240Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwl5rk5",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T12:00:50.696Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「写一个贪吃蛇小游戏」",
+    "taskId": "3e65b6b4-0d97-496b-b2ac-9386488f6402",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-02T12:01:09.405Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「写一个贪吃蛇小游戏 — 心跳唤醒测试 v3」",
+    "taskId": "7639292a-396e-4c01-a830-ae049021a4fc",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-02T12:17:42.299Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「写一个贪吃蛇小游戏 — 正确路径测试」",
+    "taskId": "6b6de872-7689-4c27-9b05-1d30bce01a75",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-02T12:20:47.498Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwm7u3p",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T12:30:29.637Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpwnafer",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-02T13:00:26.154Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpxxw0ji",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T10:46:32.102Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【杨晓晨】完成任务「??????????????????????? test-verify.txt」",
+    "taskId": "ca5190ff-6d7f-4be0-9e8c-2d9e680d0421",
+    "agentName": "杨晓晨",
+    "completedAt": "2026-06-03T10:50:36.314Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【杨晓晨】完成任务「[小龙验收] 请保存当前时间到文件 test-pass-verify.txt」",
+    "taskId": "634b0682-73da-422a-81c7-32321e2df2de",
+    "agentName": "杨晓晨",
+    "completedAt": "2026-06-03T10:54:45.329Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【杨晓晨】完成任务「[小龙验证] 请用write_file保存当前时间到文件 test-final.txt」",
+    "taskId": "c2264a21-9103-4290-a0d0-38b9cbfe2757",
+    "agentName": "杨晓晨",
+    "completedAt": "2026-06-03T10:57:52.534Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpxyfwaf",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T11:00:26.438Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpxziv1u",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T11:30:41.871Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「创建一个贪吃蛇小游戏HTML文件」",
+    "taskId": "a8343892-6be0-4b57-9c1d-a73b2aef37b1",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-03T11:52:06.231Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【杨晓晨】完成任务「[诊断] 请输出一句话到文件 diag-test.txt」",
+    "taskId": "1c297091-b25b-4cf7-b932-4af5d5e37c38",
+    "agentName": "杨晓晨",
+    "completedAt": "2026-06-03T11:54:23.662Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「写一句话到文件 hello-test.txt」",
+    "taskId": "a59abcbf-d8bb-4096-bf6b-a4db139217c2",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T11:58:38.539Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「?????2????????????? hello-test.txt」",
+    "taskId": "67599ae1-d8e7-4688-9d83-5a448354a293",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-03T12:00:14.800Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【周泽宇】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpy0l34z",
+    "agentName": "周泽宇",
+    "completedAt": "2026-06-03T12:00:26.285Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「写一句话到文件 hello-test.txt」",
+    "taskId": "9dc09535-fe15-4ab8-bddb-c677985cf834",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-03T12:19:29.176Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpy1o2vw",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T12:31:16.417Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「[Worker] 保存时间到文件 worker-test.txt」",
+    "taskId": "0fd4598b-7e00-454b-8d6a-b154e5c49ef0",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-03T12:31:53.078Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【刘思远】完成任务「[Worker v2] 保存当前时间到文件 worker-v2.txt」",
+    "taskId": "6fae5c52-db04-401c-a087-b80cec19631b",
+    "agentName": "刘思远",
+    "completedAt": "2026-06-03T12:37:46.175Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【杨晓晨】完成任务「[Final] 保存时间到文件 final-test.txt」",
+    "taskId": "2e90a5f1-1399-4d93-b16a-eb664de6b765",
+    "agentName": "杨晓晨",
+    "completedAt": "2026-06-03T12:39:56.312Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpy2qr89",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T13:00:50.388Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpy3tch8",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T13:30:49.590Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpy4vj4e",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T14:00:31.585Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「创建一个贪吃蛇小游戏 — 最终验证测试」",
+    "taskId": "b30d1a2d-94ad-43f5-8c77-0ce128327e53",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-03T14:03:10.255Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「[验证] 彭子豪请保存时间到文件 pengzihao-test.txt」",
+    "taskId": "c8d3ca1d-40c2-4ba9-a3c5-5bb0df8eb561",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-03T14:08:35.243Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「[验证2] 彭子豪请保存时间到文件 pengzi-pass.txt」",
+    "taskId": "1c2460e5-0850-4645-b6c7-4a4b9d421dd6",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-03T14:12:22.574Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpy5y9qr",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-03T14:30:48.856Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【周泽宇】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpz7gpb3",
+    "agentName": "周泽宇",
+    "completedAt": "2026-06-04T08:25:19.068Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpz6wrim",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-04T08:25:20.481Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「第三次验证测试——写文件」",
+    "taskId": "f8131de9-8bbb-4716-b59e-bca4be93e66c",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T08:25:36.759Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpz8jdx8",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-04T08:30:50.222Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「写一个实时时钟HTML页面」",
+    "taskId": "01f47bb2-11ec-472b-aefc-4390bfcaad8b",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T08:37:52.634Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「当前系统实时测试——写一句话到文件」",
+    "taskId": "3b55fe30-1f48-44a2-903f-2e910926c652",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T08:47:50.249Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpz9n5lf",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-04T09:01:55.112Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「测试任务 - 写当前时间到 test-round-0604.txt」",
+    "taskId": "da6edcd8-b4d5-4c6a-9c66-0865c9b4b912",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T09:02:48.994Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「写当前时间到 test-round-0604.txt」",
+    "taskId": "399d6613-bf87-449c-ac9d-3b91015089bf",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-04T09:14:04.076Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【吴文斌】完成任务「test_cron」",
+    "taskId": "cron_job_mpj299wc_zxg4_mpzao54h",
+    "agentName": "吴文斌",
+    "completedAt": "2026-06-04T09:30:34.701Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「最终验证测试-final-round-0604」",
+    "taskId": "852603a5-80ab-4f9f-95d4-3067e3b6447a",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T09:33:26.117Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「[小龙测试] 保存当前时间到文件 ceo-test-round-0604.txt」",
+    "taskId": "f1b71c26-aa37-4edb-b30d-859299572d73",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T09:52:46.020Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「[小龙测试-第8轮] 写时间到文件 ceo-test-8.txt」",
+    "taskId": "e19f1012-8252-492c-82c0-ec563acb43e5",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T09:55:58.114Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「[第9轮测试] 写时间到文件 ceo-test-9.txt」",
+    "taskId": "89ff806b-3acc-4aa7-82be-2a29705c1b47",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T10:10:37.400Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【彭子豪】完成任务「[第10轮测试] 写时间到文件 ceo-test-10.txt」",
+    "taskId": "9e6526d1-0f58-4f34-b730-a6923f5015aa",
+    "agentName": "彭子豪",
+    "completedAt": "2026-06-04T10:18:17.891Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【沈嘉文】完成任务「【调度链路测试】系统时间戳验证」",
+    "taskId": "5ce04ad1-27c0-4596-ba0e-ff6c41faa0a8",
+    "agentName": "沈嘉文",
+    "completedAt": "2026-06-06T07:24:26.666Z",
+    "status": "read"
+  },
+  {
+    "type": "task_completed",
+    "message": "【前端总监】完成任务「小游戏开发：贪吃蛇网页版」",
+    "taskId": "7c2162a3-b24e-4103-a7d4-df4cffb86932",
+    "agentName": "前端总监",
+    "completedAt": "2026-07-06T04:45:54.306Z",
+    "status": "read"
+  }
+]

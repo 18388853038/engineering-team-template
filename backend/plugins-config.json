@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "example-hello": true,
+    "dingtalk-connector": true,
+    "ima-connector": true,
+    "lark-connector": true,
+    "qq-bot-connector": true,
+    "tencent-docs": true,
+    "tencent-meeting": true,
+    "tencent-survey": true,
+    "wechat-connector": true,
+    "wecom-connector": true
+  }
+}

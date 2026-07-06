@@ -1,0 +1,1627 @@
+[
+  {
+    "id": "alert_1783206005689",
+    "createdAt": "2026-07-04T23:00:05.689Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "44MB",
+        "heapUsed": "28MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783207806166",
+    "createdAt": "2026-07-04T23:30:06.166Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "43MB",
+        "heapUsed": "28MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783209606632",
+    "createdAt": "2026-07-05T00:00:06.632Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "46MB",
+        "heapUsed": "26MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783211407095",
+    "createdAt": "2026-07-05T00:30:07.095Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "39MB",
+        "heapUsed": "34MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783213207518",
+    "createdAt": "2026-07-05T01:00:07.518Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "44MB",
+        "heapUsed": "32MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783215007985",
+    "createdAt": "2026-07-05T01:30:07.985Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "45MB",
+        "heapUsed": "31MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783216808472",
+    "createdAt": "2026-07-05T02:00:08.472Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "45MB",
+        "heapUsed": "31MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783218608997",
+    "createdAt": "2026-07-05T02:30:08.997Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "43MB",
+        "heapUsed": "31MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783220409488",
+    "createdAt": "2026-07-05T03:00:09.488Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "47MB",
+        "heapUsed": "29MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783222209956",
+    "createdAt": "2026-07-05T03:30:09.956Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "43MB",
+        "heapUsed": "28MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783224010454",
+    "createdAt": "2026-07-05T04:00:10.454Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "46MB",
+        "heapUsed": "26MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783225810885",
+    "createdAt": "2026-07-05T04:30:10.885Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "45MB",
+        "heapUsed": "33MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783227611352",
+    "createdAt": "2026-07-05T05:00:11.352Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "42MB",
+        "heapUsed": "31MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783229411767",
+    "createdAt": "2026-07-05T05:30:11.767Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "46MB",
+        "heapUsed": "31MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783231212303",
+    "createdAt": "2026-07-05T06:00:12.303Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "45MB",
+        "heapUsed": "30MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783233012701",
+    "createdAt": "2026-07-05T06:30:12.701Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "45MB",
+        "heapUsed": "28MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783234813255",
+    "createdAt": "2026-07-05T07:00:13.255Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "47MB",
+        "heapUsed": "30MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783236613759",
+    "createdAt": "2026-07-05T07:30:13.759Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "48MB",
+        "heapUsed": "29MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783238414238",
+    "createdAt": "2026-07-05T08:00:14.238Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "46MB",
+        "heapUsed": "29MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783240214763",
+    "createdAt": "2026-07-05T08:30:14.763Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "46MB",
+        "heapUsed": "27MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783242015220",
+    "createdAt": "2026-07-05T09:00:15.220Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "42MB",
+        "heapUsed": "34MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783243815770",
+    "createdAt": "2026-07-05T09:30:15.770Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "48MB",
+        "heapUsed": "33MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783245616294",
+    "createdAt": "2026-07-05T10:00:16.294Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "47MB",
+        "heapUsed": "30MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783247416802",
+    "createdAt": "2026-07-05T10:30:16.802Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "46MB",
+        "heapUsed": "28MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  },
+  {
+    "id": "alert_1783249217343",
+    "createdAt": "2026-07-05T11:00:17.343Z",
+    "source": "health_check",
+    "issues": [
+      {
+        "type": "bridge_down",
+        "target": "telegram",
+        "msg": "telegram 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "whatsapp",
+        "msg": "whatsapp 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "discord",
+        "msg": "discord 桥接进程异常(连续3次)"
+      },
+      {
+        "type": "bridge_down",
+        "target": "slack",
+        "msg": "slack 桥接进程异常(连续3次)"
+      }
+    ],
+    "data": {
+      "status": "warning",
+      "issues": [
+        {
+          "type": "bridge_down",
+          "target": "telegram",
+          "msg": "telegram 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "whatsapp",
+          "msg": "whatsapp 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "discord",
+          "msg": "discord 桥接进程异常(连续3次)"
+        },
+        {
+          "type": "bridge_down",
+          "target": "slack",
+          "msg": "slack 桥接进程异常(连续3次)"
+        }
+      ],
+      "bridges": {
+        "feishu": true,
+        "dingtalk": true,
+        "qqbot": true,
+        "wechat": true,
+        "wecom": true
+      },
+      "memory": {
+        "rss": "50MB",
+        "heapUsed": "30MB",
+        "pct": 0
+      },
+      "cpu": {}
+    }
+  }
+]

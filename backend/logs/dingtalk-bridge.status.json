@@ -1,0 +1,13 @@
+{
+  "status": "waiting_account",
+  "startedAt": "2026-07-06T04:39:49.583Z",
+  "lastEventAt": null,
+  "lastMessageAt": null,
+  "errorCount": 0,
+  "messageCount": 0,
+  "account": "",
+  "_socketState": -1,
+  "_connected": false,
+  "_registered": false,
+  "_uptime": 2071
+}

@@ -1,0 +1,8 @@
+8564: send(JSON.stringify({type:"subscribe",channels:["channel","tasks","agents","system","tools","workpath"]})),setTimeout(fu
+14550: send(){if(!this.input.trim()&&!this.files.length)return;var e=this.files.filter(function(h){return h._loading});if(e.len
+19467: sendSubchat(){if(!(!this.subchatInput.trim()&&!this.subchatFiles.length)){var e=this.subchatInput.trim(),t=[],a=null;thi
+43055: send&&r.send(...s),["exact","prevent"]),["enter"])),placeholder:r.__("chatPlaceholder"),rows:"1",class:"chat-input",disa
+43063: send(...s),["exact","prevent"]),["enter"])),placeholder:r.__("chatPlaceholder"),rows:"1",class:"chat-input",disabled:n.l
+43478: send-btn",onClick:t[14]||(t[14]=(...s)=>r.send&&r.send(...s)),disabled:!n.input.trim()&&!n.files.length&&!n.streaming},"
+43520: send&&r.send(...s)),disabled:!n.input.trim()&&!n.files.length&&!n.streaming},"➤",8,Ue)]),o("div",je,[o("label",We,[t[43]
+43528: send(...s)),disabled:!n.input.trim()&&!n.files.length&&!n.streaming},"➤",8,Ue)]),o("div",je,[o("label",We,[t[43]||(t[43]

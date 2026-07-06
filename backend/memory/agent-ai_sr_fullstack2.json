@@ -1,0 +1,20 @@
+{
+  "decisions": [],
+  "notes": [],
+  "status": "idle",
+  "currentTask": null,
+  "lastActive": "2026-05-22T14:45:43.453Z",
+  "conversations": [
+    {
+      "role": "user",
+      "content": "你好",
+      "time": "2026-05-22T14:45:43.453Z"
+    },
+    {
+      "role": "assistant",
+      "content": "你好，我是林浩然，技术部的全栈老将。有什么需要帮忙的吗？",
+      "time": "2026-05-22T14:45:43.453Z"
+    }
+  ],
+  "summary": "最近: 你好 -> 你好，我是林浩然，技术部的全栈老将。有什么需要帮忙的吗？"
+}

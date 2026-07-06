@@ -1,0 +1,92 @@
+{
+  "entities": [
+    {
+      "name": "苏雨晴",
+      "type": "人物",
+      "confidence": "high"
+    },
+    {
+      "name": "Vue",
+      "type": "技术",
+      "confidence": "medium"
+    },
+    {
+      "name": "TypeScript",
+      "type": "技术",
+      "confidence": "medium"
+    },
+    {
+      "name": "前端",
+      "type": "技术",
+      "confidence": "medium"
+    },
+    {
+      "name": "苏雨晴负责Vue3前端方案",
+      "type": "项目",
+      "confidence": "medium"
+    }
+  ],
+  "relations": [
+    {
+      "source": "苏雨晴",
+      "sourceType": "人物",
+      "target": "Vue",
+      "targetType": "技术",
+      "type": "擅长",
+      "context": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具"
+    },
+    {
+      "source": "苏雨晴",
+      "sourceType": "人物",
+      "target": "TypeScript",
+      "targetType": "技术",
+      "type": "擅长",
+      "context": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具"
+    },
+    {
+      "source": "苏雨晴",
+      "sourceType": "人物",
+      "target": "前端",
+      "targetType": "技术",
+      "type": "擅长",
+      "context": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具"
+    },
+    {
+      "source": "Vue",
+      "sourceType": "技术",
+      "target": "TypeScript",
+      "targetType": "技术",
+      "type": "related_to",
+      "context": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具"
+    },
+    {
+      "source": "Vue",
+      "sourceType": "技术",
+      "target": "前端",
+      "targetType": "技术",
+      "type": "related_to",
+      "context": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具"
+    },
+    {
+      "source": "TypeScript",
+      "sourceType": "技术",
+      "target": "前端",
+      "targetType": "技术",
+      "type": "related_to",
+      "context": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具"
+    }
+  ],
+  "conversations": [
+    {
+      "source": "chat",
+      "preview": "苏雨晴负责Vue3前端项目的用户界面开发，使用了TypeScript和Vite构建工具",
+      "timestamp": "2026-05-05T14:13:45.112Z"
+    },
+    {
+      "source": "chat",
+      "preview": "苏雨晴用Vue3开发",
+      "timestamp": "2026-05-05T14:56:34.397Z"
+    }
+  ],
+  "updatedAt": "2026-05-05T14:56:34.398Z"
+}

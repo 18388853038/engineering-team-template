@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>腾讯云配置 - eCompany</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; background: #0f0c29; color: #e0e0e0; min-height: 100vh; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    h1 { font-size: 24px; margin-bottom: 8px; background: linear-gradient(135deg,#667eea,#764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .subtitle { color: #888; font-size: 14px; margin-bottom: 30px; }
+    .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+    .card h3 { font-size: 16px; margin-bottom: 16px; color: #a78bfa; }
+    .field { margin-bottom: 16px; }
+    .field label { display: block; font-size: 13px; color: #aaa; margin-bottom: 4px; }
+    .field input { width: 100%; padding: 10px 12px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; color: #fff; font-size: 14px; outline: none; }
+    .field input:focus { border-color: #667eea; }
+    .btn { padding: 10px 24px; background: linear-gradient(135deg,#667eea,#764ba2); border: none; border-radius: 6px; color: #fff; font-size: 14px; cursor: pointer; }
+    .btn:hover { opacity: 0.9; }
+    .status { margin-top: 16px; padding: 12px; border-radius: 6px; font-size: 13px; display: none; }
+    .status.success { display: block; background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+    .status.error { display: block; background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+    .back { display: inline-block; margin-top: 20px; color: #667eea; text-decoration: none; font-size: 14px; }
+    .back:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>☁️ 腾讯云配置</h1>
+    <p class="subtitle">配置腾讯云 API 凭证，启用手写笔记、腾讯文档等云服务</p>
+    
+    <div class="card">
+      <h3>🔑 腾讯云凭证</h3>
+      <div class="field">
+        <label>SecretId</label>
+        <input type="text" id="secretId" placeholder="请输入腾讯云 SecretId" />
+      </div>
+      <div class="field">
+        <label>SecretKey</label>
+        <input type="password" id="secretKey" placeholder="请输入腾讯云 SecretKey" />
+      </div>
+      <button class="btn" onclick="saveConfig()">保存配置</button>
+      <div id="status" class="status"></div>
+    </div>
+
+    <div class="card">
+      <h3>📋 已配置服务</h3>
+      <p id="serviceStatus" style="color:#888;font-size:13px;">加载中...</p>
+    </div>
+
+    <a href="/settings" class="back">← 返回设置</a>
+  </div>
+
+  <script>
+    async function saveConfig() {
+      var sid = document.getElementById('secretId').value.trim();
+      var sk = document.getElementById('secretKey').value.trim();
+      var status = document.getElementById('status');
+      if (!sid || !sk) { status.className = 'status error'; status.textContent = '请填写 SecretId 和 SecretKey'; return; }
+      try {
+        var resp = await fetch('/api/v4/settings/provider', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ provider: 'hunyuan', apiKey: sk, extra: { secretId: sid } })
+        });
+        var d = await resp.json();
+        status.className = d.ok ? 'status success' : 'status error';
+        status.textContent = d.ok ? '✅ 腾讯云配置已保存' : '保存失败: ' + (d.error || '未知错误');
+      } catch(e) {
+        status.className = 'status error';
+        status.textContent = '网络错误: ' + e.message;
+      }
+    }
+
+    async function loadStatus() {
+      try {
+        var resp = await fetch('/api/channels/list');
+        var d = await resp.json();
+        var channels = d.channels || [];
+        var tc = channels.find(function(c) { return c.id === 'tencent' || c.id === 'tencent-cloud'; });
+        var el = document.getElementById('serviceStatus');
+        if (tc && tc.configured) {
+          el.innerHTML = '✅ 腾讯云已配置 | 可用服务: 手写笔记、腾讯文档';
+        } else {
+          el.innerHTML = '⏳ 未配置 — 请在上方填写凭证';
+        }
+      } catch(e) {
+        document.getElementById('serviceStatus').textContent = '查询失败: ' + e.message;
+      }
+    }
+    loadStatus();
+  </script>
+</body>
+</html>

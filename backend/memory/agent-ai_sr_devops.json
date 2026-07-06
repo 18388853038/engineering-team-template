@@ -1,0 +1,20 @@
+{
+  "decisions": [],
+  "notes": [],
+  "status": "idle",
+  "currentTask": null,
+  "lastActive": "2026-05-30T13:15:34.602Z",
+  "conversations": [
+    {
+      "role": "user",
+      "content": "你好",
+      "time": "2026-05-30T13:15:34.602Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-05-30T13:15:34.602Z"
+    }
+  ],
+  "summary": "最近: 你好 -> "
+}

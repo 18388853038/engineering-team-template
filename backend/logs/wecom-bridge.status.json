@@ -1,0 +1,13 @@
+{
+  "status": "running",
+  "startedAt": "2026-07-06T04:39:49.658Z",
+  "lastEventAt": null,
+  "lastMessageAt": null,
+  "errorCount": 0,
+  "messageCount": 0,
+  "account": "(not configured)",
+  "_connected": false,
+  "_lastConnectedAt": null,
+  "lastPollAt": "2026-07-06T05:14:20.698Z",
+  "_uptime": 2071
+}

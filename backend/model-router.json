@@ -1,0 +1,49 @@
+{
+  "enabled": true,
+  "strategy": "cost-aware",
+  "providers": {
+    "deepseek": {
+      "enabled": true,
+      "apiKey": "",
+      "models": {
+        "deepseek-v4-flash": {
+          "enabled": true,
+          "priority": 1
+        },
+        "deepseek-v4-pro": {
+          "enabled": true,
+          "priority": 2
+        },
+        "deepseek-chat": {
+          "enabled": true,
+          "priority": 3
+        },
+        "deepseek-reasoner": {
+          "enabled": true,
+          "priority": 4
+        }
+      },
+      "apiBase": "https://api.deepseek.com/v1/chat/completions"
+    },
+    "qwen": {
+      "enabled": true,
+      "apiKey": "",
+      "models": {
+        "qwen3.6-flash": {
+          "priority": 3,
+          "enabled": true
+        },
+        "qwen3.7-max": {
+          "priority": 2,
+          "enabled": true
+        },
+        "qwen3.7-plus": {
+          "priority": 1,
+          "enabled": true
+        }
+      }
+    }
+  },
+  "routingOverride": {},
+  "createdAt": "2026-05-28T06:43:06.789Z"
+}

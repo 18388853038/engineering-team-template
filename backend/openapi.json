@@ -1,0 +1,119 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "eCompany API",
+    "version": "3.0.0",
+    "description": "AI虚拟公司 RESTful API"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8003"
+    }
+  ],
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "系统健康检查",
+        "tags": [
+          "系统"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/workflow-templates": {
+      "get": {
+        "summary": "获取工作流模板",
+        "tags": [
+          "工作流"
+        ],
+        "responses": {
+          "200": {
+            "description": "50个模板"
+          }
+        }
+      }
+    },
+    "/api/workflows": {
+      "get": {
+        "summary": "工作流列表",
+        "tags": [
+          "工作流"
+        ],
+        "responses": {
+          "200": {
+            "description": "列表"
+          }
+        }
+      }
+    },
+    "/api/team/knowledge-stats": {
+      "get": {
+        "summary": "知识库统计",
+        "tags": [
+          "团队学习"
+        ],
+        "responses": {
+          "200": {
+            "description": "统计"
+          }
+        }
+      }
+    },
+    "/api/team/feedback": {
+      "get": {
+        "summary": "进化回馈报告",
+        "tags": [
+          "团队学习"
+        ],
+        "responses": {
+          "200": {
+            "description": "报告"
+          }
+        }
+      }
+    },
+    "/api/team/errors/report": {
+      "get": {
+        "summary": "错误模式报告",
+        "tags": [
+          "团队学习"
+        ],
+        "responses": {
+          "200": {
+            "description": "报告"
+          }
+        }
+      }
+    },
+    "/api/team/performance/report": {
+      "get": {
+        "summary": "员工效能报告",
+        "tags": [
+          "团队学习"
+        ],
+        "responses": {
+          "200": {
+            "description": "报告"
+          }
+        }
+      }
+    },
+    "/api/scheduler/status": {
+      "get": {
+        "summary": "调度器状态",
+        "tags": [
+          "调度"
+        ],
+        "responses": {
+          "200": {
+            "description": "状态"
+          }
+        }
+      }
+    }
+  }
+}

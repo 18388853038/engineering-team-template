@@ -1,0 +1,9 @@
+{
+  "id": "wechat-connector",
+  "name": "微信连接器",
+  "version": "2.4.3",
+  "description": "腾讯微信通道插件，支持消息收发、群组管理、文件传输",
+  "author": "Tencent",
+  "category": "tencent-communication",
+  "main": "index.js"
+}

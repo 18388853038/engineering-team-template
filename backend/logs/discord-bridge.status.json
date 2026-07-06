@@ -1,0 +1,11 @@
+{
+  "status": "waiting_account",
+  "startedAt": "2026-07-06T02:33:29.820Z",
+  "lastEventAt": null,
+  "lastMessageAt": null,
+  "errorCount": 0,
+  "messageCount": 0,
+  "account": "(not configured)",
+  "lastError": "",
+  "gatewayConnected": false
+}

@@ -1,0 +1,170 @@
+{
+  "events": [
+    {
+      "id": "mppbyb6byyt6",
+      "category": "preference",
+      "action": "工作时间分析",
+      "detail": "老板主要在下午14:00-18:00工作，在此时间段内回复效率最高",
+      "metadata": {
+        "source": "seed"
+      },
+      "timestamp": 1779962899475,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mppbyb6itpid",
+      "category": "format",
+      "action": "回复格式偏好",
+      "detail": "老板偏好简洁、结构化的回复，含表格和状态标记(✅/❌)",
+      "metadata": {
+        "source": "seed"
+      },
+      "timestamp": 1779962899482,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mppbyb6kuhv6",
+      "category": "command",
+      "action": "日常开发模式",
+      "detail": "老板开发测试时偏好逐步推进：开发→测试→验证→优化，每个环节完成后汇报",
+      "metadata": {
+        "source": "seed"
+      },
+      "timestamp": 1779962899484,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mppbyb6mhdvt",
+      "category": "report",
+      "action": "工作汇报偏好",
+      "detail": "老板需要以表格形式呈现完成/未完成/进行中的状态概览",
+      "metadata": {
+        "source": "seed"
+      },
+      "timestamp": 1779962899486,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mprwz3txk56d",
+      "category": "format",
+      "action": "avoid_negative_tone",
+      "detail": "避免使用否定语气",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780119140901,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mprxlkcrdas0",
+      "category": "format",
+      "action": "avoid_negative_tone",
+      "detail": "避免使用否定语气",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780120188747,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mpsdo8vjhzdd",
+      "category": "report",
+      "action": "view_任务_report",
+      "detail": "查看任务类报表",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780147187695,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mpsdq3ziwn38",
+      "category": "report",
+      "action": "view_任务_report",
+      "detail": "查看任务类报表",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780147274670,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mpugrzlj9wy1",
+      "category": "preference",
+      "action": "prefer_concise",
+      "detail": "偏好简洁直接的回复风格",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780273333495,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mpwdmhrarjxz",
+      "category": "report",
+      "action": "view_综合_report",
+      "detail": "查看综合类报表",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780388970598,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mpwlc38xo9ov",
+      "category": "command",
+      "action": "cli_style_prefix",
+      "detail": "使用动作前缀命令风格",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1780401922161,
+      "weight": 1,
+      "source": "observation"
+    },
+    {
+      "id": "mpxz7f4urgv2",
+      "category": "preference",
+      "action": "prefer_concise",
+      "detail": "偏好简洁直接的回复风格",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1783313164041,
+      "weight": 2,
+      "source": "observation"
+    },
+    {
+      "id": "mr8ge81umsjh",
+      "category": "report",
+      "action": "view_用户_report",
+      "detail": "查看用户类报表",
+      "metadata": {
+        "source": "auto",
+        "agentId": "ai_ceo"
+      },
+      "timestamp": 1783296000066,
+      "weight": 1,
+      "source": "observation"
+    }
+  ],
+  "version": 1
+}

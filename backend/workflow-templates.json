@@ -1,0 +1,3522 @@
+[
+  {
+    "id": "wf_tpl_dev_fullstack",
+    "name": "全栈开发交付流",
+    "category": "开发",
+    "description": "从需求评审到上线的完整全栈开发流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "需求评审",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "技术方案设计",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n3",
+        "type": "parallel",
+        "label": "并行开发",
+        "isParallel": true
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "前端开发",
+        "estimatedMinutes": 240
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "后端开发",
+        "estimatedMinutes": 240
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "API对接测试",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "代码审查",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "自动化测试",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "预发布验证",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n10",
+        "type": "task",
+        "label": "生产上线",
+        "estimatedMinutes": 15
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n3",
+        "to": "n5"
+      },
+      {
+        "from": "n4",
+        "to": "n6"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n8",
+        "to": "n9"
+      },
+      {
+        "from": "n9",
+        "to": "n10"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_security_audit",
+    "name": "安全审计全流程",
+    "category": "安全",
+    "description": "完整的安全审计流程：扫描→分析→报告→修复→复检",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "资产盘点",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "parallel",
+        "label": "并行扫描",
+        "isParallel": true
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "漏洞扫描",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "代码审计",
+        "estimatedMinutes": 90
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "依赖检查",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "结果汇总分析",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "生成安全报告",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "分配修复任务",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "修复复检",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n10",
+        "type": "condition",
+        "label": "是否全部通过？",
+        "isCondition": true
+      },
+      {
+        "id": "n11",
+        "type": "task",
+        "label": "安全验收通过",
+        "estimatedMinutes": 5
+      },
+      {
+        "id": "n12",
+        "type": "task",
+        "label": "高风险通知CEO",
+        "estimatedMinutes": 10
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n2",
+        "to": "n4"
+      },
+      {
+        "from": "n2",
+        "to": "n5"
+      },
+      {
+        "from": "n3",
+        "to": "n6"
+      },
+      {
+        "from": "n4",
+        "to": "n6"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n8",
+        "to": "n9"
+      },
+      {
+        "from": "n9",
+        "to": "n10"
+      },
+      {
+        "from": "n10",
+        "to": "n11",
+        "condition": "pass"
+      },
+      {
+        "from": "n10",
+        "to": "n12",
+        "condition": "fail"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_compliance_check",
+    "name": "合规检查流水线",
+    "category": "合规",
+    "description": "多部门协同合规检查流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "合规范围确定",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n2",
+        "type": "parallel",
+        "label": "并行合规检查",
+        "isParallel": true
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "数据合规检查",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "安全合规检查",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "业务合规检查",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "合规报告汇总",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "整改方案制定",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "CEO审批",
+        "estimatedMinutes": 15
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n2",
+        "to": "n4"
+      },
+      {
+        "from": "n2",
+        "to": "n5"
+      },
+      {
+        "from": "n3",
+        "to": "n6"
+      },
+      {
+        "from": "n4",
+        "to": "n6"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_deploy_pipeline",
+    "name": "CI/CD部署流水线",
+    "category": "DevOps",
+    "description": "自动化构建→测试→部署流水线",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "代码检出",
+        "estimatedMinutes": 5
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "依赖安装",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "静态分析",
+        "estimatedMinutes": 10
+      },
+      {
+        "id": "n4",
+        "type": "parallel",
+        "label": "并行阶段",
+        "isParallel": true
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "单元测试",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "构建",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "集成测试",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "构建产物存档",
+        "estimatedMinutes": 5
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "部署到预发布",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n10",
+        "type": "task",
+        "label": "预发布验证测试",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n11",
+        "type": "condition",
+        "label": "验证通过？",
+        "isCondition": true
+      },
+      {
+        "id": "n12",
+        "type": "task",
+        "label": "部署到生产",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n13",
+        "type": "task",
+        "label": "生产监控验证",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n14",
+        "type": "task",
+        "label": "回滚",
+        "estimatedMinutes": 10
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n4",
+        "to": "n6"
+      },
+      {
+        "from": "n4",
+        "to": "n7"
+      },
+      {
+        "from": "n5",
+        "to": "n8"
+      },
+      {
+        "from": "n6",
+        "to": "n8"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n8",
+        "to": "n9"
+      },
+      {
+        "from": "n9",
+        "to": "n10"
+      },
+      {
+        "from": "n10",
+        "to": "n11"
+      },
+      {
+        "from": "n11",
+        "to": "n12",
+        "condition": "pass"
+      },
+      {
+        "from": "n12",
+        "to": "n13"
+      },
+      {
+        "from": "n11",
+        "to": "n14",
+        "condition": "fail"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_qa_full",
+    "name": "全量质量门禁",
+    "category": "质量",
+    "description": "8道质量门禁全面检查",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "代码规范检查",
+        "estimatedMinutes": 10
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "单元测试覆盖率",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "集成测试",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "端到端测试",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "性能基线测试",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "安全扫描",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "兼容性测试",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n8",
+        "type": "condition",
+        "label": "全部门禁通过？",
+        "isCondition": true
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "质量报告生成",
+        "estimatedMinutes": 10
+      },
+      {
+        "id": "n10",
+        "type": "task",
+        "label": "不合格项分配",
+        "estimatedMinutes": 15
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n8",
+        "to": "n9",
+        "condition": "pass"
+      },
+      {
+        "from": "n8",
+        "to": "n10",
+        "condition": "fail"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_data_pipeline",
+    "name": "数据处理流水线",
+    "category": "数据",
+    "description": "数据采集→清洗→分析→报表自动生成",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "数据源配置",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "数据采集",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "数据清洗",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "数据转换",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "数据分析",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "可视化报表生成",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "报表审核",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "自动分发",
+        "estimatedMinutes": 10
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_incident_response",
+    "name": "安全事件响应",
+    "category": "安全",
+    "description": "安全事件应急响应全流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "事件分级",
+        "estimatedMinutes": 5
+      },
+      {
+        "id": "n2",
+        "type": "condition",
+        "label": "级别判定",
+        "isCondition": true
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "P0级：立即通知CEO",
+        "estimatedMinutes": 5
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "P1-P3：标准响应",
+        "estimatedMinutes": 5
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "事件隔离",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "根因分析",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n7",
+        "type": "parallel",
+        "label": "并行处置",
+        "isParallel": true
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "漏洞修复",
+        "estimatedMinutes": 120
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "数据恢复",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n10",
+        "type": "task",
+        "label": "影响评估报告",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n11",
+        "type": "task",
+        "label": "复盘总结",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n12",
+        "type": "task",
+        "label": "改进措施跟踪",
+        "estimatedMinutes": 45
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3",
+        "condition": "P0"
+      },
+      {
+        "from": "n2",
+        "to": "n4",
+        "condition": "P1-P3"
+      },
+      {
+        "from": "n3",
+        "to": "n5"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n7",
+        "to": "n9"
+      },
+      {
+        "from": "n7",
+        "to": "n10"
+      },
+      {
+        "from": "n8",
+        "to": "n11"
+      },
+      {
+        "from": "n9",
+        "to": "n11"
+      },
+      {
+        "from": "n10",
+        "to": "n11"
+      },
+      {
+        "from": "n11",
+        "to": "n12"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_content_review",
+    "name": "内容审批流",
+    "category": "审批",
+    "description": "多级内容审核发布流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "内容提交",
+        "estimatedMinutes": 10
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "初审（合规）",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "二审（法务）",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "三审（质量）",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n5",
+        "type": "condition",
+        "label": "是否通过",
+        "isCondition": true
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "发布上线",
+        "estimatedMinutes": 10
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "驳回修改",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6",
+        "condition": "pass"
+      },
+      {
+        "from": "n5",
+        "to": "n7",
+        "condition": "fail"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_project_management",
+    "name": "项目管理闭环",
+    "category": "管理",
+    "description": "项目从立项到结项的完整管理流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "项目立项",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "需求调研",
+        "estimatedMinutes": 120
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "方案评审",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "资源分配",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "任务分解(WBS)",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "迭代开发",
+        "estimatedMinutes": 480
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "里程碑检查",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "验收测试",
+        "estimatedMinutes": 120
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "上线",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n10",
+        "type": "task",
+        "label": "结项报告",
+        "estimatedMinutes": 45
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n8",
+        "to": "n9"
+      },
+      {
+        "from": "n9",
+        "to": "n10"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_employee_onboarding",
+    "name": "新员工入职流程",
+    "category": "人事",
+    "description": "新员工从录用通知到正式上岗的完整流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "发放Offer",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "入职资料收集",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "账号创建",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "parallel",
+        "label": "并行准备",
+        "isParallel": true
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "工位/设备准备",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "系统权限配置",
+        "estimatedMinutes": 45
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "培训计划制定",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "入职培训",
+        "estimatedMinutes": 120
+      },
+      {
+        "id": "n9",
+        "type": "task",
+        "label": "导师分配",
+        "estimatedMinutes": 15
+      },
+      {
+        "id": "n10",
+        "type": "task",
+        "label": "试用期考核",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n4",
+        "to": "n6"
+      },
+      {
+        "from": "n4",
+        "to": "n7"
+      },
+      {
+        "from": "n5",
+        "to": "n8"
+      },
+      {
+        "from": "n6",
+        "to": "n8"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      },
+      {
+        "from": "n8",
+        "to": "n9"
+      },
+      {
+        "from": "n9",
+        "to": "n10"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_1",
+    "name": "API网关配置变更",
+    "category": "运维",
+    "description": "API网关配置变更审批与部署",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_2",
+    "name": "数据库迁移",
+    "category": "运维",
+    "description": "数据库Schema变更迁移流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_3",
+    "name": "容量评估与扩容",
+    "category": "运维",
+    "description": "系统容量评估到扩容执行",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_4",
+    "name": "故障恢复演练",
+    "category": "运维",
+    "description": "定期故障恢复演练流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_5",
+    "name": "预算审批流",
+    "category": "财务",
+    "description": "部门预算申报到审批",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_6",
+    "name": "采购审批流",
+    "category": "财务",
+    "description": "采购申请到付款全流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_7",
+    "name": "费用报销",
+    "category": "财务",
+    "description": "员工费用报销审核流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_8",
+    "name": "合同审查",
+    "category": "法务",
+    "description": "合同条款审查与法务审批",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_9",
+    "name": "知识产权申请",
+    "category": "法务",
+    "description": "专利/商标/著作权申请流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_10",
+    "name": "合规培训",
+    "category": "合规",
+    "description": "年度合规培训计划执行",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_11",
+    "name": "数据脱敏审批",
+    "category": "合规",
+    "description": "敏感数据处理与脱敏审批",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_12",
+    "name": "市场活动策划",
+    "category": "市场",
+    "description": "市场活动从策划到执行",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "步骤7",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_13",
+    "name": "社交媒体运营",
+    "category": "市场",
+    "description": "社媒内容排期与发布流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_14",
+    "name": "客户反馈处理",
+    "category": "市场",
+    "description": "客户反馈收集到改进闭环",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_15",
+    "name": "竞品分析报告",
+    "category": "市场",
+    "description": "竞品信息收集与分析报告",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_16",
+    "name": "A/B实验管理",
+    "category": "开发",
+    "description": "A/B实验设计到结论输出",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "步骤7",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_17",
+    "name": "热修复紧急流程",
+    "category": "开发",
+    "description": "生产环境热修复快速通道",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_18",
+    "name": "技术债务清理",
+    "category": "开发",
+    "description": "定期技术债务评估与清理",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_19",
+    "name": "开源组件评估",
+    "category": "安全",
+    "description": "引入开源组件的安全评估",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_20",
+    "name": "渗透测试流程",
+    "category": "安全",
+    "description": "定期渗透测试执行流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_21",
+    "name": "员工绩效评估",
+    "category": "人事",
+    "description": "季度/年度绩效评估流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_22",
+    "name": "离职交接流程",
+    "category": "人事",
+    "description": "员工离职手续与工作交接",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "步骤7",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_23",
+    "name": "值班排班管理",
+    "category": "人事",
+    "description": "团队值班排班与通知",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_24",
+    "name": "代码重构审批",
+    "category": "质量",
+    "description": "大规模代码重构审批流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_25",
+    "name": "技术方案评审",
+    "category": "质量",
+    "description": "技术方案设计与专家评审",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_26",
+    "name": "产品发布Checklist",
+    "category": "质量",
+    "description": "产品发布前逐项检查清单",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "步骤7",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "步骤8",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n7",
+        "to": "n8"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_27",
+    "name": "日志监控告警",
+    "category": "运维",
+    "description": "日志监控规则配置与告警",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_28",
+    "name": "备份恢复验证",
+    "category": "运维",
+    "description": "定期备份恢复演练流程",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_29",
+    "name": "证书更新流程",
+    "category": "运维",
+    "description": "SSL/TLS证书到期更新",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_30",
+    "name": "技术方案评审",
+    "category": "管理",
+    "description": "重大技术方案多层评审",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_31",
+    "name": "OKR制定与追踪",
+    "category": "管理",
+    "description": "季度OKR制定到进度追踪",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_32",
+    "name": "跨部门协作流程",
+    "category": "管理",
+    "description": "跨部门需求协作与交付",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_33",
+    "name": "数据备份策略",
+    "category": "数据",
+    "description": "数据备份策略制定与执行",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_34",
+    "name": "数据质量监控",
+    "category": "数据",
+    "description": "数据质量规则与异常监控",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_35",
+    "name": "数据权限申请",
+    "category": "数据",
+    "description": "数据访问权限申请与审批",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_36",
+    "name": "发票审核流程",
+    "category": "财务",
+    "description": "发票真伪验证与审核",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_37",
+    "name": "年度预算编制",
+    "category": "财务",
+    "description": "年度预算编制与审批",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "步骤6",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_38",
+    "name": "合规自查报告",
+    "category": "合规",
+    "description": "合规自查执行到报告输出",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_39",
+    "name": "监管报送流程",
+    "category": "合规",
+    "description": "监管数据报送与复核",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "步骤1",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "步骤2",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "步骤3",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n4",
+        "type": "task",
+        "label": "步骤4",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "步骤5",
+        "estimatedMinutes": 30
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5"
+      }
+    ]
+  },
+  {
+    "id": "wf_tpl_gen_41",
+    "name": "系统版本升级流程",
+    "category": "运维",
+    "description": "操作系统/中间件版本升级评估与执行",
+    "nodes": [
+      {
+        "id": "n1",
+        "type": "task",
+        "label": "版本评估",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n2",
+        "type": "task",
+        "label": "兼容性测试",
+        "estimatedMinutes": 60
+      },
+      {
+        "id": "n3",
+        "type": "task",
+        "label": "备份",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n4",
+        "type": "condition",
+        "label": "测试通过？",
+        "isCondition": true
+      },
+      {
+        "id": "n5",
+        "type": "task",
+        "label": "灰度升级",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n6",
+        "type": "task",
+        "label": "全量升级",
+        "estimatedMinutes": 30
+      },
+      {
+        "id": "n7",
+        "type": "task",
+        "label": "验证确认",
+        "estimatedMinutes": 20
+      },
+      {
+        "id": "n8",
+        "type": "task",
+        "label": "回滚",
+        "estimatedMinutes": 15
+      }
+    ],
+    "edges": [
+      {
+        "from": "n1",
+        "to": "n2"
+      },
+      {
+        "from": "n2",
+        "to": "n3"
+      },
+      {
+        "from": "n3",
+        "to": "n4"
+      },
+      {
+        "from": "n4",
+        "to": "n5",
+        "condition": "pass"
+      },
+      {
+        "from": "n5",
+        "to": "n6"
+      },
+      {
+        "from": "n6",
+        "to": "n7"
+      },
+      {
+        "from": "n4",
+        "to": "n8",
+        "condition": "fail"
+      }
+    ]
+  }
+]

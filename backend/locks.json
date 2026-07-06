@@ -1,0 +1,30 @@
+[
+  {
+    "id": "38bd986c-05c3-4a45-9067-0ed5474dcb08",
+    "resourceId": "file-1",
+    "resourceType": "task",
+    "agentId": "ai_fe_vue",
+    "reason": "",
+    "lockedAt": "2026-05-05T13:49:56.905Z",
+    "active": true
+  },
+  {
+    "id": "df3ab093-0b04-41c3-ba22-4ba3cca33ba7",
+    "resourceId": "res-a",
+    "resourceType": "task",
+    "agentId": "ai_fe_vue",
+    "reason": "",
+    "lockedAt": "2026-05-05T14:13:45.096Z",
+    "active": true
+  },
+  {
+    "id": "3f946167-1ba8-43e0-af7b-f22e22fb4acc",
+    "resourceId": "r1",
+    "resourceType": "task",
+    "agentId": "ai_fe_vue",
+    "reason": "",
+    "lockedAt": "2026-05-05T14:56:34.389Z",
+    "active": false,
+    "unlockedAt": "2026-05-05T14:56:34.391Z"
+  }
+]

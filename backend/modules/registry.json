@@ -1,0 +1,20 @@
+{
+  "installed": {
+    "healthcheck": {
+      "source": "bundled",
+      "installedAt": "2026-05-23T10:43:50.640Z",
+      "emoji": "🛡️"
+    },
+    "tencent-docs": {
+      "source": "bundled",
+      "installedAt": "2026-05-23T10:55:43.426Z",
+      "emoji": "📄"
+    },
+    "docx": {
+      "source": "bundled",
+      "installedAt": "2026-05-23T10:56:43.220Z",
+      "emoji": "📝"
+    }
+  },
+  "updates": {}
+}

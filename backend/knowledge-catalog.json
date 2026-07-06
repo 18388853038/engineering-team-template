@@ -1,0 +1,35 @@
+{
+  "categories": [
+    "测试质量"
+  ],
+  "tags": {
+    "测试": {
+      "count": 2,
+      "entries": [
+        "477ad495-d0de-42ec-9ade-ba11db54585d",
+        "13c56704-aa62-4435-88db-8f1bbf1e73a6"
+      ]
+    },
+    "系统摸底": {
+      "count": 2,
+      "entries": [
+        "477ad495-d0de-42ec-9ade-ba11db54585d",
+        "13c56704-aa62-4435-88db-8f1bbf1e73a6"
+      ]
+    },
+    "功能验证": {
+      "count": 2,
+      "entries": [
+        "477ad495-d0de-42ec-9ade-ba11db54585d",
+        "13c56704-aa62-4435-88db-8f1bbf1e73a6"
+      ]
+    },
+    "质量": {
+      "count": 2,
+      "entries": [
+        "477ad495-d0de-42ec-9ade-ba11db54585d",
+        "13c56704-aa62-4435-88db-8f1bbf1e73a6"
+      ]
+    }
+  }
+}

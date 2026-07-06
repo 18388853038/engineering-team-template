@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "id": "83c29712-ac94-4fa0-a78a-933ec4625d4b",
+      "timestamp": "2026-05-14T06:51:07.094Z",
+      "actor": "boss",
+      "action": "approve_task",
+      "target": "ai_cto",
+      "detail": {
+        "taskId": "76e60cf2-c891-42ab-a65c-6cd4caf277f0",
+        "title": "数据库性能优化方案",
+        "comment": ""
+      },
+      "result": "success"
+    }
+  ]
+}

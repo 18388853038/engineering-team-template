@@ -1,0 +1,208 @@
+[
+  {
+    "id": "rule_builtin_high_error_rate",
+    "name": "高错误率告警",
+    "description": "BI 统计中错误率超过阈值时触发告警",
+    "enabled": true,
+    "trigger": {
+      "type": "error_rate",
+      "params": {
+        "threshold": 5,
+        "windowMinutes": 60
+      }
+    },
+    "condition": "stats.errorRate > params.threshold",
+    "action": {
+      "type": "notify",
+      "params": {
+        "message": "⚠️ 系统错误率异常：{errorRate}%（阈值{threshold}%）",
+        "severity": "warning"
+      }
+    },
+    "cooldownMs": 1800000,
+    "lastTriggeredAt": null,
+    "triggerCount": 0,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_traffic_drop_alert",
+    "name": "流量骤降告警",
+    "description": "API 调用量较昨日同期下降超过 50% 时告警",
+    "enabled": true,
+    "trigger": {
+      "type": "traffic_drop",
+      "params": {
+        "dropPercent": 50,
+        "compareHours": 24
+      }
+    },
+    "condition": "stats.trafficDrop > params.dropPercent",
+    "action": {
+      "type": "notify",
+      "params": {
+        "message": "📉 流量骤降 {trafficDrop}%（较{compareHours}h前）",
+        "severity": "warning"
+      }
+    },
+    "cooldownMs": 3600000,
+    "lastTriggeredAt": null,
+    "triggerCount": 0,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_slow_response",
+    "name": "响应缓慢告警",
+    "description": "P95 响应时间超过阈值时告警",
+    "enabled": true,
+    "trigger": {
+      "type": "slow_response",
+      "params": {
+        "thresholdMs": 5000,
+        "windowMinutes": 30
+      }
+    },
+    "condition": "stats.p95Duration > params.thresholdMs",
+    "action": {
+      "type": "notify",
+      "params": {
+        "message": "🐢 响应缓慢：P95={p95Duration}ms（阈值{thresholdMs}ms）",
+        "severity": "warning"
+      }
+    },
+    "cooldownMs": 1800000,
+    "lastTriggeredAt": null,
+    "triggerCount": 0,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_daily_report_push",
+    "name": "每日推送日报",
+    "description": "每天 09:00 自动生成并推送 BI 日报",
+    "enabled": true,
+    "trigger": {
+      "type": "cron",
+      "params": {
+        "schedule": "daily 09:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    "condition": "true",
+    "action": {
+      "type": "auto_flow",
+      "params": {
+        "template": "scheduled_report",
+        "notify": true
+      }
+    },
+    "cooldownMs": 0,
+    "lastTriggeredAt": "2026-07-06T05:09:54.454Z",
+    "triggerCount": 368,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_evening_report_push",
+    "name": "晚间推送日报",
+    "description": "每天 20:00 自动推送 BI 日报",
+    "enabled": true,
+    "trigger": {
+      "type": "cron",
+      "params": {
+        "schedule": "daily 20:00",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    "condition": "true",
+    "action": {
+      "type": "auto_flow",
+      "params": {
+        "template": "scheduled_report",
+        "notify": true
+      }
+    },
+    "cooldownMs": 0,
+    "lastTriggeredAt": "2026-07-06T05:09:54.488Z",
+    "triggerCount": 368,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_hourly_health_check",
+    "name": "每小时健康检查",
+    "description": "每小时检查系统健康状态",
+    "enabled": true,
+    "trigger": {
+      "type": "cron",
+      "params": {
+        "schedule": "every 1h",
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    "condition": "true",
+    "action": {
+      "type": "auto_flow",
+      "params": {
+        "template": "health_check",
+        "notify": false
+      }
+    },
+    "cooldownMs": 0,
+    "lastTriggeredAt": "2026-07-06T05:09:54.512Z",
+    "triggerCount": 368,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_auto_heal_p95",
+    "name": "P95 响应缓慢自动修复",
+    "description": "[已禁用] 之前会触发 Evolve 自修复循环，误判系统问题并消耗 Token",
+    "enabled": false,
+    "trigger": {
+      "type": "slow_response",
+      "params": {
+        "thresholdMs": 3000,
+        "windowMinutes": 10
+      }
+    },
+    "condition": "false",
+    "action": {
+      "type": "notify",
+      "params": {
+        "message": "规则已禁用 - 不再自动触发修复"
+      }
+    },
+    "cooldownMs": 0,
+    "lastTriggeredAt": null,
+    "triggerCount": 0,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  },
+  {
+    "id": "rule_builtin_auto_heal_errors",
+    "name": "高错误率自动自愈",
+    "description": "[已禁用] 之前会触发 Evolve 自修复循环，误判系统问题并消耗 Token",
+    "enabled": false,
+    "trigger": {
+      "type": "error_rate",
+      "params": {
+        "threshold": 10,
+        "windowMinutes": 15
+      }
+    },
+    "condition": "false",
+    "action": {
+      "type": "notify",
+      "params": {
+        "message": "规则已禁用 - 不再自动触发修复"
+      }
+    },
+    "cooldownMs": 0,
+    "lastTriggeredAt": null,
+    "triggerCount": 0,
+    "createdAt": "2026-07-04T15:16:07.374Z",
+    "updatedAt": "2026-07-04T15:16:07.374Z"
+  }
+]

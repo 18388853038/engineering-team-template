@@ -1,0 +1,9 @@
+{
+  "id": "qq-bot-connector",
+  "name": "QQ机器人连接器",
+  "version": "1.0.0",
+  "description": "腾讯QQ机器人通道插件，支持群聊消息、私聊、频道管理",
+  "author": "Tencent",
+  "category": "tencent-communication",
+  "main": "index.js"
+}

@@ -1,0 +1,12 @@
+8644|send" :placeholder="__('chatPlaceholder')" rows="1" class="chat-input" :disabled
+8979|send-btn" @click="send" :disabled="!input.trim() && !files.length && !streaming"
+8997|send" :disabled="!input.trim() && !files.length && !streaming">➤</button>      
+27507|send(JSON.stringify({ type: 'subscribe', channels: ['channel','tasks','agents','
+37974|send (SSE streaming for CEO) ----     async send() {       if (!this.input.tri
+38019|send() {       if (!this.input.trim() && !this.files.length) return        //
+39179|sendFiles = this.files.length ? this.files.map(function(f) { return { name: f.na
+39382|sendFiles, time: new Date().toISOString() })       this.saveMessages()       t
+46447|sendSubchat() {       if (!this.subchatInput.trim() && !this.subchatFiles.lengt
+71368|send-btn{background:var(--accent,#4ecdc4)!important;color:#0f0c29!important;bord
+71597|send-btn:disabled{background:#3a3760!important;color:#6b7294!important}.send-btn
+71669|send-btn:hover:not(:disabled){filter:brightness(1.15)!important;box-shadow:0 2px

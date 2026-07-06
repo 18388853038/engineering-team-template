@@ -1,0 +1,92 @@
+{
+  "entries": [
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/test.txt",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-12T17:18:33.163Z"
+    },
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/test.txt",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-12T17:18:53.965Z"
+    },
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/test",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-13T05:57:06.604Z"
+    },
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/test",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-13T06:00:26.065Z"
+    },
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/backend/server-modern.js",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:31.954Z"
+    },
+    {
+      "agentId": "ai_fe_vue",
+      "operation": "write",
+      "filePath": "/backend/tasks.json",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:31.959Z"
+    },
+    {
+      "agentId": "ai_be_go",
+      "operation": "read",
+      "filePath": "/backend/provider-keys.json",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:31.962Z"
+    },
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/backend/ai-provider.json",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:31.966Z"
+    },
+    {
+      "agentId": "ai_ceo",
+      "operation": "write",
+      "filePath": "/backend/test_write_perm.txt",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:31.968Z"
+    },
+    {
+      "agentId": "ai_cto",
+      "operation": "read",
+      "filePath": "/backend/server-modern.js",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:42.867Z"
+    },
+    {
+      "agentId": "ai_be_go",
+      "operation": "read",
+      "filePath": "/backend/provider-keys.json",
+      "allowed": false,
+      "reason": "路径不在白名单",
+      "timestamp": "2026-05-14T08:08:42.870Z"
+    }
+  ]
+}

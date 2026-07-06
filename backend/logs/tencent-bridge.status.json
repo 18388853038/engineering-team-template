@@ -1,0 +1,9 @@
+{
+  "status": "waiting_account",
+  "startedAt": "2026-07-06T04:39:49.657Z",
+  "lastPollAt": "2026-07-06T04:39:49.669Z",
+  "errorCount": 0,
+  "account": "(not configured)",
+  "_configured": false,
+  "_uptime": 0
+}

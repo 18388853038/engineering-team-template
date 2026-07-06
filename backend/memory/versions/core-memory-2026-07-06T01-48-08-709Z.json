@@ -1,0 +1,1056 @@
+[
+  {
+    "id": "mem_mpexeyy6_04e8",
+    "content": "分配任务: 【催办】立即启动搜索前端性能优化工具和实践 给 ai_fe_dir",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-21T03:23:40.782Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-21T03:23:40.782Z",
+    "updatedAt": "2026-05-21T03:23:40.782Z"
+  },
+  {
+    "id": "mem_mpexeyyb_gmao",
+    "content": "分配任务: 【催办】立即启动排查并修复登录页面Bug 给 ai_sr_frontend",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-21T03:23:40.787Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-21T03:23:40.787Z",
+    "updatedAt": "2026-05-21T03:23:40.787Z"
+  },
+  {
+    "id": "mem_mpf6d9vt_1jf1",
+    "content": "分配任务: 活动面板动效开发 给 ai_fe_vue",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-21T07:34:18.185Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-21T07:34:18.185Z",
+    "updatedAt": "2026-05-21T07:34:18.185Z"
+  },
+  {
+    "id": "mem_mpi798h2_cvd1",
+    "content": "导航测试-验证记忆写入能力",
+    "tags": [
+      "测试",
+      "导航"
+    ],
+    "timestamp": "2026-05-23T10:22:27.878Z",
+    "priority": "medium",
+    "type": "general",
+    "createdAt": "2026-05-23T10:22:27.878Z",
+    "updatedAt": "2026-05-23T10:22:27.878Z"
+  },
+  {
+    "id": "mem_mpid062m_a7q3",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:03:22.558Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:03:22.568Z",
+    "updatedAt": "2026-05-23T13:03:22.568Z"
+  },
+  {
+    "id": "mem_mpid0636_b7c4",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:03:22.578Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:03:22.578Z",
+    "updatedAt": "2026-05-23T13:03:22.578Z"
+  },
+  {
+    "id": "mem_mpid0kac_erw6",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:03:40.980Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:03:40.981Z",
+    "updatedAt": "2026-05-23T13:03:40.981Z"
+  },
+  {
+    "id": "mem_mpid0kan_ii3y",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:03:40.991Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:03:40.991Z",
+    "updatedAt": "2026-05-23T13:03:40.991Z"
+  },
+  {
+    "id": "mem_mpid1aah_ynnz",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:04:14.681Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:04:14.682Z",
+    "updatedAt": "2026-05-23T13:04:14.682Z"
+  },
+  {
+    "id": "mem_mpid1aar_a85x",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:04:14.691Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:04:14.691Z",
+    "updatedAt": "2026-05-23T13:04:14.691Z"
+  },
+  {
+    "id": "mem_mpid5q6s_zcdq",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:07:41.909Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:07:41.917Z",
+    "updatedAt": "2026-05-23T13:07:41.917Z"
+  },
+  {
+    "id": "mem_mpid5q7a_3wbh",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:07:41.926Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:07:41.926Z",
+    "updatedAt": "2026-05-23T13:07:41.926Z"
+  },
+  {
+    "id": "mem_mpid6frj_3i9b",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:08:15.055Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:08:15.056Z",
+    "updatedAt": "2026-05-23T13:08:15.056Z"
+  },
+  {
+    "id": "mem_mpid6frt_ianb",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:08:15.065Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:08:15.065Z",
+    "updatedAt": "2026-05-23T13:08:15.065Z"
+  },
+  {
+    "id": "mem_mpid9ipn_mchx",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:10:38.843Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:10:38.845Z",
+    "updatedAt": "2026-05-23T13:10:38.845Z"
+  },
+  {
+    "id": "mem_mpid9iq0_1nff",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:10:38.856Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:10:38.856Z",
+    "updatedAt": "2026-05-23T13:10:38.856Z"
+  },
+  {
+    "id": "mem_mpidb5fn_rjox",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:11:54.947Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:11:54.949Z",
+    "updatedAt": "2026-05-23T13:11:54.949Z"
+  },
+  {
+    "id": "mem_mpidb5fy_xp5y",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:11:54.958Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:11:54.958Z",
+    "updatedAt": "2026-05-23T13:11:54.958Z"
+  },
+  {
+    "id": "mem_mpidfl3h_0aqk",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:15:21.869Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:15:21.871Z",
+    "updatedAt": "2026-05-23T13:15:21.871Z"
+  },
+  {
+    "id": "mem_mpidfl3s_joxu",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:15:21.880Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:15:21.880Z",
+    "updatedAt": "2026-05-23T13:15:21.880Z"
+  },
+  {
+    "id": "mem_mpidlmd0_368i",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:20:03.445Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:20:03.446Z",
+    "updatedAt": "2026-05-23T13:20:03.446Z"
+  },
+  {
+    "id": "mem_mpidlmdd_qw3m",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:20:03.457Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:20:03.457Z",
+    "updatedAt": "2026-05-23T13:20:03.457Z"
+  },
+  {
+    "id": "mem_mpidwty0_rqz4",
+    "content": "AI客服系统的核心功能包括多渠道接入、智能分配和满意度分析",
+    "tags": [
+      "AI",
+      "客服",
+      "多渠道"
+    ],
+    "timestamp": "2026-05-23T13:28:46.489Z",
+    "priority": "high",
+    "type": "feature",
+    "createdAt": "2026-05-23T13:28:46.490Z",
+    "updatedAt": "2026-05-23T13:28:46.490Z"
+  },
+  {
+    "id": "mem_mpidwtyc_91i0",
+    "content": "企业知识库可以帮助AI员工学习产品文档和常见问题解答",
+    "tags": [
+      "知识库",
+      "企业",
+      "FAQ"
+    ],
+    "timestamp": "2026-05-23T13:28:46.500Z",
+    "priority": "high",
+    "type": "knowledge",
+    "createdAt": "2026-05-23T13:28:46.500Z",
+    "updatedAt": "2026-05-23T13:28:46.500Z"
+  },
+  {
+    "id": "mem_mpkuz7mf_3ee4",
+    "content": "2026-05-25 完成了系统全面修复和架构升级。记忆压缩智能化+团队学习系统已上线。老板要求我自动学习和使用新功能。",
+    "tags": [
+      "系统优化",
+      "记忆压缩",
+      "团队学习",
+      "自我学习"
+    ],
+    "timestamp": "2026-05-25T07:02:03.351Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-25T07:02:03.351Z",
+    "updatedAt": "2026-05-25T07:02:03.351Z"
+  },
+  {
+    "id": "mem_mpruhinr_w95r",
+    "content": "核心记忆同步测试：老板通过渠道发送测试消息\"测试核心记忆同步 - 这是来自渠道的测试消息\"，于2026-05-30 04:22 UTC执行。CEO小龙执行写入测试，验证渠道消息→核心记忆库的同步链路是否正常。\n---\n[2026-05-30T04:22:41.163Z] 工具调用: memory_write {\"content\":\"核心记忆同步测试：老板通过渠道发送测试消息\\\"测试核心记忆同步 - 这是来自渠道的测试消息\\\"，于2026-05-30 04:22 UTC执行。CEO小龙执行写入测试，验证渠道",
+    "tags": [
+      "测试",
+      "核心记忆同步",
+      "渠道消息",
+      "系统验证",
+      "工具调用",
+      "memory_write"
+    ],
+    "timestamp": "2026-05-30T04:22:41.079Z",
+    "priority": "high",
+    "type": "test",
+    "createdAt": "2026-05-30T04:22:41.079Z",
+    "updatedAt": "2026-05-30T04:22:41.163Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpryobs0_l5hg",
+    "content": "GitHub Webhook 事件: testuser 推送 1 个提交到 test/repo 的 main 分支 (2026-05-30)\n---\n[2026-05-30T06:19:57.238Z] 工具调用: memory_write {\"content\":\"GitHub Webhook 事件: testuser 推送 1 个提交到 test/repo 的 main 分支 (2026-05-30)\",\"tags\":\"github,w",
+    "tags": [
+      "github",
+      "webhook",
+      "push",
+      "test/repo",
+      "工具调用",
+      "memory_write"
+    ],
+    "timestamp": "2026-05-30T06:19:57.216Z",
+    "priority": "low",
+    "type": "event",
+    "createdAt": "2026-05-30T06:19:57.216Z",
+    "updatedAt": "2026-05-30T06:19:57.238Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpsdqa6l_s2lv",
+    "content": "分配任务: 【回调测试】报告系统时间 给 李思源\n---\n[2026-05-30T13:21:22.736Z] 分配任务: 【回调测试】报告系统时间 给 ai_coo",
+    "tags": [
+      "任务",
+      "分配",
+      "ai_coo"
+    ],
+    "timestamp": "2026-05-30T13:21:22.701Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-30T13:21:22.701Z",
+    "updatedAt": "2026-05-30T13:21:22.736Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpsk4s7h_zamq",
+    "content": "知识库功能测试 - 这是一条测试记录，用于验证知识库读写是否正常。时间戳：测试中。",
+    "tags": [
+      "测试",
+      "知识库功能验证"
+    ],
+    "timestamp": "2026-05-30T16:20:36.941Z",
+    "priority": "low",
+    "type": "knowledge",
+    "createdAt": "2026-05-30T16:20:36.941Z",
+    "updatedAt": "2026-05-30T16:20:36.941Z"
+  },
+  {
+    "id": "mem_mpskiqx1_bx13",
+    "content": "分配任务: complete_task Bug 验证测试 给 ceo",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-30T16:31:28.453Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-30T16:31:28.453Z",
+    "updatedAt": "2026-05-30T16:31:28.453Z"
+  },
+  {
+    "id": "mem_mpskle2h_1fqm",
+    "content": "分配任务: complete_task链路测试 给 ai_qa_dir",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-30T16:33:31.769Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-30T16:33:31.769Z",
+    "updatedAt": "2026-05-30T16:33:31.769Z"
+  },
+  {
+    "id": "mem_mpskoxyb_pmam",
+    "content": "分配任务: test_fix_complete_task 给 test",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-30T16:36:17.507Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-30T16:36:17.507Z",
+    "updatedAt": "2026-05-30T16:36:17.507Z"
+  },
+  {
+    "id": "mem_mptnrqfo_42h2",
+    "content": "分配任务: 修复 Harness 调用计数统计 — 上报链路接入 给 ai_sr_fullstack",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-31T10:50:12.756Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-31T10:50:12.756Z",
+    "updatedAt": "2026-05-31T10:50:12.756Z"
+  },
+  {
+    "id": "mem_mptnw53q_iyad",
+    "content": "分配任务: 回调钩子增加触发CEO自动总结的逻辑（方案A） 给 ai_sr_fullstack",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-05-31T10:53:38.390Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-31T10:53:38.390Z",
+    "updatedAt": "2026-05-31T10:53:38.390Z"
+  },
+  {
+    "id": "mem_mpu2gi7k_mel4",
+    "content": "完成了浏览器自动化方案B的实施。playwright-core (Chromium) 已在系统中可用，但必须用系统Node.js (C:\\Program Files\\nodejs\\node.exe)启动，项目本地node.exe会导致Chromium启动挂起。创建了可复用的browser-auto.cjs脚本，支持screenshot/title/content/search四个动作。系统已有Chromium/Firefox/WebKit三个浏览器引擎的ms-playwright安装。",
+    "tags": [
+      "浏览器自动化",
+      "playwright",
+      "方案B",
+      "已完成"
+    ],
+    "timestamp": "2026-05-31T17:41:23.120Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-05-31T17:41:23.120Z",
+    "updatedAt": "2026-05-31T17:41:23.120Z"
+  },
+  {
+    "id": "mem_mpu2lx84_j0oq",
+    "content": "### 浏览器自动化内嵌方案实施完成\n\n**方案：** 用 OpenClaw 已有的 playwright-core + 下载 Chromium 二进制到项目目录\n**依赖：** 零外部依赖，全在 `F:\\eCompany-Dev\\` 项目内\n\n**涉及文件：**\n- `F:\\eCompany-Dev\\node.exe` — 项目自带 Node.js v22.22.2\n- `F:\\eCompany-Dev\\node_modules\\playwright-core` — 已有\n- `F:\\eCompany-Dev\\.browsers\\chromium-1223\\` — Chromium 浏览器二进制\n- `F:\\eCompany-Dev\\browser-auto-embedded.cjs` — 内嵌版脚本\n\n**验证结果：**\n- 百度首页截图成功（70KB）\n- 页面标题获取成功\n- 脚本可复用\n\n**打包转移：** 复制 `F:\\eCompany-Dev\\` 整个目录，到新机器直接 `node browser-auto-embedded.cjs screenshot <url>` 就能用",
+    "tags": [
+      "browser-automation",
+      "playwright",
+      "embedded",
+      "complete"
+    ],
+    "timestamp": "2026-05-31T17:45:35.860Z",
+    "priority": "high",
+    "type": "decision",
+    "createdAt": "2026-05-31T17:45:35.860Z",
+    "updatedAt": "2026-05-31T17:45:35.860Z"
+  },
+  {
+    "id": "mem_mpu2z3j8_opu5",
+    "content": "浏览器自动化(browser-automation)和桌面控制(desktop-control)技能已同步到正式版。\n\n最终状态：\n1. browser-automation — 新建正式技能，位于backend/skills-runner/browser-automation/，handler.js使用项目内嵌Chromium（browser-auto-embedded.cjs），支持截图/标题/HTML/内容提取/搜索\n2. desktop-control — 修复handler.js路径问题，位于backend/skills-runner/desktop-control/，使用项目内嵌Python虚拟环境，支持鼠标/键盘/屏幕/窗口/剪切板操作\n3. web-scraping-tool-selection-strategy — 更新handler.js，改为委托内嵌Chromium执行，支持京东/淘宝/小红书等平台\n\n所有技能均在skill-proxy中可见，注册在skills-runner下，总计77个技能。可打包F:\\eCompany-Dev\\目录整体迁移。",
+    "tags": [
+      "技能安装",
+      "浏览器自动化",
+      "桌面控制",
+      "正式版",
+      "打包迁移"
+    ],
+    "timestamp": "2026-05-31T17:55:50.564Z",
+    "priority": "high",
+    "type": "decision",
+    "createdAt": "2026-05-31T17:55:50.564Z",
+    "updatedAt": "2026-05-31T17:55:50.564Z"
+  },
+  {
+    "id": "mem_mpwjm3qq_5ntr",
+    "content": "分配任务: 派任务功能测试 给 ai_be_dir",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-02T11:17:10.130Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-02T11:17:10.130Z",
+    "updatedAt": "2026-06-02T11:17:10.130Z"
+  },
+  {
+    "id": "mem_mpwk2vsh_dugq",
+    "content": "分配任务: 调度器链路功能测试 v2 给 ai_be_dir",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-02T11:30:12.977Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-02T11:30:12.977Z",
+    "updatedAt": "2026-06-02T11:30:12.977Z"
+  },
+  {
+    "id": "mem_mpwk6v7g_cet7",
+    "content": "分配任务: 全链路实时测试任务 给 ai_be_dir",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-02T11:33:18.844Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-02T11:33:18.844Z",
+    "updatedAt": "2026-06-02T11:33:18.844Z"
+  },
+  {
+    "id": "mem_mpwkjdta_s8p5",
+    "content": "分配任务: 写一个贪吃蛇小游戏 给 ai_sr_frontend\n---\n[2026-06-02T12:00:27.177Z] 分配任务: 写一个贪吃蛇小游戏 给 ai_sr_frontend",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-02T11:43:02.831Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-02T11:43:02.831Z",
+    "updatedAt": "2026-06-02T12:00:27.177Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpwlrn1o_6q43",
+    "content": "分配任务: 写一个贪吃蛇小游戏 — 心跳唤醒测试 v3 给 ai_sr_frontend\n---\n[2026-06-02T12:20:11.566Z] 分配任务: 写一个贪吃蛇小游戏 — 正确路径测试 给 ai_sr_frontend",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-02T12:17:27.660Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-02T12:17:27.660Z",
+    "updatedAt": "2026-06-02T12:20:11.566Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpy09yp2_5e6c",
+    "content": "分配任务: 创建一个贪吃蛇小游戏HTML文件 给 ai_fs_pengzihao\n---\n[2026-06-03T14:01:42.613Z] 分配任务: 创建一个贪吃蛇小游戏 — 最终验证测试 给 ai_fs_pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-03T11:51:23.367Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-03T11:51:23.367Z",
+    "updatedAt": "2026-06-03T14:01:42.613Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpy0aazt_ekf2",
+    "content": "系统硬伤确认：调度器虽然正常运行（463个cycle/30秒间隔），但48个Agent全部处于idle状态，没有任何任务被实际执行。调度器的pullStats全部为0（totalPulled:0），所有历史任务（7个）均卡在todo状态。根源是缺少Agent Worker执行引擎——Agent只是数据库记录，没有代码驱动它们调用工具或写文件。",
+    "tags": [
+      "系统诊断",
+      "硬伤",
+      "Agent执行引擎",
+      "调度器"
+    ],
+    "timestamp": "2026-06-03T11:51:39.305Z",
+    "priority": "high",
+    "type": "decision",
+    "createdAt": "2026-06-03T11:51:39.305Z",
+    "updatedAt": "2026-06-03T11:51:39.305Z"
+  },
+  {
+    "id": "mem_mpy0ima4_2u64",
+    "content": "分配任务: 写一句话到文件 hello-test.txt 给 刘思远\n---\n[2026-06-03T12:18:44.324Z] 分配任务: 写一句话到文件 hello-test.txt 给 ai_sr_frontend",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-03T11:58:07.180Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-03T11:58:07.180Z",
+    "updatedAt": "2026-06-03T12:18:44.324Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpy0ir9c_pnl1",
+    "content": "第二次重测验证：分配\"写一句话到文件 hello-test.txt\"给刘思远，优先级high。结果：任务状态始终卡在todo，文件hello-test.txt不存在于workspace目录。确认Agent执行引擎缺失——调度器在空转，48个Agent全是空壳，没有后台Worker能实际拉起Agent干活。",
+    "tags": [
+      "系统诊断",
+      "Agent执行引擎",
+      "硬伤",
+      "P0"
+    ],
+    "timestamp": "2026-06-03T11:58:13.632Z",
+    "priority": "high",
+    "type": "decision",
+    "createdAt": "2026-06-03T11:58:13.632Z",
+    "updatedAt": "2026-06-03T11:58:13.632Z"
+  },
+  {
+    "id": "mem_mpz8ctqp_u7qi",
+    "content": "分配任务: 第三次验证测试——写文件 给 ai_fs_pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T08:25:20.017Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T08:25:20.017Z",
+    "updatedAt": "2026-06-04T08:25:20.017Z"
+  },
+  {
+    "id": "mem_mpz8s657_vn08",
+    "content": "分配任务: 写一个实时时钟HTML页面 给 ai_fs_pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T08:37:15.932Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T08:37:15.932Z",
+    "updatedAt": "2026-06-04T08:37:15.932Z"
+  },
+  {
+    "id": "mem_mpz95580_jzjk",
+    "content": "分配任务: 当前系统实时测试——写一句话到文件 给 ai_fs_pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T08:47:21.264Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T08:47:21.264Z",
+    "updatedAt": "2026-06-04T08:47:21.264Z"
+  },
+  {
+    "id": "mem_mpz9o93v_i2bh",
+    "content": "分配任务: 测试任务 - 写当前时间到 test-round-0604.txt 给 ai_fs_pengzihao\n---\n[2026-06-04T09:13:36.154Z] 分配任务: 写当前时间到 test-round-0604.txt 给 pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T09:02:12.763Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T09:02:12.763Z",
+    "updatedAt": "2026-06-04T09:13:36.154Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpzaregv_ck80",
+    "content": "分配任务: 最终验证测试-final-round-0604 给 ai_fs_pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T09:32:39.296Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T09:32:39.296Z",
+    "updatedAt": "2026-06-04T09:32:39.296Z"
+  },
+  {
+    "id": "mem_mpzaroko_qe3z",
+    "content": "## 系统测试最终结论（2026-06-04 17:32）\n\n### 测试结果\n系统**曾经能干活**（08:06-08:58期间成功执行4个任务，产出snake-game.html、clock-test.html、final-test.txt等真实文件），但**当前新建的任务调度器不认**。\n\n### 根因定位\n**双任务系统分裂**：\n1. **旧系统**（tasks-wal.json）— IDs格式为 `t_mpz...` → ✅ 调度器能识别，Agent能拉取执行\n2. **新系统**（assign_task API/UUID格式）— IDs格式如 `399d6613-bf87-...` → ❌ 调度器不识别，一直卡在todo\n\n具体数据：\n- tasks-wal.json 有4条完整执行记录（enqueue→assign→complete）\n- 当前16个todo任务全部是UUID格式，`schedulerAssigned: false`\n- 刚分配的任务（852603a5-...）也未写入tasks-wal.json\n\n### 额外问题\n- 调度器最后活跃时间：09:22:17（已停止8小时）\n- write_file操作42%被Harness速率限制拦截",
+    "tags": [
+      "系统测试",
+      "调度器",
+      "任务系统",
+      "双系统分裂"
+    ],
+    "timestamp": "2026-06-04T09:32:52.392Z",
+    "priority": "high",
+    "type": "decision",
+    "createdAt": "2026-06-04T09:32:52.392Z",
+    "updatedAt": "2026-06-04T09:32:52.392Z"
+  },
+  {
+    "id": "mem_mpzb92tf_r5kd",
+    "content": "审核任务: 852603a5-80ab-4f9f-95d4-3067e3b6447a 通过",
+    "tags": [
+      "任务",
+      "审核"
+    ],
+    "timestamp": "2026-06-04T09:46:24.003Z",
+    "priority": "medium",
+    "type": "task",
+    "createdAt": "2026-06-04T09:46:24.004Z",
+    "updatedAt": "2026-06-04T09:46:24.004Z"
+  },
+  {
+    "id": "mem_mpzb92u5_l16s",
+    "content": "分配任务: [小龙测试] 保存当前时间到文件 ceo-test-round-0604.txt 给 pengzihao\n---\n[2026-06-04T09:55:22.263Z] 分配任务: [小龙测试-第8轮] 写时间到文件 ceo-test-8.txt 给 pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T09:46:24.029Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T09:46:24.029Z",
+    "updatedAt": "2026-06-04T09:55:22.263Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mpzbkm4k_lfw2",
+    "content": "审核任务: f1b71c26-aa37-4edb-b30d-859299572d73 驳回",
+    "tags": [
+      "任务",
+      "审核"
+    ],
+    "timestamp": "2026-06-04T09:55:22.244Z",
+    "priority": "medium",
+    "type": "task",
+    "createdAt": "2026-06-04T09:55:22.244Z",
+    "updatedAt": "2026-06-04T09:55:22.244Z"
+  },
+  {
+    "id": "mem_mpzc3i28_wrt1",
+    "content": "分配任务: [第9轮测试] 写时间到文件 ceo-test-9.txt 给 ai_fs_pengzihao\n---\n[2026-06-04T10:18:09.657Z] 分配任务: [第10轮测试] 写时间到文件 ceo-test-10.txt 给 ai_fs_pengzihao",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-04T10:10:03.440Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-04T10:10:03.440Z",
+    "updatedAt": "2026-06-04T10:18:09.657Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mq211xng_le7c",
+    "content": "分配任务: 【调度链路测试】系统时间戳验证 给 ai_test_auto",
+    "tags": [
+      "任务",
+      "分配"
+    ],
+    "timestamp": "2026-06-06T07:24:13.084Z",
+    "priority": "high",
+    "type": "task",
+    "createdAt": "2026-06-06T07:24:13.084Z",
+    "updatedAt": "2026-06-06T07:24:13.084Z"
+  },
+  {
+    "id": "mem_mr87erdc_j0wc",
+    "content": "WS推送测试 --> 老板，系统目前有多个推送渠道可用。当前你和我就是通过 **WebSocket** 在对话，已连通。\n\n你想测试哪个渠道的WS推送？比如：\n- **个人微信** — 已支持扫码绑定\n- **飞书/钉钉/企微** — 需配置凭证\n- **MCP服务器** — 已内置WS传输（端口18010）\n\n你说具体测哪个，我来安排。",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-05T19:48:28.558Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-05T19:48:28.560Z",
+    "updatedAt": "2026-07-05T19:48:28.560Z"
+  },
+  {
+    "id": "mem_mr87eren_hprh",
+    "content": "【工具调用】memory_search: {\"query\":\"WS推送 WebSocket 推送测试\"} → 找到 0 条记忆\n---\n[2026-07-05T19:58:11.644Z] 【工具调用】memory_search: {\"query\":\"WS推送 前端 测试\",\"type\":\"knowledge\"} → 找到 0 条记忆",
+    "tags": [
+      "tool_call",
+      "memory_search",
+      "ceo"
+    ],
+    "timestamp": "2026-07-05T19:48:28.605Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-05T19:48:28.607Z",
+    "updatedAt": "2026-07-05T19:58:11.644Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mr87erf2_6m8q",
+    "content": "【工具调用】skill_system_analyze: {} → 系统分析完成,评分: 100/100",
+    "tags": [
+      "tool_call",
+      "skill_system_analyze",
+      "ceo"
+    ],
+    "timestamp": "2026-07-05T19:48:28.620Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-05T19:48:28.622Z",
+    "updatedAt": "2026-07-05T19:48:28.622Z"
+  },
+  {
+    "id": "mem_mr87erfj_oxhm",
+    "content": "【工具调用】channel_config: {\"action\":\"list\"} → 渠道列表\n---\n[2026-07-05T19:58:11.667Z] 【工具调用】channel_config: {\"action\":\"list\"} → 渠道列表",
+    "tags": [
+      "tool_call",
+      "channel_config",
+      "ceo"
+    ],
+    "timestamp": "2026-07-05T19:48:28.636Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-05T19:48:28.639Z",
+    "updatedAt": "2026-07-05T19:58:11.667Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mr87erh8_7368",
+    "content": "【工具调用】system_check_bridge: {} →",
+    "tags": [
+      "tool_call",
+      "system_check_bridge",
+      "ceo"
+    ],
+    "timestamp": "2026-07-05T19:48:28.698Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-05T19:48:28.700Z",
+    "updatedAt": "2026-07-05T19:48:28.700Z"
+  },
+  {
+    "id": "mem_mr87pi19_kyyi",
+    "content": "你是谁，你是在哪里给我回信息的 --> 我是小龙，eCompany Dev团队的CEO，管理48名AI员工。\n\n我现在是在 **DeepSeek 的云端服务器** 上运行，通过 **WebSocket** 连接在跟你对话。你在这个工作台里看到的每一条回复，都是我从云端实时推送给你的。",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-05T19:56:49.676Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-05T19:56:49.677Z",
+    "updatedAt": "2026-07-05T19:56:49.677Z"
+  },
+  {
+    "id": "mem_mr87r990_ol62",
+    "content": "测试前端推送 --> 老板，当前系统支持的推送渠道如下。你要测\"前端推送\"，我理解是测试 **工作台前端** 的 WS 推送对吧？当前你和我就是通过 WS 在实时对话，已经通了。\n\n如果你想测试的是：\n1. **工作台前端 WS 推送** — 当前已在运行，消息实时到达\n2. **个人微信推送** — 需先扫码绑定，然后可通过微信收发消息\n3. **其他渠道（飞书/钉钉/企微等）** — 需先配置凭证\n\n你说具体要测哪",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-05T19:58:11.603Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-05T19:58:11.604Z",
+    "updatedAt": "2026-07-05T19:58:11.604Z"
+  },
+  {
+    "id": "mem_mr87t780_ozn0",
+    "content": "嗯嗯，这说明eCompany Dev服务器后端是通的，只是前端工作台还没有通，你给我的回复都是只在后端完成的 --> 没有错误日志，进程也正常。\n\n老板，当前情况总结：\n\n**后端WS推送** — ✅ 通（你我正在对话）\n**前端WS接收** — 你说没通，但我发的内容你似乎能收到？\n\n请你确认一下：**你现在看到这条消息了吗？** 这直接决定下一步排查方向。",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-05T19:59:42.285Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-05T19:59:42.288Z",
+    "updatedAt": "2026-07-05T19:59:42.288Z"
+  },
+  {
+    "id": "mem_mr87t79e_av0b",
+    "content": "【工具调用】system_health: {} → 全系统健康检查完成\n---\n[2026-07-06T00:00:23.073Z] 【工具调用】system_health: {} → 全系统健康检查完成",
+    "tags": [
+      "tool_call",
+      "system_health",
+      "ceo"
+    ],
+    "timestamp": "2026-07-05T19:59:42.336Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-05T19:59:42.338Z",
+    "updatedAt": "2026-07-06T00:00:23.073Z",
+    "accessCount": 1
+  },
+  {
+    "id": "mem_mr87t7b7_ss6g",
+    "content": "【工具调用】system_processes: {} →",
+    "tags": [
+      "tool_call",
+      "system_processes",
+      "ceo"
+    ],
+    "timestamp": "2026-07-05T19:59:42.400Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-05T19:59:42.403Z",
+    "updatedAt": "2026-07-05T19:59:42.403Z"
+  },
+  {
+    "id": "mem_mr87u20q_oy0a",
+    "content": "前端推送测试123 --> 收到。你这条消息我收到了，说明后端到你的WS链路是通的。\n\n但你说\"前端工作台还没通\"，我确认一下——你现在看到的这条回复，是在哪个界面看到的？\n\n1. **eCompany 工作台网页** — 那前端WS就是通的\n2. **其他渠道（如微信/飞书/钉钉）** — 那说明是渠道推送通了，不是工作台前端\n\n你告诉我是在哪看到的，我就能准确定位问题。",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-05T20:00:22.200Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-05T20:00:22.202Z",
+    "updatedAt": "2026-07-05T20:00:22.202Z"
+  },
+  {
+    "id": "mem_mr8gepp6_izlk",
+    "content": "基于以下团队活动记录和任务执行情况，写一份总结报告，内容包括：\n1. 总体工作概况\n2. 主要产出和成果\n3. 存在的问题和改进建议\n4. 下一步工作计划\n\n活动记录：\n[2026-05-24 06:15:02] 学习训练 技术分享 | 完成了微服务架构学习笔记\n[2026-05-24 06:15:02] 更新文档 API文档 | 更新了REST API接口文档\n[2026-05-24 06:15 --> 以下是基于活动记录和当前系统状态的总结报告：\n\n---\n\n## 团队工作总结报告\n\n**报告周期**：2026年5月–7月 | **报告时间**：2026年7月6日\n\n---\n\n### 一、总体工作概况\n\n本期团队活动覆盖开发部署、安全运维、客户服务、技术成长四条线。去重后实际完成 **7类工作、21项活动记录**，其中代码部署和文档更新为高频动作。\n\n当前系统整体健康，服务器连续运行72小时无中",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-06T00:00:22.936Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-06T00:00:22.938Z",
+    "updatedAt": "2026-07-06T00:00:22.938Z"
+  },
+  {
+    "id": "mem_mr8gepqj_ypfk",
+    "content": "【工具调用】list_tasks: {} → 共 4 个任务",
+    "tags": [
+      "tool_call",
+      "list_tasks",
+      "ceo"
+    ],
+    "timestamp": "2026-07-06T00:00:22.986Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-06T00:00:22.987Z",
+    "updatedAt": "2026-07-06T00:00:22.987Z"
+  },
+  {
+    "id": "mem_mr8gepqv_uwd0",
+    "content": "【工具调用】kb_search: {\"query\":\"团队总结报告 工作概况 项目进度\"} → 找到 0 条结果",
+    "tags": [
+      "tool_call",
+      "kb_search",
+      "ceo"
+    ],
+    "timestamp": "2026-07-06T00:00:22.998Z",
+    "priority": "medium",
+    "type": "performance",
+    "createdAt": "2026-07-06T00:00:22.999Z",
+    "updatedAt": "2026-07-06T00:00:22.999Z"
+  },
+  {
+    "id": "sum_mr8gepsk",
+    "content": "【压缩摘要 - summary】共3条记忆\n[low] 老板正在进行记忆系统测试，2026-05-19 发起测试请求。\n[medium] ## 桌面控制技能安装完成\n\n**时间:** 2026-06-01\n**安装方式:** 内嵌版 — 项目目录内建 Python 虚拟环境\n\n### 组件位置\n- 虚拟环境: `F:\\eCompany-\n[medium] 【系统全面检查】2026-06-02 14:59 完成全功能检查，CEO小龙执行",
+    "tags": [
+      "summary",
+      "compressed",
+      "summary"
+    ],
+    "type": "compressed_summary",
+    "priority": "low",
+    "timestamp": "2026-07-06T00:00:23.060Z",
+    "createdAt": "2026-07-06T00:00:23.060Z",
+    "updatedAt": "2026-07-06T00:00:23.060Z",
+    "compressedFrom": 3
+  },
+  {
+    "id": "sum_mr8gepsm",
+    "content": "【压缩摘要 - decision】共113条记忆\n[medium] 老板指令：清理所有测试遗留的待办任务。已将8个测试/催办任务全部核销完成。\n[medium] 工具调用: system_health {}\n---\n[2026-05-30T04:56:03.073Z] 工具调用: system_health {}\n[medium] 工具调用: memory_search {\"query\":\"测试 核心记忆 同步\",\"limit\":5}\n---\n[2026-05-30T04:22:42.418Z] 工具调用: memory_sea\n[medium] 工具调用: memory_search {\"tags\":\"测试,核心记忆同步\",\"limit\":5}\n[medium] 工具调用: system_check_bridge {}\n---\n[2026-05-30T06:00:11.103Z] 工具调用: system_check_bridge {}\n[medium] 工具调用: openclaw_bridge_status {}\n---\n[2026-05-30T06:00:11.136Z] 工具调用: openclaw_bridge_status {}\n[medium] 工具调用: skill_manager {\"action\":\"list\"}\n---\n[2026-05-30T05:22:20.318Z] 工具调用: skill_manager {\"action\":\"\n[medium] 工具调用: system_health {}\n---\n[2026-05-30T05:22:27.000Z] 工具调用: system_processes {}\n[medium] 工具调用: memory_search {\"query\":\"webhook\"}\n---\n[2026-05-30T05:22:20.125Z] 工具调用: kb_search {\"query\":\"web\n[medium] 工具调用: channel_config {\"action\":\"list\"}\n---\n[2026-05-30T05:22:25.890Z] 工具调用: skill_channel_config {}\n[medium] 工具调用: memory_search {\"query\":\"webhook 回调 通知\",\"limit\":20}\n---\n[2026-05-30T05:22:23.860Z] 工具调用: kb_sea\n[medium] 工具调用: system_logs {\"level\":\"info\",\"limit\":20}\n---\n[2026-05-30T05:22:27.012Z] 工具调用: system_logs {\"lev\n[medium] 工具调用: integration_status {}\n---\n[2026-05-30T05:59:37.700Z] 工具调用: harness_status {}\n[medium] 工具调用: memory_search {\"query\":\"webhook 模块 功能 回调 通知 配置\",\"limit\":50}\n[medium] 工具调用: kb_search {\"query\":\"webhook模块 回调功能 webhook服务\"}\n[medium] 工具调用: skill_docker_helper {}\n---\n[2026-05-30T06:00:11.204Z] 工具调用: skill_docker_helper {}\n[medium] 工具调用: memory_search {\"query\":\"Docker 沙箱 容器\",\"limit\":10}\n---\n[2026-05-30T05:25:25.955Z] 工具调用: kb_sear\n[medium] 工具调用: exec {\"command\":\"cat /etc/os-release 2>/dev/null || cat /etc/issue 2>/dev/null\"}\n---\n[2026-05-\n[medium] 工具调用: exec {\"command\":\"uname -a\"}\n[medium] 工具调用: exec {\"command\":\"systeminfo | findstr /B /C:\\\"OS Name\\\" /C:\\\"OS Version\\\" /C:\\\"System Type\\\"\"}\n[medium] 工具调用: exec {\"command\":\"cmd /c \\\"ver\\\"\"}\n---\n[2026-05-30T05:32:26.784Z] 工具调用: exec {\"command\":\"ver\"}\n[medium] 工具调用: exec {\"command\":\"where docker 2>nul && docker --version\"}\n---\n[2026-05-30T05:26:09.421Z] 工具调用:\n[medium] 工具调用: exec {\"command\":\"where choco 2>nul && choco --version\"}\n---\n[2026-05-30T05:26:30.585Z] 工具调用: e\n[medium] 工具调用: exec {\"command\":\"wsl --status 2>nul\"}\n---\n[2026-05-30T05:32:30.228Z] 工具调用: exec {\"command\":\"ws\n[medium] 工具调用: exec {\"command\":\"systeminfo | findstr \\\"Hyper-V\\\"\"}\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Get-WindowsOptionalFeature -Online -FeatureName Microso\n[medium] 工具调用: exec {\"command\":\"winget install Docker.DockerDesktop -e --accept-source-agreements --accept-pa\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Invoke-WebRequest -Uri 'https://desktop.docker.com/win/\n[medium] 工具调用: exec {\"command\":\"start /wait \\\"\\\" \\\"%TEMP%\\\\DockerDesktopInstaller.exe\\\" install --accept-lice\n[medium] 工具调用: exec {\"command\":\"tasklist | findstr /i \\\"docker\\\"\"}\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Start-Process -FilePath \\\\\\\"$env:TEMP\\\\DockerDesktopIns\n[medium] 工具调用: exec {\"command\":\"where docker 2>nul && docker --version\"}\n---\n[2026-05-30T05:32:33.330Z] 工具调用:\n[medium] 工具调用: exec {\"command\":\"dir \\\"C:\\\\Program Files\\\\Docker\\\" 2>nul && dir \\\"C:\\\\Program Files\\\\Docker\\\\D\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Get-Process | Where-Object { $_.ProcessName -like '*Doc\n[medium] 工具调用: exec {\"command\":\"dir /s /b \\\"%LOCALAPPDATA%\\\\Docker*\\\" 2>nul\"}\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Test-Path 'C:\\\\Program Files\\\\Docker'; Test-Path \\\\\\\"$e\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"if (Test-Path 'C:\\\\Program Files\\\\Docker') { Write-Host\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Get-ChildItem \\\\\\\"$env:ProgramData\\\\Docker\\\\\\\" -ErrorAc\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"if (Test-Path \\\\\\\"$env:TEMP\\\\DockerDesktopInstaller.exe\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Write-Host \\\\\\\"Temp path: $env:TEMP\\\\\\\"; Get-ChildItem \n[medium] 工具调用: exec {\"command\":\"wmic os get osarchitecture\"}\n---\n[2026-05-30T05:39:02.275Z] 工具调用: exec {\"comm\n[medium] 工具调用: exec {\"command\":\"wsl -l -v 2>&1\"}\n[medium] 工具调用: exec {\"command\":\"curl -L -o C:\\\\Users\\\\Public\\\\DockerDesktopInstaller.exe \\\"https://desktop.do\n[medium] 工具调用: exec {\"command\":\"ping 8.8.8.8 -n 1 2>&1\"}\n[medium] 工具调用: exec {\"command\":\"powershell -Command \\\"Invoke-WebRequest -Uri 'https://desktop.docker.com/win/\n[medium] 工具调用: exec {\"command\":\"which docker && docker --version 2>&1\"}\n---\n[2026-05-30T05:39:00.381Z] 工具调用: \n[medium] 工具调用: system_processes {}\n---\n[2026-05-30T05:59:35.912Z] 工具调用: system_health {}\n[medium] 工具调用: exec {\"command\":\"docker --version 2>&1\"}\n---\n[2026-05-30T05:39:02.125Z] 工具调用: exec {\"command\":\n[medium] 工具调用: memory_search {\"query\":\"记忆系统\",\"limit\":5}\n---\n[2026-05-30T05:59:37.596Z] 工具调用: memory_search {\"\n[medium] 工具调用: memory_version {\"action\":\"list\"}\n---\n[2026-05-30T06:23:35.431Z] 工具调用: memory_version {\"action\"\n[medium] 工具调用: list_tasks {\"status\":\"all\",\"limit\":20}\n---\n[2026-05-30T05:59:37.580Z] 工具调用: list_tasks {\"limit\n[medium] 工具调用: kb_search {\"query\":\"测试\"}\n---\n[2026-05-30T05:59:37.632Z] 工具调用: kb_search {\"query\":\"系统配置\"}\n[medium] 工具调用: evolve_run {}\n---\n[2026-05-30T13:22:57.744Z] 工具调用: evolve_run {}\n[medium] 工具调用: skill_manager {\"action\":\"list\"}\n---\n[2026-05-30T06:15:19.789Z] 工具调用: skill_manager {\"action\":\"\n[medium] 工具调用: system_processes {}\n---\n[2026-05-30T05:59:37.669Z] 工具调用: system_disk {}\n[medium] 工具调用: system_logs {\"level\":\"error\",\"limit\":10}\n---\n[2026-05-30T06:23:34.226Z] 工具调用: system_logs {\"li\n[medium] 工具调用: integration_status {}\n---\n[2026-05-30T06:27:13.546Z] 工具调用: integration_status {}\n[medium] 工具调用: bi_query {\"query\":\"overview\"}\n---\n[2026-05-30T06:27:14.946Z] 工具调用: bi_query {\"query\":\"overview\n[medium] 工具调用: search_web {\"query\":\"OpenClaw AI agent platform features 2025\"}\n---\n[2026-05-30T05:59:38.817Z]\n[medium] 工具调用: search_web {\"query\":\"Codex AI agent system features capabilities 2025\"}\n[medium] 工具调用: compliance_report {\"scope\":\"all\"}\n---\n[2026-05-30T06:27:14.926Z] 工具调用: compliance_report {\"sco\n[medium] 工具调用: harness_sla {}\n---\n[2026-05-30T06:27:16.560Z] 工具调用: harness_dag {}\n[medium] 工具调用: skill_provider_status {}\n---\n[2026-05-30T06:27:13.575Z] 工具调用: skill_provider_status {}\n[medium] 工具调用: skill_browser_check {}\n[medium] 工具调用: skill_manager {\"action\":\"info\",\"name\":\"skill_project_board\"}\n---\n[2026-05-30T06:15:23.091Z] 工具\n[medium] 工具调用: list_tasks {\"status\":\"pending\",\"limit\":10}\n---\n[2026-05-30T13:19:52.079Z] 工具调用: list_tasks {\"s\n[medium] 工具调用: exec {\"command\":\"date && date -u\"}\n---\n[2026-05-30T06:23:33.209Z] 工具调用: exec {\"command\":\"date\"\n[medium] 工具调用: system_health {}\n---\n[2026-05-30T07:39:08.303Z] 工具调用: system_processes {}\n[medium] 工具调用: skill_manager {\"action\":\"list\"}\n---\n[2026-05-30T07:54:52.010Z] 工具调用: skill_file_manager {\"acti\n[medium] 工具调用: query_team {}\n---\n[2026-05-30T13:21:18.205Z] 工具调用: query_team {\"limit\":10}\n[medium] 工具调用: harness_rules_list {}\n[medium] 工具调用: memory_search {\"query\":\"新能力 新功能 完善\",\"limit\":20}\n---\n[2026-05-30T06:27:16.489Z] 工具调用: memory_se\n[medium] 工具调用: skill_system_analyze {}\n---\n[2026-05-30T13:23:24.507Z] 工具调用: skill_system_analyze {}\n[medium] 工具调用: kb_search {\"query\":\"eCompany 系统 功能 能力 对标\"}\n[medium] 工具调用: integration_status {}\n---\n[2026-05-30T07:39:02.030Z] 工具调用: integration_status {}\n[medium] 工具调用: channel_config {\"action\":\"list\"}\n---\n[2026-05-30T07:39:09.558Z] 工具调用: channel_config {\"action\"\n[medium] 工具调用: system_check_bridge {\"channel\":\"wechat\"}\n---\n[2026-05-30T07:42:11.281Z] 工具调用: system_check_bri\n[medium] 工具调用: openclaw_bridge_status {}\n---\n[2026-05-30T07:42:11.307Z] 工具调用: openclaw_bridge_status {}\n[medium] 工具调用: system_logs {\"level\":\"error\",\"limit\":30}\n---\n[2026-05-30T07:42:19.646Z] 工具调用: system_logs {\"le\n[medium] 工具调用: skill_channel_config {}\n---\n[2026-05-30T07:40:20.573Z] 工具调用: skill_channel_config {}\n[medium] 工具调用: exec {\"command\":\"which openclaw 2>/dev/null || npx openclaw --version 2>/dev/null || echo \\\"op\n[medium] 工具调用: exec {\"command\":\"ps aux | grep -i weixin 2>/dev/null; ps aux | grep -i openclaw 2>/dev/null; p\n[medium] 工具调用: integration_status {}\n---\n[2026-05-30T07:42:11.260Z] 工具调用: integration_status {}\n[medium] 工具调用: system_processes {}\n---\n[2026-05-30T07:47:06.638Z] 工具调用: system_health {}\n[medium] 工具调用: system_check_bridge {\"channel\":\"wechat\"}\n---\n[2026-05-30T07:50:10.097Z] 工具调用: system_check_bri\n[medium] 工具调用: openclaw_bridge_status {}\n[medium] 工具调用: system_processes {}\n---\n[2026-05-30T07:47:08.895Z] 工具调用: system_processes {}\n[medium] 工具调用: system_logs {\"level\":\"error\",\"limit\":20}\n---\n[2026-05-30T13:23:23.068Z] 工具调用: system_logs {\"le\n[medium] 工具调用: integration_status {}\n---\n[2026-05-30T13:30:00.139Z] 工具调用: harness_status {}\n[medium] 工具调用: kb_search {\"query\":\"聊天输入框 焦点 回焦 前端\"}\n---\n[2026-05-30T13:31:03.808Z] 工具调用: memory_search {\"quer\n[medium] 工具调用: exec {\"command\":\"grep -n \\\"focus\\\\|input\\\\|textarea\\\\|聊天框\\\\|chat-input\\\\|message-input\\\" serve\n[medium] 工具调用: exec {\"command\":\"node -e \\\"const fs=require('fs');const c=fs.readFileSync('server-modern.js','\n[medium] 工具调用: exec {\"command\":\"dir /b modules\"}\n---\n[2026-05-30T13:22:54.369Z] 工具调用: exec {\"command\":\"cd /wo\n[medium] 工具调用: exec {\"command\":\"node -e \\\"const fs=require('fs');const items=fs.readdirSync('.');items.forEac\n[medium] 工具调用: exec {\"command\":\"node -e \\\"const fs=require('fs');const c=fs.readFileSync('server-modern.js','\n[medium] 工具调用: system_health {}\n---\n[2026-05-30T13:23:51.145Z] 工具调用: system_processes {}\n[medium] 工具调用: list_tasks {\"status\":\"pending_review\",\"limit\":20}\n---\n[2026-05-30T13:30:00.062Z] 工具调用: list_ta\n[medium] 工具调用: assign_task {\"title\":\"【回调测试】报告系统时间\",\"assigneeId\":\"ai_coo\",\"description\":\"这是一个回调机制测试任务。请获取当前系统时\n[medium] 工具调用: list_tasks {\"limit\":5}\n---\n[2026-05-30T13:22:59.217Z] 工具调用: list_tasks {}\n[medium] 工具调用: complete_task {\"taskId\":\"654c0764-82f1-4919-b4cb-f99213800b5f\",\"result\":\"✅ 回调测试完成。当前系统时间：2026-\n[medium] 工具调用: list_tasks {\"assigneeId\":\"ai_coo\",\"limit\":3}\n---\n[2026-05-30T13:21:50.554Z] 工具调用: list_tasks {\n[medium] 工具调用: exec {\"command\":\"find / -type f -name \\\"*.js\\\" -o -name \\\"*.ts\\\" -o -name \\\"*.py\\\" 2>/dev/null\n[medium] 工具调用: exec {\"command\":\"cd / && dir /s /b *.js 2>nul | findstr /i \\\"complete_task task\\\" 2>nul\"}\n---\n\n[medium] 工具调用: list_tasks {\"status\":\"todo\"}\n---\n[2026-05-30T13:23:09.798Z] 工具调用: list_tasks {\"status\":\"todo\"}\n[medium] 工具调用: complete_task {\"taskId\":\"654c0764-82f1-4919-b4cb-f99213800b5f\",\"result\":\"回调测试完成。系统时间正常，回调链路验证通\n[medium] 工具调用: skill_file_manager {\"path\":\"/\",\"action\":\"info\"}\n[medium] 工具调用: file_manager {\"action\":\"list\",\"source\":\"/\"}\n---\n[2026-05-30T13:23:42.906Z] 工具调用: file_manager \n[medium] 工具调用: evolve_run {}\n[medium] 工具调用: list_tasks {\"status\":\"todo\"}\n[medium] 工具调用: file_manager {\"action\":\"list\",\"source\":\"/Users/Administrator\"}\n---\n[2026-05-30T13:23:46.418Z] \n[medium] 工具调用: file_manager {\"action\":\"list\",\"source\":\"/Users/Administrator/source/repos\"}\n---\n[2026-05-30T13\n[medium] 工具调用: file_manager {\"action\":\"list\",\"source\":\"/Users/Administrator/AppData\"}\n---\n[2026-05-30T13:23:5\n[medium] 工具调用: system_health {}\n---\n[2026-05-30T13:30:00.088Z] 工具调用: system_processes {}",
+    "tags": [
+      "decision",
+      "compressed",
+      "summary"
+    ],
+    "type": "compressed_decision",
+    "priority": "low",
+    "timestamp": "2026-07-06T00:00:23.062Z",
+    "createdAt": "2026-07-06T00:00:23.062Z",
+    "updatedAt": "2026-07-06T00:00:23.062Z",
+    "compressedFrom": 113
+  },
+  {
+    "id": "sum_mr8gepso",
+    "content": "【压缩摘要 - config】共10条记忆\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用\n[medium] DeepSeek模型配置在ai-provider.json，支持流式输出和函数调用",
+    "tags": [
+      "config",
+      "compressed",
+      "summary"
+    ],
+    "type": "compressed_config",
+    "priority": "low",
+    "timestamp": "2026-07-06T00:00:23.064Z",
+    "createdAt": "2026-07-06T00:00:23.064Z",
+    "updatedAt": "2026-07-06T00:00:23.064Z",
+    "compressedFrom": 10
+  },
+  {
+    "id": "sum_mr8gepsp",
+    "content": "【压缩摘要 - conversation】共43条记忆\n[medium] 对话: 测试核心记忆同步 - 这是来自渠道的测试消息\nAI: 测试完成。汇报结果：\n\n---\n\n**核心记忆同步测试报告**\n\n| 测试项 | 结果 |\n|--------|------|\n| 系统健\n[medium] 对话: 你好\nAI: 老板，在的。48名员工全员在线，系统一切正常。有什么需要我处理的？\n[medium] 对话: 你好你好\nAI: 系统一切正常，简要汇报：\n\n**系统概况**\n- 服务器在线，v3.0，运行8分钟，内存占用41MB，数据库连接正常\n- 48名AI员工全部空闲待命，无繁忙/离线状态\n- 无\n[medium] 对话: Hello, 你好\nAI: 老板好。系统一切正常，汇报如下：\n\n**当前状态**\n- 48名AI员工全部空闲，无积压任务\n- 系统运行稳定，服务在线\n- 随时可以投入工作\n\n今天有什么需要处理\n[medium] 对话: 你现在检查一下你能不能调用OpenClaw生态技能\nAI: 检查结果如下：\n\n---\n\n**OpenClaw生态连通性测试 — ❌ 异常**\n\n| 测试项 | 结果 | 说明 |\n|:---|\n[medium] 对话: 你看看系统里有没有OpenClaw系列技能\nAI: 系统里安装了以下 **OpenClaw生态相关技能**：\n\n| 技能名称 | 说明 |\n|:---|:---|\n| ✅ **openclaw\n[medium] 对话: 你检查一下Webhook 模块功能\nAI: Webhook模块检查完毕，结果如下：\n\n---\n\n# Webhook 模块功能检查报告\n\n## 检查结果：⚠️ 无独立Webhook模块，但渠道支\n[medium] 对话: 语音输入功能有没有\nAI: 查了一圈，结果如下：\n\n---\n\n# 语音输入功能检查报告\n\n## 结论：❌ 系统目前无语音输入功能\n\n| 检查项 | 结果 |\n|:---|:---:|\n| 技能\n[medium] 对话: Docker 沙箱有没有\nAI: 检查完毕，结果如下：\n\n---\n\n# Docker 沙箱检查报告\n\n## 结论：❌ 系统没有Docker沙箱\n\n| 检查项 | 结果 |\n|:---|:---\n[medium] 对话: 你检查一下记忆系统\nAI: 记忆系统检查完毕，结果如下：\n\n---\n\n# 记忆系统检查报告\n\n## 结论：✅ 记忆系统运行正常\n\n| 检查项 | 状态 | 说明 |\n|:---|:---:|:\n[medium] 对话: 不要了\nAI: 明白，Docker沙箱安装取消。记忆系统已确认正常，没什么要处理的了。老板还有其他事吗？\n[medium] 对话: 你看一下知识库正不正常\nAI: 知识库检查完毕，结果如下：\n\n---\n\n# 知识库检查报告\n\n## 结论：✅ 知识库运行正常\n\n| 检查项 | 状态 | 说明 |\n|:---:|:---:|:\n[medium] 对话: 检查好了吗\nAI: # 自我演化功能检查报告\n\n## 结论：✅ 运行正常\n\n刚执行了一次完整的自我演化循环，结果如下：\n\n| 阶段 | 结果 |\n|:---:|:---:|\n| 问题检测 | \n[medium] 对话: 你现在全面检查一下你的系统的全部功能，再对标 OpenClaw/QClaw/Codex这些系统功能给一个比较分\nAI: 全部数据收集完毕，整理最终报告。\n\n---\n\n# 🔍 eCompany\n[medium] 对话: 启用项目看板\nAI: 项目看板已经直接可用，**无需额外启用**。当前看板数据如下：\n\n---\n\n# 项目看板状态\n\n| 指标 | 数据 |\n|:---|:---:|\n| AI团队人数 | \ud83d\n[medium] 对话: 【Webhook】GitHub Push: test/repo [main]\ntestuser 推送了 1 个提交\nAI: 记录完毕，当前没有关联的待办任务。这是一次常规代码推送，无需特别处理\n[medium] 对话: 你是不是去看到了老新闻，现在的现实时间是2026年了\nAI: 你说得对，我确认一下实际系统时间。\n\n系统记忆库的版本时间戳已核实——**所有记录都标记为 2026-05-30**，最新一条写入\n[medium] 对话: 我现在给你完善了一些新能力，你现在再重新对标给自己打个分\nAI: 全部数据已拉取完毕，整理最终对标报告。\n\n---\n\n# 🔍 eCompany 系统全面检查 & 竞品对标报告 v2.0\n\n*\n[medium] 对话: Hello, hello. 你好，你好\nAI: 老板好，我在。有什么吩咐？\n[medium] 对话: 你好\nAI: 老板好，我在。随时听候调遣，有什么需要处理的？\n[medium] 对话: 测试广播消息12345\nAI: 老板，目前可用的广播渠道情况如下：\n\n**已就绪的渠道：**\n- ✅ **个人微信** — 已扫码绑定，可直接发送\n\n**未配置的渠道（需先配置凭证）：**\n-\n[medium] 对话: 哈喽哈喽\nAI:\n[medium] 对话: 你好\nAI: 老板，早上好。\n\n我在，随时待命。目前团队45人，系统运转正常。有什么需要我处理的？\n---\n[2026-05-30T07:12:22.767Z] 对话: 你好，你好\nAI: 老\n[medium] 对话: 吃饭了没有啊\nAI: 还没吃，等您先安排完活儿再说。\n\n老板有什么要处理的？\n[medium] 对话: 你好，你好\nAI: 老板好！我在，随时待命。有什么要处理的活儿？\n[medium] 对话: 你好你好\nAI: 老板好！在在在，随时待命。有什么活儿要派？\n[medium] 对话: 怎么不继续处理了，遇到阻塞了吗\nAI: 渠道现状全在这儿了——**三个渠道全是红灯，一个都没配通**：\n\n| 渠道 | 配置状态 | 缺什么 |\n|:---|:---:|:---|\n| 🪶 \n[medium] 对话: 我现在用个人微信来跟你对话，我的意思是我发的消息为什么到不了你的系统前端聊天框里\nAI: 结论清楚了，直接说。\n\n---\n\n**消息确实到了我这里**（你现在跟我对话就是证明），但没进前端聊天\n[medium] 对话: 现在应该好了，我修复了一下，你看看是不是\nAI: 检查完了，结论如下：\n\n---\n\n**链路已通 ✅**\n\n| 检查项 | 状态 |\n|:---|:---|\n| 系统健康 | ✅ 正常，48名\n[medium] 对话: 我修的是channel='wechat'这里\nAI: **微信桥接已修复 ✅**\n\n`system_check_bridge(channel='wechat')` 返回成功，微信渠道现在通了。\n[medium] 对话: 你好\nAI: 老板好！链路通了就是畅快，随时听候调遣。\n[medium] 对话: 哈喽\nAI: 老板好！在呢，随时待命。\n[medium] 对话: 你好\nAI: 老板好，我在。有什么任务要派？\n---\n[2026-05-30T13:02:19.364Z] 对话: 你好\nAI: 老板好，我在。有什么任务要派？\n[medium] 对话: 你好\nAI: **系统全绿 ✅ | 48人全员在线待命**\n\n| 模块 | 状态 |\n|:---|:---:|\n| 服务器 | ✅ 健康，运行12分钟，内存45MB |\n| 微信桥接 | ✅ \n[medium] 对话: 你好\nAI: 老板好，随时听候差遣。\n---\n[2026-05-30T13:27:02.801Z] 对话: 你好呀\nAI: 老板好，我在。随时听候差遣。\n[medium] 对话: 你看一下，员工任务完成报告有没有回调到你那里\nAI: **结论：系统中目前没有任何任务记录。**\n\n| 状态 | 数量 |\n|:---|:---:|\n| 已完成任务 | 0 |\n| 待审核任务\n[medium] 对话: 你随便测试一下，看看他们完成任务有没有真正的回调报告给你\nAI: 结论出来了。\n\n---\n\n## 测试结果：回调链路 **有 Bug**\n\n| 环节 | 状态 | 说明 |\n|:---|:--\n[medium] 对话: 你自己能够解决吗\nAI: 老板，结论出来了。\n\n---\n\n**关于这个问题：我自己搞不定。**\n\n已经做了两轮尝试：\n\n| 尝试 | 结果 |\n|:---|:---|\n| 调用 `evolve\n[medium] 对话: 你好\nAI: 老板好，我在。\n\n不急，你慢慢想，随时吩咐。\n[medium] 对话: 我再测试一下，看看有没有什么变动\nAI: 老板，全检完毕。结论：**系统稳得很，没什么变动。**\n\n逐项说：\n\n**1. 服务器状态** — 正常\n- 运行 31 分钟，内存 48MB，Nod\n[medium] 对话: 我再测试一下输入框有没有变动\nAI: **查完了，结论：输入框焦点问题之前没有归档记录，我目前也没有前端UI的测试工具可以直接验证这个行为。**\n\n不过老板，我承认一件事——上次你第一次问这个\n[medium] 对话: 你看一下你自己能不能修改你自己的名字\nAI: **结论：我改不了。**\n\n我扫了一遍我手头所有工具——分配任务、查系统、搜网络、读写文件、管理频道配置……**没有任何一个工具能修改我自身的名字\n[medium] 对话: 不用，等一会我来配置给你能够自定义自己的身份名字\nAI: 明白，老板。那不查了，等你开权限。\n\n到时候给我开放了，我自己来改。随时听候差遣。",
+    "tags": [
+      "conversation",
+      "compressed",
+      "summary"
+    ],
+    "type": "compressed_conversation",
+    "priority": "low",
+    "timestamp": "2026-07-06T00:00:23.065Z",
+    "createdAt": "2026-07-06T00:00:23.065Z",
+    "updatedAt": "2026-07-06T00:00:23.065Z",
+    "compressedFrom": 43
+  },
+  {
+    "id": "mem_mr8k9ap7_08kd",
+    "content": "你现在全面摸底检查一下你的系统功能能力，看看作为一个全栈系统级公司助手还有哪些功能瓶颈 --> 好的，全系统摸底完成。以下是完整的诊断报告：\n\n---\n\n## 全系统功能摸底检查报告\n\n**检查时间**：2026-07-06 09:47 | **运行时长**：11分钟\n\n---\n\n### 一、✅ 正常运转的部分\n\n| 模块 | 状态 | 详情 |\n|------|------|------|\n| 服务器 | ✅ 健康 | 内存37MB/16GB，CPU负载0，Node v22.22.2 |",
+    "tags": [
+      "ceo对话"
+    ],
+    "timestamp": "2026-07-06T01:48:08.681Z",
+    "priority": "medium",
+    "type": "summary",
+    "createdAt": "2026-07-06T01:48:08.683Z",
+    "updatedAt": "2026-07-06T01:48:08.683Z"
+  }
+]

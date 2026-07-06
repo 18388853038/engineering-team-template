@@ -1,0 +1,11 @@
+{
+  "status": "running",
+  "startedAt": "2026-07-06T04:39:49.672Z",
+  "lastPollAt": "2026-07-06T05:14:18.188Z",
+  "lastMessageAt": null,
+  "errorCount": 0,
+  "messageCount": 0,
+  "account": "ba992aab09c2",
+  "lastError": "",
+  "sessionRefreshedAt": null
+}

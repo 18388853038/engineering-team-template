@@ -1,0 +1,94 @@
+[
+  {
+    "ruleId": "rule_mpdd9a3u_tiux",
+    "action": "proposed",
+    "details": {
+      "proposedBy": "test_agent"
+    },
+    "timestamp": "2026-05-20T01:11:36.812Z"
+  },
+  {
+    "ruleId": "rule_mpdd9a3u_tiux",
+    "action": "confirmed",
+    "details": {
+      "confirmedBy": "test_security"
+    },
+    "timestamp": "2026-05-20T01:11:36.816Z"
+  },
+  {
+    "ruleId": "rule_mpdda7m6_8cvu",
+    "action": "proposed",
+    "details": {
+      "proposedBy": "test_agent"
+    },
+    "timestamp": "2026-05-20T01:12:20.240Z"
+  },
+  {
+    "ruleId": "rule_mpdda7m6_8cvu",
+    "action": "confirmed",
+    "details": {
+      "confirmedBy": "test_security"
+    },
+    "timestamp": "2026-05-20T01:12:20.243Z"
+  },
+  {
+    "ruleId": "rule_mpddba90_4zl1",
+    "action": "proposed",
+    "details": {
+      "proposedBy": "审计Agent"
+    },
+    "timestamp": "2026-05-20T01:13:10.308Z"
+  },
+  {
+    "ruleId": "rule_mpddba90_4zl1",
+    "action": "confirmed",
+    "details": {
+      "confirmedBy": "安全Agent",
+      "note": "同意"
+    },
+    "timestamp": "2026-05-20T01:13:10.533Z"
+  },
+  {
+    "ruleId": "rule_mpddba90_4zl1",
+    "action": "deprecated",
+    "details": {
+      "deprecateBy": "cleanup",
+      "reason": "测试数据"
+    },
+    "timestamp": "2026-05-20T01:13:18.996Z"
+  },
+  {
+    "ruleId": "rule_mpdda7m6_8cvu",
+    "action": "deprecated",
+    "details": {
+      "deprecateBy": "cleanup",
+      "reason": "测试数据"
+    },
+    "timestamp": "2026-05-20T01:13:19.005Z"
+  },
+  {
+    "ruleId": "rule_mpddqpza_upyu",
+    "action": "proposed",
+    "details": {
+      "proposedBy": "审计Agent"
+    },
+    "timestamp": "2026-05-20T01:25:10.534Z"
+  },
+  {
+    "ruleId": "rule_mpddqpza_upyu",
+    "action": "confirmed",
+    "details": {
+      "confirmedBy": "安全Agent"
+    },
+    "timestamp": "2026-05-20T01:25:10.545Z"
+  },
+  {
+    "ruleId": "rule_mpddqpza_upyu",
+    "action": "deprecated",
+    "details": {
+      "deprecateBy": "cleanup",
+      "reason": "test data"
+    },
+    "timestamp": "2026-05-20T01:25:30.621Z"
+  }
+]

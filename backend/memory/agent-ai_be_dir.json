@@ -1,0 +1,256 @@
+{
+  "decisions": [],
+  "notes": [],
+  "status": "idle",
+  "currentTask": null,
+  "lastActive": "2026-06-04T09:14:21.320Z",
+  "conversations": [
+    {
+      "role": "user",
+      "content": "【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。",
+      "time": "2026-06-02T11:17:18.594Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:17:18.594Z"
+    },
+    {
+      "role": "user",
+      "content": "【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。",
+      "time": "2026-06-02T11:17:40.426Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:17:40.426Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：派任务功能测试\n任务描述：这是一个派任务功能测试任务。请执行以下步骤：\n1. 检查当前系统API响应状态\n2. 输出当前北京时间\n3. 返回一段确认信息：\"派任务功能测试通过\"\n\n验证标准：确认系统能够正常接收任务、分配任务、完成任务流转。\n优先级：high\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-02T11:17:51.338Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:17:51.338Z"
+    },
+    {
+      "role": "user",
+      "content": "【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。",
+      "time": "2026-06-02T11:30:26.776Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:30:26.776Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：调度器链路功能测试 v2\n任务描述：这是一个调度器完整链路测试任务，用于验证从任务分配→执行→回调的完整流程。\n\n请执行以下操作：\n1. 输出当前的系统时间（北京时间）\n2. 检查系统API是否正常响应\n3. 返回确认信息：\\\"调度器链路测试通过，北京时间：[当前时间]\\\"\n\n完成后自动触发回调通知CEO。\n优先级：high\n\n\n## 参考经验\n- 派任务功能测试\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- 语音对话渠道集成 - 对接微信/Web渠道\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- 语音对话核心模块 voice-dialogue.js\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-02T11:30:46.196Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:30:46.196Z"
+    },
+    {
+      "role": "user",
+      "content": "【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。",
+      "time": "2026-06-02T11:33:32.268Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:33:32.268Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：全链路实时测试任务\n任务描述：这是一个实时全链路测试任务，用于验证调度器→分配Agent→执行→回调CEO的完整流程。\n请执行以下步骤：\n1. 输出当前系统时间（北京时间）\n2. 回复确认信息：\\\"全链路测试通过，北京时间：[当前时间]\\\"\n优先级：high\n\n\n## 参考经验\n- 派任务功能测试\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- 调度器链路功能测试 v2\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- 🔴 [高优] 修复员工任务结果推送CEO链路\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-02T11:33:43.445Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-02T11:33:43.445Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：test_cron\n任务描述：test_cron\n优先级：medium\n\n\n## 参考经验\n- 语音对话核心模块 voice-dialogue.js\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-03T12:00:29.627Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-03T12:00:29.627Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：test_cron\n任务描述：test_cron\n优先级：medium\n\n\n## 参考经验\n- test_cron\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- 语音对话核心模块 voice-dialogue.js\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-04T08:25:22.461Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-04T08:25:22.461Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：test_cron\n任务描述：test_cron\n优先级：medium\n\n\n## 参考经验\n- test_cron\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- test_cron\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- 语音对话核心模块 voice-dialogue.js\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-04T08:26:51.141Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-04T08:26:51.141Z"
+    },
+    {
+      "role": "user",
+      "content": "任务标题：测试任务 - 写当前时间到 test-round-0604.txt\n任务描述：请用write_file在当前工作目录下创建一个文件 test-round-0604.txt，内容写入\"测试时间：2026-06-04 17:01，彭子豪测试通过。\"\n优先级：high\n\n\n## 参考经验\n- test_cron\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- test_cron\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n- test_cron\n  {\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"202\n\n请执行以上任务并输出结果。",
+      "time": "2026-06-04T09:03:07.716Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-04T09:03:07.716Z"
+    },
+    {
+      "role": "user",
+      "content": "你有任务需要执行：「test_cron」\n描述：test_cron\n请立即开始执行，完成任务后调用 complete_claimed_task 提交。用 write_file 将成果写入文件。",
+      "time": "2026-06-04T09:14:21.319Z"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "time": "2026-06-04T09:14:21.320Z"
+    }
+  ],
+  "summary": "最近: 你有任务需要执行：「test_cron」\n描述：test_cron\n请立即开始执行，完成任务后调用  -> ",
+  "experiences": [
+    {
+      "id": "exp_1780399071364_prac",
+      "type": "execution",
+      "summary": "派任务功能测试",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-02T11:17:51.338Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "派任务功能测试",
+      "taskPriority": "high",
+      "success": true,
+      "durationMs": 10927,
+      "timestamp": "2026-06-02T11:17:51.364Z",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ]
+    },
+    {
+      "id": "exp_1780399846222_0q3b",
+      "type": "execution",
+      "summary": "调度器链路功能测试 v2",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-02T11:30:46.196Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "调度器链路功能测试 v2",
+      "taskPriority": "high",
+      "success": true,
+      "durationMs": 19431,
+      "timestamp": "2026-06-02T11:30:46.222Z",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ]
+    },
+    {
+      "id": "exp_1780400023472_dxp0",
+      "type": "execution",
+      "summary": "全链路实时测试任务",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-02T11:33:43.445Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "全链路实时测试任务",
+      "taskPriority": "high",
+      "success": true,
+      "durationMs": 11190,
+      "timestamp": "2026-06-02T11:33:43.472Z",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ]
+    },
+    {
+      "id": "exp_1780488029657_85c8",
+      "type": "execution",
+      "summary": "test_cron",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-03T12:00:29.627Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "test_cron",
+      "taskPriority": "medium",
+      "success": true,
+      "durationMs": 17096,
+      "timestamp": "2026-06-03T12:00:29.657Z",
+      "tags": [
+        "cron",
+        "auto",
+        "priority:medium",
+        "scheduled"
+      ]
+    },
+    {
+      "id": "exp_1780561522517_k67o",
+      "type": "execution",
+      "summary": "test_cron",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-04T08:25:22.461Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "test_cron",
+      "taskPriority": "medium",
+      "success": true,
+      "durationMs": 16047,
+      "timestamp": "2026-06-04T08:25:22.517Z",
+      "tags": [
+        "cron",
+        "auto",
+        "priority:medium",
+        "scheduled"
+      ]
+    },
+    {
+      "id": "exp_1780561611178_e0pz",
+      "type": "execution",
+      "summary": "test_cron",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-04T08:26:51.141Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "test_cron",
+      "taskPriority": "medium",
+      "success": true,
+      "durationMs": 16191,
+      "timestamp": "2026-06-04T08:26:51.178Z",
+      "tags": [
+        "cron",
+        "auto",
+        "priority:medium",
+        "scheduled"
+      ]
+    },
+    {
+      "id": "exp_1780563787753_tomq",
+      "type": "execution",
+      "summary": "测试任务 - 写当前时间到 test-round-0604.txt",
+      "detail": "{\"reply\":\"\",\"memory\":{\"decisions\":[],\"notes\":[],\"status\":\"idle\",\"currentTask\":null,\"lastActive\":\"2026-06-04T09:03:07.716Z\",\"conversations\":[{\"role\":\"user\",\"content\":\"【新任务】派任务功能测试。请立即执行。用 write_file 将成果写入文件，完成后用 complete_claimed_task 提交。\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"assistant\",\"content\":\"\",\"time\":\"2026-06-02T11:17:18.594Z\"},{\"role\":\"user\",\"content\":\"【系统自动唤醒】检测到你有待办任务：「派任务功能测试」(优先级:high)。请立即调用 check_pending_tasks 查看任务详情，然后 claim_task 领取并执行。完成任务后务必调用 complete_claimed_task 完成回调。\",\"ti",
+      "taskTitle": "测试任务 - 写当前时间到 test-round-0604.txt",
+      "taskPriority": "high",
+      "success": true,
+      "durationMs": 17737,
+      "timestamp": "2026-06-04T09:03:07.753Z",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ]
+    }
+  ],
+  "skills": {
+    "测试": {
+      "uses": 4,
+      "successes": 4,
+      "failures": 0
+    }
+  },
+  "stats": {
+    "tasksDone": 7,
+    "tasksFailed": 0,
+    "totalDuration": 108619
+  },
+  "updatedAt": "2026-06-04T09:03:07.753Z"
+}

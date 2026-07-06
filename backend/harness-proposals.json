@@ -1,0 +1,738 @@
+[
+  {
+    "id": "prop_mpddfxtv_8rww",
+    "agentId": "test_agent",
+    "agentName": "测试员工",
+    "agentRole": "staff",
+    "type": "tool_call",
+    "action": {
+      "tool": "search_web",
+      "params": {
+        "query": "test"
+      },
+      "reasoning": "需要搜索测试数据",
+      "expected": "返回搜索结果",
+      "risk": "low"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 6
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": false,
+      "action": "block",
+      "reasons": [
+        "搜索工具每分钟最多调用 5 次"
+      ],
+      "triggered": [
+        {
+          "ruleId": "rate_tool_search_web",
+          "ruleName": "搜索工具频率限制",
+          "type": "rate_limit",
+          "action": "block",
+          "reason": "搜索工具每分钟最多调用 5 次",
+          "severity": "medium"
+        }
+      ]
+    },
+    "appeal": {
+      "appealedBy": "test_agent",
+      "appealedRole": "staff",
+      "justification": "这是紧急任务需要搜索",
+      "status": "pending",
+      "createdAt": "2026-05-20T01:16:47.502Z"
+    },
+    "override": {
+      "type": "appeal_granted",
+      "reviewedBy": "vp01",
+      "reviewedRole": "vp",
+      "note": "紧急任务，予以豁免",
+      "createdAt": "2026-05-20T01:16:47.505Z"
+    },
+    "createdAt": "2026-05-20T01:16:47.491Z",
+    "updatedAt": "2026-05-20T01:16:47.505Z",
+    "blockReason": "搜索工具每分钟最多调用 5 次",
+    "blockedBy": [
+      {
+        "ruleId": "rate_tool_search_web",
+        "ruleName": "搜索工具频率限制"
+      }
+    ],
+    "canAppeal": true
+  },
+  {
+    "id": "prop_mpddfxu2_12r5",
+    "agentId": "test_agent",
+    "agentName": "测试员工",
+    "agentRole": "staff",
+    "type": "tool_call",
+    "action": {
+      "tool": "search_web",
+      "params": {
+        "query": "normal search"
+      },
+      "reasoning": "正常搜索",
+      "expected": "返回结果",
+      "risk": "low"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 3
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-20T01:16:47.498Z",
+    "updatedAt": "2026-05-20T01:16:47.499Z"
+  },
+  {
+    "id": "prop_mpddfxub_69fa",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "system_config_set",
+      "params": {
+        "key": "test",
+        "value": "test"
+      },
+      "reasoning": "系统配置测试",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-20T01:16:47.507Z",
+    "updatedAt": "2026-05-20T01:16:47.508Z"
+  },
+  {
+    "id": "prop_mpddikca_xjao",
+    "agentId": "ai_staff",
+    "agentName": "测试员工",
+    "agentRole": "staff",
+    "type": "tool_call",
+    "action": {
+      "tool": "search_web",
+      "params": {
+        "q": "test"
+      },
+      "reasoning": "搜索测试",
+      "expected": "结果",
+      "risk": "low"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 1
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-20T01:18:49.978Z",
+    "updatedAt": "2026-05-20T01:18:49.979Z"
+  },
+  {
+    "id": "prop_mpddikcp_o20k",
+    "agentId": "ai_staff",
+    "agentName": "测试员工",
+    "agentRole": "staff",
+    "type": "tool_call",
+    "action": {
+      "tool": "search_web",
+      "params": {
+        "q": "test2"
+      },
+      "reasoning": "搜索测试2",
+      "expected": "结果",
+      "risk": "low"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 6
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": false,
+      "action": "block",
+      "reasons": [
+        "搜索工具每分钟最多调用 5 次"
+      ],
+      "triggered": [
+        {
+          "ruleId": "rate_tool_search_web",
+          "ruleName": "搜索工具频率限制",
+          "type": "rate_limit",
+          "action": "block",
+          "reason": "搜索工具每分钟最多调用 5 次",
+          "severity": "medium"
+        }
+      ]
+    },
+    "appeal": {
+      "appealedBy": "ai_staff",
+      "appealedRole": "staff",
+      "justification": "紧急任务需要搜索",
+      "status": "pending",
+      "createdAt": "2026-05-20T01:18:49.999Z"
+    },
+    "override": {
+      "type": "appeal_granted",
+      "reviewedBy": "vp_wang",
+      "reviewedRole": "vp",
+      "note": "紧急任务，予以豁免",
+      "createdAt": "2026-05-20T01:18:50.004Z"
+    },
+    "createdAt": "2026-05-20T01:18:49.993Z",
+    "updatedAt": "2026-05-20T01:18:50.004Z",
+    "blockReason": "搜索工具每分钟最多调用 5 次",
+    "blockedBy": [
+      {
+        "ruleId": "rate_tool_search_web",
+        "ruleName": "搜索工具频率限制"
+      }
+    ],
+    "canAppeal": true
+  },
+  {
+    "id": "prop_mpddqpzq_q5ls",
+    "agentId": "staff1",
+    "agentName": "员工A",
+    "agentRole": "staff",
+    "type": "tool_call",
+    "action": {
+      "tool": "search_web",
+      "params": {
+        "q": "test"
+      },
+      "reasoning": "测试",
+      "expected": "结果",
+      "risk": "low"
+    },
+    "context": {
+      "toolCallsPerMinute": 6
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": false,
+      "action": "block",
+      "reasons": [
+        "搜索工具每分钟最多调用 5 次"
+      ],
+      "triggered": [
+        {
+          "ruleId": "rate_tool_search_web",
+          "ruleName": "搜索工具频率限制",
+          "type": "rate_limit",
+          "action": "block",
+          "reason": "搜索工具每分钟最多调用 5 次",
+          "severity": "medium"
+        }
+      ]
+    },
+    "appeal": {
+      "appealedBy": "staff1",
+      "appealedRole": "staff",
+      "justification": "紧急任务",
+      "status": "pending",
+      "createdAt": "2026-05-20T01:25:10.557Z"
+    },
+    "override": {
+      "type": "appeal_granted",
+      "reviewedBy": "vp_wang",
+      "reviewedRole": "vp",
+      "note": "豁免",
+      "createdAt": "2026-05-20T01:25:10.562Z"
+    },
+    "createdAt": "2026-05-20T01:25:10.550Z",
+    "updatedAt": "2026-05-20T01:25:10.562Z",
+    "blockReason": "搜索工具每分钟最多调用 5 次",
+    "blockedBy": [
+      {
+        "ruleId": "rate_tool_search_web",
+        "ruleName": "搜索工具频率限制"
+      }
+    ],
+    "canAppeal": true
+  },
+  {
+    "id": "prop_mpf6cvw6_6rf5",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "find / -type f \\( -name \"*.vue\" -o -name \"*.js\" -o -name \"*.ts\" -o -name \"*.html\" \\) 2>/dev/null | head -50"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:00.054Z",
+    "updatedAt": "2026-05-21T07:34:00.055Z"
+  },
+  {
+    "id": "prop_mpf6cxyl_mf41",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "find / -type d -name \"src\" 2>/dev/null | head -20"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:02.733Z",
+    "updatedAt": "2026-05-21T07:34:02.734Z"
+  },
+  {
+    "id": "prop_mpf6cyz0_u3qv",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "ls -la /"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:04.044Z",
+    "updatedAt": "2026-05-21T07:34:04.044Z"
+  },
+  {
+    "id": "prop_mpf6d0eo_1lsy",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "dir C:\\ /b"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:05.904Z",
+    "updatedAt": "2026-05-21T07:34:05.905Z"
+  },
+  {
+    "id": "prop_mpf6d1g1_t6u1",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "dir C:\\dev /b 2>nul"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:07.249Z",
+    "updatedAt": "2026-05-21T07:34:07.249Z"
+  },
+  {
+    "id": "prop_mpf6d2iy_cov2",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "dir C:\\dev\\keluya /b /s 2>nul | findstr /i \"activity\" 2>nul"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:08.650Z",
+    "updatedAt": "2026-05-21T07:34:08.650Z"
+  },
+  {
+    "id": "prop_mpf6d4dn_dmt1",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "dir /s /b C:\\dev\\keluya 2>nul"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:11.051Z",
+    "updatedAt": "2026-05-21T07:34:11.051Z"
+  },
+  {
+    "id": "prop_mpf6deij_rypc",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "type C:\\dev\\keluya\\src\\renderer\\App.tsx"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:24.187Z",
+    "updatedAt": "2026-05-21T07:34:24.187Z"
+  },
+  {
+    "id": "prop_mpf6dej0_c93x",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "type C:\\dev\\keluya\\src\\renderer\\index.html"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:24.204Z",
+    "updatedAt": "2026-05-21T07:34:24.204Z"
+  },
+  {
+    "id": "prop_mpf6dk3r_65go",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "type C:\\dev\\keluya\\src\\renderer\\styles.css"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:31.431Z",
+    "updatedAt": "2026-05-21T07:34:31.431Z"
+  },
+  {
+    "id": "prop_mpf6dp5t_uzg2",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "cd C:\\dev\\keluya && dir /b src\\renderer\\"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:37.985Z",
+    "updatedAt": "2026-05-21T07:34:37.985Z"
+  },
+  {
+    "id": "prop_mpf6ds31_9nb6",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "cd /d C:\\dev\\keluya && dir /b src\\renderer\\"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:41.773Z",
+    "updatedAt": "2026-05-21T07:34:41.773Z"
+  },
+  {
+    "id": "prop_mpf6dvv7_xwb4",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "cd /d C:\\dev\\keluya && powershell -Command \"(Get-Content src\\renderer\\styles.css) -join \\\"`n\\\"\" | findstr /n \"waveform-placeholder playing-indicator ai-actions file-item\""
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:46.675Z",
+    "updatedAt": "2026-05-21T07:34:46.675Z"
+  },
+  {
+    "id": "prop_mpf6dy3z_nd84",
+    "agentId": "ai_ceo",
+    "agentName": "AI CEO",
+    "agentRole": "ceo",
+    "type": "tool_call",
+    "action": {
+      "tool": "exec",
+      "params": {
+        "command": "type C:\\dev\\keluya\\src\\renderer\\styles.css"
+      },
+      "reasoning": "CEO 执行",
+      "risk": "high"
+    },
+    "context": {
+      "callsPerMinute": 0,
+      "callsPerHour": 0,
+      "callsPerDay": 0,
+      "toolCallsPerMinute": 0
+    },
+    "status": "approved",
+    "validation": {
+      "allowed": true,
+      "action": "allow",
+      "reasons": [],
+      "triggered": []
+    },
+    "appeal": null,
+    "override": null,
+    "createdAt": "2026-05-21T07:34:49.583Z",
+    "updatedAt": "2026-05-21T07:34:49.584Z"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "ima-connector",
+  "name": "IMA智能体",
+  "version": "1.0.0",
+  "description": "腾讯IMA智能体集成插件，支持AI问答、知识库检索、内容生成",
+  "author": "Tencent",
+  "category": "tencent-ai",
+  "main": "index.js"
+}

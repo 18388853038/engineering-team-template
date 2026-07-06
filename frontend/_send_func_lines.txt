@@ -1,0 +1,54 @@
+<template>
+  <div class="chat-layout"
+    @dragover.prevent="dragOver = true"
+    @dragleave.prevent="dragOver = false"
+    @drop.prevent="onFileDrop"
+    @paste="onPaste">
+    <!-- Main Chat Area -->
+    <div class="chat-main">
+      <!-- 主聊天框拖拽遮罩 -->
+      <div v-if="dragOver" class="drag-overlay" @dragleave.prevent="dragOver=false" @drop.prevent="handleDrop">
+        <div class="drag-overlay-content">
+          <p>{{ $t('chat.drop_files') || '释放文件到主聊天框' }}</p>
+        </div>
+      </div>
+      <div class="chat-hdr">
+        <span class="chi">{{ current ? (current.icon || '👑') : '👑' }}</span>
+        <div>
+          <div class="chn">工作台</div>
+          <div class="cht" style="display:none">{{ current ? current.title : $t('chat.ready', '就绪') }} <span class="xl-badge">小龙模式</span></div>
+        </div>
+        <button class="create-avatar-btn" @click="showCreateAvatar = true" :title="$t('chat.new_avatar', '创建新分身')">+ {{ $t('chat.avatar_clone', '分身') }}</button>
+        <select v-model="modelName" class="model-select" @change="onModelChange" title="选择模型">
+          <option v-for="m in modelList" :key="m.value" :value="m.value">{{ m.label }}</option>
+        </select>
+        <button class="compress-btn" @click="compressHistory" title="压缩历史消息" :disabled="messages.length < 50">📦</button>
+        <button class="refresh-btn" @click="refreshHistory" title="刷新消息">🔄</button>
+        <span v-if="compressedCount" class="compress-badge" @click="compressHistory">已压缩 {{ compressedCount }} 条</span>
+        <!-- WebSocket broadcast notifications -->
+        <div class="ws-notif-area" @mouseenter="wsNotifUnread = 0">
+          <button class="ws-notif-btn" :class="{ connected: wsConnected }"><span class="ws-dot"></span>🔔</button>
+          <span v-if="wsNotifUnread > 0" class="ws-notif-badge">{{ wsNotifUnread > 99 ? '99+' : wsNotifUnread }}</span>
+          <div v-if="wsNotifications.length" class="ws-notif-dropdown" @mouseenter.stop>
+            <div class="ws-notif-header">实时动态</div>
+            <div class="ws-notif-list">
+              <div v-for="(n,i) in wsNotifications.slice(-20).reverse()" :key="i" class="ws-notif-item">
+                <span class="ws-notif-icon">{{ n.source_icon || '📡' }}</span>
+                <div class="ws-notif-body">
+                  <div class="ws-notif-text">{{ n.message || n.content || '' }}</div>
+                  <div class="ws-notif-meta">{{ n.channel }} · {{ n.from || '' }} · {{ formatMsgTime(n.time) }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div v-else class="ws-notif-dropdown" @mouseenter.stop>
+            <div class="ws-notif-header">实时动态</div>
+            <div class="ws-notif-empty">暂无实时动态</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg-box" ref="msgBox">
+        <div class="msg-spacer"></div>
+        <div v-for="(m,i) in messages" :key="i" :class="'msg msg-' + m.role">
+          <!

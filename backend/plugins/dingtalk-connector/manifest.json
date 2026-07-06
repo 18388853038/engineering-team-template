@@ -1,0 +1,9 @@
+{
+  "id": "dingtalk-connector",
+  "name": "钉钉连接器",
+  "version": "0.8.20",
+  "description": "阿里钉钉通道插件，支持消息收发、群组管理、审批、日程",
+  "author": "Alibaba",
+  "category": "communication",
+  "main": "index.js"
+}

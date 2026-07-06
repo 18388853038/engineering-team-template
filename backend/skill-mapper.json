@@ -1,0 +1,419 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-05-24T16:13:51.606Z",
+  "description": "eCompany Agent 技能 → OpenClaw 工具 映射表",
+  "agentsSkillsCount": 185,
+  "openclawToolsMapped": 103,
+  "mapping": {
+    "Vue": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_performance-opt"
+    ],
+    "Vue 3": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_performance-opt",
+      "skill_Vue_3"
+    ],
+    "React": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_React"
+    ],
+    "React/Vue": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_performance-opt"
+    ],
+    "TypeScript": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_code-review",
+      "skill_TypeScript"
+    ],
+    "JavaScript": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_document-pro"
+    ],
+    "CSS/SCSS": [
+      "skill_browser-automation"
+    ],
+    "Tailwind": [
+      "skill_browser-automation"
+    ],
+    "Vite": [
+      "skill_cicd-pipeline",
+      "skill_performance-opt"
+    ],
+    "Webpack/Vite": [
+      "skill_cicd-pipeline",
+      "skill_performance-opt"
+    ],
+    "Next.js": [
+      "skill_api-dev",
+      "skill_cicd-pipeline"
+    ],
+    "Node.js": [
+      "skill_api-dev",
+      "skill_cicd-pipeline",
+      "skill_database-ops",
+      "skill_web-scraping-tool-selection-strategy",
+      "skill_Node_js"
+    ],
+    "前端架构": [
+      "skill_performance-opt",
+      "skill_code-review"
+    ],
+    "前端性能": [
+      "skill_performance-opt",
+      "skill_browser-automation"
+    ],
+    "组件设计": [
+      "skill_api-dev",
+      "skill_code-review"
+    ],
+    "设计系统": [
+      "skill_document-pro"
+    ],
+    "原型设计": [
+      "skill_document-pro"
+    ],
+    "Figma": [
+      "skill_document-pro"
+    ],
+    "Sketch": [
+      "skill_document-pro"
+    ],
+    "UI/UX": [
+      "skill_document-pro",
+      "skill_browser-automation"
+    ],
+    "Python": [
+      "skill_api-dev",
+      "skill_database-ops",
+      "skill_web-scraping-tool-selection-strategy",
+      "skill_security-audit",
+      "skill_Python"
+    ],
+    "Java": [
+      "skill_api-dev",
+      "skill_database-ops",
+      "skill_cicd-pipeline"
+    ],
+    "Go": [
+      "skill_api-dev",
+      "skill_cicd-pipeline"
+    ],
+    "Kotlin": [
+      "skill_api-dev"
+    ],
+    "Swift": [
+      "skill_api-dev"
+    ],
+    "Spring Boot": [
+      "skill_api-dev",
+      "skill_database-ops",
+      "skill_cicd-pipeline"
+    ],
+    "FastAPI": [
+      "skill_api-dev",
+      "skill_database-ops"
+    ],
+    "Django": [
+      "skill_api-dev",
+      "skill_database-ops",
+      "skill_cicd-pipeline"
+    ],
+    "MyBatis": [
+      "skill_database-ops"
+    ],
+    "SQLAlchemy": [
+      "skill_database-ops"
+    ],
+    "后端架构": [
+      "skill_api-dev",
+      "skill_database-ops",
+      "skill_performance-opt"
+    ],
+    "微服务": [
+      "skill_api-dev",
+      "skill_cicd-pipeline"
+    ],
+    "分布式架构": [
+      "skill_database-ops",
+      "skill_performance-opt"
+    ],
+    "高并发": [
+      "skill_database-ops",
+      "skill_performance-opt"
+    ],
+    "API设计": [
+      "skill_api-dev",
+      "skill_cicd-pipeline-generator"
+    ],
+    "API文档": [
+      "skill_api-dev",
+      "skill_document-pro"
+    ],
+    "REST": [
+      "skill_api-dev"
+    ],
+    "gRPC": [
+      "skill_api-dev"
+    ],
+    "WebSocket": [
+      "skill_api-dev"
+    ],
+    "消息队列": [
+      "skill_database-ops"
+    ],
+    "RabbitMQ": [
+      "skill_database-ops"
+    ],
+    "Celery": [
+      "skill_database-ops"
+    ],
+    "Redis": [
+      "skill_database-ops"
+    ],
+    "MySQL": [
+      "skill_database-ops"
+    ],
+    "PostgreSQL": [
+      "skill_database-ops"
+    ],
+    "MongoDB": [
+      "skill_database-ops"
+    ],
+    "数据库": [
+      "skill_database-ops"
+    ],
+    "数据库优化": [
+      "skill_database-ops",
+      "skill_performance-opt"
+    ],
+    "数据库设计": [
+      "skill_database-ops"
+    ],
+    "Docker": [
+      "skill_docker-helper",
+      "skill_cicd-pipeline",
+      "skill_Docker"
+    ],
+    "Kubernetes": [
+      "skill_cicd-pipeline",
+      "skill_desktop-control"
+    ],
+    "K8s": [
+      "skill_cicd-pipeline",
+      "skill_desktop-control"
+    ],
+    "CI/CD": [
+      "skill_cicd-pipeline",
+      "skill_cicd-pipeline-generator"
+    ],
+    "DevOps": [
+      "skill_cicd-pipeline",
+      "skill_cicd-pipeline-generator",
+      "skill_docker-helper"
+    ],
+    "Linux": [
+      "skill_desktop-control"
+    ],
+    "Shell": [
+      "skill_desktop-control",
+      "skill_cicd-pipeline"
+    ],
+    "Shell脚本": [
+      "skill_desktop-control",
+      "skill_cicd-pipeline"
+    ],
+    "Prometheus": [
+      "skill_desktop-control"
+    ],
+    "监控告警": [
+      "skill_desktop-control"
+    ],
+    "自动化测试": [
+      "skill_cicd-pipeline",
+      "skill_browser-automation",
+      "skill_openclaw-api-tester"
+    ],
+    "Pytest": [
+      "skill_cicd-pipeline",
+      "skill_api-dev"
+    ],
+    "Selenium": [
+      "skill_browser-automation"
+    ],
+    "Cypress": [
+      "skill_browser-automation",
+      "skill_cicd-pipeline"
+    ],
+    "JMeter": [
+      "skill_openclaw-api-tester",
+      "skill_performance-opt"
+    ],
+    "Postman": [
+      "skill_openclaw-api-tester",
+      "skill_api-dev"
+    ],
+    "回归测试": [
+      "skill_cicd-pipeline",
+      "skill_openclaw-api-tester"
+    ],
+    "测试用例设计": [
+      "skill_openclaw-api-tester"
+    ],
+    "Web安全": [
+      "skill_security-audit",
+      "skill_web-scraping-tool-selection-strategy"
+    ],
+    "渗透测试": [
+      "skill_security-audit"
+    ],
+    "漏洞扫描": [
+      "skill_security-audit"
+    ],
+    "漏洞管理": [
+      "skill_security-audit"
+    ],
+    "OWASP": [
+      "skill_security-audit"
+    ],
+    "安全架构": [
+      "skill_security-audit"
+    ],
+    "安全加固": [
+      "skill_security-audit"
+    ],
+    "Nmap/Wireshark": [
+      "skill_security-audit"
+    ],
+    "基线检查": [
+      "skill_security-audit"
+    ],
+    "数据分析": [
+      "skill_database-ops",
+      "skill_web-scraping-tool-selection-strategy"
+    ],
+    "数据仓库": [
+      "skill_database-ops"
+    ],
+    "ETL": [
+      "skill_database-ops"
+    ],
+    "大数据": [
+      "skill_database-ops"
+    ],
+    "RAG系统": [
+      "skill_database-ops",
+      "skill_api-dev"
+    ],
+    "大模型应用": [
+      "skill_api-dev"
+    ],
+    "模型微调": [
+      "skill_api-dev"
+    ],
+    "项目管理": [
+      "skill_git-workflow",
+      "skill_cicd-pipeline-generator"
+    ],
+    "敏捷管理": [
+      "skill_git-workflow"
+    ],
+    "需求分析": [
+      "skill_document-pro"
+    ],
+    "竞品分析": [
+      "skill_web-scraping-tool-selection-strategy",
+      "skill_document-pro"
+    ],
+    "知识管理": [
+      "skill_document-pro"
+    ],
+    "文档编写": [
+      "skill_document-pro"
+    ],
+    "技术写作": [
+      "skill_document-pro"
+    ],
+    "Markdown": [
+      "skill_document-pro"
+    ],
+    "Android开发": [
+      "skill_api-dev",
+      "skill_cicd-pipeline"
+    ],
+    "iOS开发": [
+      "skill_api-dev",
+      "skill_cicd-pipeline"
+    ],
+    "Flutter": [
+      "skill_api-dev"
+    ],
+    "React Native": [
+      "skill_api-dev"
+    ],
+    "跨平台": [
+      "skill_api-dev"
+    ],
+    "合规审计": [
+      "skill_security-audit",
+      "skill_document-pro"
+    ],
+    "隐私保护": [
+      "skill_security-audit"
+    ],
+    "GDPR": [
+      "skill_security-audit"
+    ],
+    "法规研究": [
+      "skill_document-pro",
+      "skill_web-scraping-tool-selection-strategy"
+    ],
+    "风险评估": [
+      "skill_security-audit"
+    ],
+    "Git": [
+      "skill_git-workflow",
+      "skill_cicd-pipeline"
+    ],
+    "技术选型": [
+      "skill_performance-opt",
+      "skill_api-dev"
+    ],
+    "系统架构": [
+      "skill_database-ops",
+      "skill_performance-opt",
+      "skill_security-audit"
+    ],
+    "性能优化": [
+      "skill_performance-opt"
+    ],
+    "工程化建设": [
+      "skill_cicd-pipeline",
+      "skill_cicd-pipeline-generator"
+    ],
+    "云服务": [
+      "skill_docker-helper",
+      "skill_cicd-pipeline"
+    ],
+    "流程优化": [
+      "skill_cicd-pipeline-generator",
+      "skill_git-workflow"
+    ],
+    "安全审计": [
+      "skill_security-audit"
+    ],
+    "策略制定": [
+      "skill_____"
+    ],
+    "风险管控": [
+      "skill_____"
+    ]
+  }
+}

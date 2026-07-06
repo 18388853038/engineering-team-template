@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.64.0",
+    "@wecom/aibot-node-sdk": "^1.0.7",
+    "better-sqlite3": "^12.9.0",
+    "dingtalk-jsapi": "^3.2.9",
+    "dingtalk-stream": "^2.1.4",
+    "iconv-lite": "^0.7.2",
+    "jsonwebtoken": "^9.0.3",
+    "qq-guild-bot": "^2.9.5",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.34.5",
+    "ws": "^8.20.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-modern.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "overrides": {
+    "axios": "^1.16.1"
+  }
+}

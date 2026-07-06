@@ -1,0 +1,4717 @@
+[
+  {
+    "id": "flow_1780121753218_djuj",
+    "name": "系统健康监控",
+    "steps": [
+      {
+        "name": "检查健康",
+        "type": "scrape",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/health",
+          "method": "GET",
+          "parseLinks": false
+        },
+        "id": "step_0_1780121753218",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "检查状态",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": true,
+          "failMessage": "系统健康检查失败"
+        },
+        "id": "step_1_1780121753218",
+        "index": 1,
+        "status": "pending"
+      },
+      {
+        "name": "记录结果",
+        "type": "command",
+        "params": {
+          "command": "echo Health check done"
+        },
+        "id": "step_2_1780121753218",
+        "index": 2,
+        "status": "pending"
+      }
+    ],
+    "status": "failed",
+    "trigger": "cron",
+    "schedule": "every 30m",
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-05-30T06:15:53.218Z",
+    "updatedAt": "2026-05-30T06:15:53.218Z",
+    "runCount": 59,
+    "lastRun": "2026-07-04T04:42:39.357Z"
+  },
+  {
+    "id": "flow_1780121753228_2emw",
+    "name": "HackerNews热榜",
+    "steps": [
+      {
+        "name": "抓取HN",
+        "type": "scrape",
+        "params": {
+          "url": "https://news.ycombinator.com/",
+          "method": "GET"
+        },
+        "id": "step_0_1780121753228",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "提取链接",
+        "type": "transform",
+        "params": {
+          "code": "function(d){var r=/titleline/;return d.links.filter(function(l){return l.text&&l.text.length>10}).slice(0,10);}"
+        },
+        "id": "step_1_1780121753228",
+        "index": 1,
+        "status": "pending"
+      },
+      {
+        "name": "保存结果",
+        "type": "command",
+        "params": {
+          "command": "echo HN done"
+        },
+        "id": "step_2_1780121753228",
+        "index": 2,
+        "status": "pending"
+      }
+    ],
+    "status": "paused",
+    "trigger": "cron",
+    "schedule": "every 2h",
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-05-30T06:15:53.228Z",
+    "updatedAt": "2026-05-30T06:15:53.228Z",
+    "runCount": 0,
+    "lastRun": null
+  },
+  {
+    "id": "flow_1780121753232_p8xw",
+    "name": "自动日报",
+    "steps": [
+      {
+        "name": "获取BI数据",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1780121753232",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知结果",
+        "type": "notify",
+        "params": {
+          "message": "日报已生成"
+        },
+        "id": "step_1_1780121753232",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "paused",
+    "trigger": "cron",
+    "schedule": "daily 08:00",
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-05-30T06:15:53.232Z",
+    "updatedAt": "2026-05-30T06:15:53.232Z",
+    "runCount": 0,
+    "lastRun": null
+  },
+  {
+    "id": "flow_1780121851201_5ka5",
+    "name": "百度热搜监控",
+    "steps": [
+      {
+        "name": "抓取百度",
+        "type": "scrape",
+        "params": {
+          "url": "https://top.baidu.com/board?tab=realtime",
+          "method": "GET"
+        },
+        "id": "step_0_1780121851201",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "验证状态",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": true,
+          "failMessage": "抓取失败"
+        },
+        "id": "step_1_1780121851201",
+        "index": 1,
+        "status": "pending"
+      },
+      {
+        "name": "记录",
+        "type": "command",
+        "params": {
+          "command": "echo baidu done"
+        },
+        "id": "step_2_1780121851201",
+        "index": 2,
+        "status": "pending"
+      }
+    ],
+    "status": "paused",
+    "trigger": "cron",
+    "schedule": "every 30m",
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-05-30T06:17:31.201Z",
+    "updatedAt": "2026-05-30T06:17:31.201Z",
+    "runCount": 0,
+    "lastRun": null
+  },
+  {
+    "id": "flow_1780121851206_hcuo",
+    "name": "GitHub趋势",
+    "steps": [
+      {
+        "name": "抓取GH趋势",
+        "type": "scrape",
+        "params": {
+          "url": "https://github.com/trending",
+          "method": "GET"
+        },
+        "id": "step_0_1780121851206",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "验证",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": true,
+          "failMessage": "GH抓取失败"
+        },
+        "id": "step_1_1780121851206",
+        "index": 1,
+        "status": "pending"
+      },
+      {
+        "name": "记录",
+        "type": "command",
+        "params": {
+          "command": "echo gh trending done"
+        },
+        "id": "step_2_1780121851206",
+        "index": 2,
+        "status": "pending"
+      }
+    ],
+    "status": "paused",
+    "trigger": "cron",
+    "schedule": "every 6h",
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-05-30T06:17:31.206Z",
+    "updatedAt": "2026-05-30T06:17:31.206Z",
+    "runCount": 0,
+    "lastRun": null
+  },
+  {
+    "id": "flow_1780121851210_8420",
+    "name": "每日新闻摘要",
+    "steps": [
+      {
+        "name": "抓取36氪",
+        "type": "scrape",
+        "params": {
+          "url": "https://36kr.com/newsflashes",
+          "method": "GET"
+        },
+        "id": "step_0_1780121851210",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "验证",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": true,
+          "failMessage": "36kr失败"
+        },
+        "id": "step_1_1780121851210",
+        "index": 1,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "每日新闻已更新"
+        },
+        "id": "step_2_1780121851210",
+        "index": 2,
+        "status": "pending"
+      }
+    ],
+    "status": "paused",
+    "trigger": "cron",
+    "schedule": "daily 07:00",
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-05-30T06:17:31.210Z",
+    "updatedAt": "2026-05-30T06:17:31.210Z",
+    "runCount": 0,
+    "lastRun": null
+  },
+  {
+    "id": "flow_1782908871645_h0q9",
+    "name": "查看当前自动化任务",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1782908871645",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "CEO触发生成报表"
+        },
+        "id": "step_1_1782908871645",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "manual",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-01T12:27:51.645Z",
+    "updatedAt": "2026-07-01T12:27:51.645Z",
+    "runCount": 1,
+    "lastRun": "2026-07-01T12:27:51.650Z"
+  },
+  {
+    "id": "flow_1783179465250_2zmt",
+    "name": "BI-Rule_每日推送日报_1783179465238",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783179465250",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783179465250",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:37:45.250Z",
+    "updatedAt": "2026-07-04T15:37:45.250Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:37:45.265Z"
+  },
+  {
+    "id": "flow_1783179465284_hqtp",
+    "name": "BI-Rule_晚间推送日报_1783179465278",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783179465284",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783179465284",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:37:45.284Z",
+    "updatedAt": "2026-07-04T15:37:45.284Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:37:45.293Z"
+  },
+  {
+    "id": "flow_1783179465324_o6g8",
+    "name": "BI-Rule_每小时健康检查_1783179465317",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783179465324",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783179465324",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:37:45.324Z",
+    "updatedAt": "2026-07-04T15:37:45.324Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:37:45.356Z"
+  },
+  {
+    "id": "flow_1783179877646_wkwx",
+    "name": "BI-Rule_每日推送日报_1783179877635",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783179877646",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783179877646",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:44:37.646Z",
+    "updatedAt": "2026-07-04T15:44:37.646Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:44:37.656Z"
+  },
+  {
+    "id": "flow_1783179877674_kz6b",
+    "name": "BI-Rule_晚间推送日报_1783179877670",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783179877674",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783179877674",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:44:37.674Z",
+    "updatedAt": "2026-07-04T15:44:37.674Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:44:37.692Z"
+  },
+  {
+    "id": "flow_1783179877713_5nit",
+    "name": "BI-Rule_每小时健康检查_1783179877707",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783179877713",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783179877713",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:44:37.713Z",
+    "updatedAt": "2026-07-04T15:44:37.713Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:44:37.720Z"
+  },
+  {
+    "id": "flow_1783180733978_i8by",
+    "name": "BI-Rule_每日推送日报_1783180733963",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783180733978",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783180733978",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:58:53.978Z",
+    "updatedAt": "2026-07-04T15:58:53.978Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:58:53.987Z"
+  },
+  {
+    "id": "flow_1783180734006_whut",
+    "name": "BI-Rule_晚间推送日报_1783180733998",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783180734006",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783180734006",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:58:54.006Z",
+    "updatedAt": "2026-07-04T15:58:54.006Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:58:54.014Z"
+  },
+  {
+    "id": "flow_1783180734030_tr0y",
+    "name": "BI-Rule_每小时健康检查_1783180734026",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783180734030",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783180734030",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T15:58:54.030Z",
+    "updatedAt": "2026-07-04T15:58:54.030Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T15:58:54.041Z"
+  },
+  {
+    "id": "flow_1783181033872_ndol",
+    "name": "BI-Rule_每日推送日报_1783181033867",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181033872",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181033872",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:03:53.872Z",
+    "updatedAt": "2026-07-04T16:03:53.872Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:03:53.882Z"
+  },
+  {
+    "id": "flow_1783181033895_k371",
+    "name": "BI-Rule_晚间推送日报_1783181033890",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181033895",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181033895",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:03:53.895Z",
+    "updatedAt": "2026-07-04T16:03:53.895Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:03:53.904Z"
+  },
+  {
+    "id": "flow_1783181033919_fwx4",
+    "name": "BI-Rule_每小时健康检查_1783181033916",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181033919",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181033919",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:03:53.919Z",
+    "updatedAt": "2026-07-04T16:03:53.919Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:03:53.925Z"
+  },
+  {
+    "id": "flow_1783181297329_l9lc",
+    "name": "BI-Rule_每日推送日报_1783181297294",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181297329",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181297329",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:08:17.329Z",
+    "updatedAt": "2026-07-04T16:08:17.329Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:08:17.337Z"
+  },
+  {
+    "id": "flow_1783181297364_ztc0",
+    "name": "BI-Rule_晚间推送日报_1783181297360",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181297364",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181297364",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:08:17.364Z",
+    "updatedAt": "2026-07-04T16:08:17.364Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:08:17.371Z"
+  },
+  {
+    "id": "flow_1783181297383_eid3",
+    "name": "BI-Rule_每小时健康检查_1783181297380",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181297383",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181297383",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:08:17.383Z",
+    "updatedAt": "2026-07-04T16:08:17.383Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:08:17.389Z"
+  },
+  {
+    "id": "flow_1783181333874_eijd",
+    "name": "BI-Rule_每日推送日报_1783181333871",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181333874",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181333874",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:08:53.874Z",
+    "updatedAt": "2026-07-04T16:08:53.874Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:08:53.879Z"
+  },
+  {
+    "id": "flow_1783181333891_yhil",
+    "name": "BI-Rule_晚间推送日报_1783181333887",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181333891",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181333891",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:08:53.891Z",
+    "updatedAt": "2026-07-04T16:08:53.891Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:08:53.897Z"
+  },
+  {
+    "id": "flow_1783181333909_bpkq",
+    "name": "BI-Rule_每小时健康检查_1783181333906",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181333909",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181333909",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:08:53.909Z",
+    "updatedAt": "2026-07-04T16:08:53.909Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:08:53.927Z"
+  },
+  {
+    "id": "flow_1783181597248_pxu9",
+    "name": "BI-Rule_每日推送日报_1783181597238",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181597248",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181597248",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:13:17.248Z",
+    "updatedAt": "2026-07-04T16:13:17.248Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:13:17.384Z"
+  },
+  {
+    "id": "flow_1783181597415_pfr0",
+    "name": "BI-Rule_晚间推送日报_1783181597411",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181597415",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181597415",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:13:17.415Z",
+    "updatedAt": "2026-07-04T16:13:17.415Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:13:17.423Z"
+  },
+  {
+    "id": "flow_1783181597441_6gm1",
+    "name": "BI-Rule_每小时健康检查_1783181597435",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181597441",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181597441",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:13:17.441Z",
+    "updatedAt": "2026-07-04T16:13:17.441Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:13:17.448Z"
+  },
+  {
+    "id": "flow_1783181633882_utl5",
+    "name": "BI-Rule_每日推送日报_1783181633878",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181633882",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181633882",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:13:53.882Z",
+    "updatedAt": "2026-07-04T16:13:53.882Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:13:53.889Z"
+  },
+  {
+    "id": "flow_1783181633904_q6fw",
+    "name": "BI-Rule_晚间推送日报_1783181633899",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181633904",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181633904",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:13:53.904Z",
+    "updatedAt": "2026-07-04T16:13:53.904Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:13:53.911Z"
+  },
+  {
+    "id": "flow_1783181633926_hs5e",
+    "name": "BI-Rule_每小时健康检查_1783181633923",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181633926",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181633926",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:13:53.926Z",
+    "updatedAt": "2026-07-04T16:13:53.926Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:13:53.932Z"
+  },
+  {
+    "id": "flow_1783181897194_3su6",
+    "name": "BI-Rule_每日推送日报_1783181897190",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181897194",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181897194",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:18:17.194Z",
+    "updatedAt": "2026-07-04T16:18:17.194Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:18:17.200Z"
+  },
+  {
+    "id": "flow_1783181897215_f5em",
+    "name": "BI-Rule_晚间推送日报_1783181897212",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181897215",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181897215",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:18:17.215Z",
+    "updatedAt": "2026-07-04T16:18:17.215Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:18:17.222Z"
+  },
+  {
+    "id": "flow_1783181897236_nvyd",
+    "name": "BI-Rule_每小时健康检查_1783181897231",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181897236",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181897236",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:18:17.236Z",
+    "updatedAt": "2026-07-04T16:18:17.236Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:18:17.242Z"
+  },
+  {
+    "id": "flow_1783181933882_6tjg",
+    "name": "BI-Rule_每日推送日报_1783181933875",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181933882",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181933882",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:18:53.882Z",
+    "updatedAt": "2026-07-04T16:18:53.882Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:18:53.888Z"
+  },
+  {
+    "id": "flow_1783181933899_kaxu",
+    "name": "BI-Rule_晚间推送日报_1783181933896",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783181933899",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783181933899",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:18:53.899Z",
+    "updatedAt": "2026-07-04T16:18:53.899Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:18:53.906Z"
+  },
+  {
+    "id": "flow_1783181933919_b8a0",
+    "name": "BI-Rule_每小时健康检查_1783181933916",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783181933919",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783181933919",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:18:53.919Z",
+    "updatedAt": "2026-07-04T16:18:53.919Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:18:53.926Z"
+  },
+  {
+    "id": "flow_1783182197215_mchk",
+    "name": "BI-Rule_每日推送日报_1783182197209",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182197215",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182197215",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:23:17.215Z",
+    "updatedAt": "2026-07-04T16:23:17.215Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:23:17.224Z"
+  },
+  {
+    "id": "flow_1783182197240_2wgg",
+    "name": "BI-Rule_晚间推送日报_1783182197236",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182197240",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182197240",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:23:17.240Z",
+    "updatedAt": "2026-07-04T16:23:17.240Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:23:17.248Z"
+  },
+  {
+    "id": "flow_1783182197450_bnxm",
+    "name": "BI-Rule_每小时健康检查_1783182197444",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783182197450",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783182197450",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:23:17.450Z",
+    "updatedAt": "2026-07-04T16:23:17.450Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:23:17.457Z"
+  },
+  {
+    "id": "flow_1783182233896_rpx7",
+    "name": "BI-Rule_每日推送日报_1783182233890",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182233896",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182233896",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:23:53.896Z",
+    "updatedAt": "2026-07-04T16:23:53.896Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:23:53.900Z"
+  },
+  {
+    "id": "flow_1783182234044_1u0p",
+    "name": "BI-Rule_晚间推送日报_1783182233948",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182234044",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182234044",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:23:54.044Z",
+    "updatedAt": "2026-07-04T16:23:54.044Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:23:54.052Z"
+  },
+  {
+    "id": "flow_1783182234096_rad4",
+    "name": "BI-Rule_每小时健康检查_1783182234092",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783182234096",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783182234096",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:23:54.096Z",
+    "updatedAt": "2026-07-04T16:23:54.096Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:23:54.103Z"
+  },
+  {
+    "id": "flow_1783182497200_0nou",
+    "name": "BI-Rule_每日推送日报_1783182497196",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182497200",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182497200",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:28:17.200Z",
+    "updatedAt": "2026-07-04T16:28:17.200Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:28:17.206Z"
+  },
+  {
+    "id": "flow_1783182497237_bw45",
+    "name": "BI-Rule_晚间推送日报_1783182497234",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182497237",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182497237",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:28:17.237Z",
+    "updatedAt": "2026-07-04T16:28:17.237Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:28:17.267Z"
+  },
+  {
+    "id": "flow_1783182497282_68ag",
+    "name": "BI-Rule_每小时健康检查_1783182497279",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783182497282",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783182497282",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:28:17.282Z",
+    "updatedAt": "2026-07-04T16:28:17.282Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:28:17.287Z"
+  },
+  {
+    "id": "flow_1783182533897_42h2",
+    "name": "BI-Rule_每日推送日报_1783182533894",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182533897",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182533897",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:28:53.897Z",
+    "updatedAt": "2026-07-04T16:28:53.897Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:28:53.903Z"
+  },
+  {
+    "id": "flow_1783182533915_476i",
+    "name": "BI-Rule_晚间推送日报_1783182533911",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182533915",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182533915",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:28:53.915Z",
+    "updatedAt": "2026-07-04T16:28:53.915Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:28:53.937Z"
+  },
+  {
+    "id": "flow_1783182533949_km66",
+    "name": "BI-Rule_每小时健康检查_1783182533946",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783182533949",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783182533949",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:28:53.949Z",
+    "updatedAt": "2026-07-04T16:28:53.949Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:28:53.955Z"
+  },
+  {
+    "id": "flow_1783182797374_g3qv",
+    "name": "BI-Rule_每日推送日报_1783182797364",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182797374",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182797374",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:33:17.374Z",
+    "updatedAt": "2026-07-04T16:33:17.374Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:33:17.383Z"
+  },
+  {
+    "id": "flow_1783182797414_5zs4",
+    "name": "BI-Rule_晚间推送日报_1783182797412",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182797414",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182797414",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:33:17.414Z",
+    "updatedAt": "2026-07-04T16:33:17.414Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:33:17.420Z"
+  },
+  {
+    "id": "flow_1783182797432_mhji",
+    "name": "BI-Rule_每小时健康检查_1783182797430",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783182797432",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783182797432",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:33:17.432Z",
+    "updatedAt": "2026-07-04T16:33:17.433Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:33:17.441Z"
+  },
+  {
+    "id": "flow_1783182833904_u4mi",
+    "name": "BI-Rule_每日推送日报_1783182833899",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182833904",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182833904",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:33:53.904Z",
+    "updatedAt": "2026-07-04T16:33:53.904Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:33:53.909Z"
+  },
+  {
+    "id": "flow_1783182833938_z83g",
+    "name": "BI-Rule_晚间推送日报_1783182833934",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783182833938",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783182833938",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:33:53.938Z",
+    "updatedAt": "2026-07-04T16:33:53.938Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:33:53.943Z"
+  },
+  {
+    "id": "flow_1783182833957_j1nn",
+    "name": "BI-Rule_每小时健康检查_1783182833954",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783182833957",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783182833957",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:33:53.957Z",
+    "updatedAt": "2026-07-04T16:33:53.957Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:33:54.012Z"
+  },
+  {
+    "id": "flow_1783183097256_ohy0",
+    "name": "BI-Rule_每日推送日报_1783183097248",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183097256",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183097256",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:38:17.256Z",
+    "updatedAt": "2026-07-04T16:38:17.256Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:38:17.263Z"
+  },
+  {
+    "id": "flow_1783183097280_f0of",
+    "name": "BI-Rule_晚间推送日报_1783183097278",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183097280",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183097280",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:38:17.280Z",
+    "updatedAt": "2026-07-04T16:38:17.281Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:38:17.287Z"
+  },
+  {
+    "id": "flow_1783183097299_49hs",
+    "name": "BI-Rule_每小时健康检查_1783183097296",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183097299",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183097299",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:38:17.299Z",
+    "updatedAt": "2026-07-04T16:38:17.299Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:38:17.327Z"
+  },
+  {
+    "id": "flow_1783183133913_56l8",
+    "name": "BI-Rule_每日推送日报_1783183133909",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183133913",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183133913",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:38:53.913Z",
+    "updatedAt": "2026-07-04T16:38:53.913Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:38:53.919Z"
+  },
+  {
+    "id": "flow_1783183133933_tacc",
+    "name": "BI-Rule_晚间推送日报_1783183133930",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183133933",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183133933",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:38:53.933Z",
+    "updatedAt": "2026-07-04T16:38:53.933Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:38:53.939Z"
+  },
+  {
+    "id": "flow_1783183133953_1xfb",
+    "name": "BI-Rule_每小时健康检查_1783183133949",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183133953",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183133953",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:38:53.953Z",
+    "updatedAt": "2026-07-04T16:38:53.953Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:38:53.959Z"
+  },
+  {
+    "id": "flow_1783183397404_h377",
+    "name": "BI-Rule_每日推送日报_1783183397397",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183397404",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183397404",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:43:17.404Z",
+    "updatedAt": "2026-07-04T16:43:17.404Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:43:17.412Z"
+  },
+  {
+    "id": "flow_1783183397434_6onh",
+    "name": "BI-Rule_晚间推送日报_1783183397431",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183397434",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183397434",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:43:17.434Z",
+    "updatedAt": "2026-07-04T16:43:17.434Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:43:17.440Z"
+  },
+  {
+    "id": "flow_1783183397456_wuua",
+    "name": "BI-Rule_每小时健康检查_1783183397453",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183397456",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183397456",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:43:17.456Z",
+    "updatedAt": "2026-07-04T16:43:17.456Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:43:17.463Z"
+  },
+  {
+    "id": "flow_1783183433935_ssuo",
+    "name": "BI-Rule_每日推送日报_1783183433930",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183433935",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183433935",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:43:53.935Z",
+    "updatedAt": "2026-07-04T16:43:53.935Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:43:53.941Z"
+  },
+  {
+    "id": "flow_1783183433955_hfr9",
+    "name": "BI-Rule_晚间推送日报_1783183433951",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183433955",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183433955",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:43:53.955Z",
+    "updatedAt": "2026-07-04T16:43:53.955Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:43:53.960Z"
+  },
+  {
+    "id": "flow_1783183434045_bue8",
+    "name": "BI-Rule_每小时健康检查_1783183434040",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183434045",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183434045",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:43:54.045Z",
+    "updatedAt": "2026-07-04T16:43:54.045Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:43:54.051Z"
+  },
+  {
+    "id": "flow_1783183697221_l3is",
+    "name": "BI-Rule_每日推送日报_1783183697217",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183697221",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183697221",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:48:17.221Z",
+    "updatedAt": "2026-07-04T16:48:17.221Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:48:17.227Z"
+  },
+  {
+    "id": "flow_1783183697244_lfrq",
+    "name": "BI-Rule_晚间推送日报_1783183697239",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183697244",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183697244",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:48:17.244Z",
+    "updatedAt": "2026-07-04T16:48:17.244Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:48:17.250Z"
+  },
+  {
+    "id": "flow_1783183697263_7kr9",
+    "name": "BI-Rule_每小时健康检查_1783183697261",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183697263",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183697263",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:48:17.263Z",
+    "updatedAt": "2026-07-04T16:48:17.263Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:48:17.268Z"
+  },
+  {
+    "id": "flow_1783183733934_ps6p",
+    "name": "BI-Rule_每日推送日报_1783183733931",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183733934",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183733934",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:48:53.934Z",
+    "updatedAt": "2026-07-04T16:48:53.934Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:48:53.940Z"
+  },
+  {
+    "id": "flow_1783183733953_e4b7",
+    "name": "BI-Rule_晚间推送日报_1783183733950",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183733953",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183733953",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:48:53.953Z",
+    "updatedAt": "2026-07-04T16:48:53.953Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:48:53.960Z"
+  },
+  {
+    "id": "flow_1783183733975_w8s1",
+    "name": "BI-Rule_每小时健康检查_1783183733973",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183733975",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183733975",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:48:53.975Z",
+    "updatedAt": "2026-07-04T16:48:53.975Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:48:53.981Z"
+  },
+  {
+    "id": "flow_1783183997220_afdh",
+    "name": "BI-Rule_每日推送日报_1783183997217",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183997220",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183997220",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:53:17.220Z",
+    "updatedAt": "2026-07-04T16:53:17.220Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:53:17.227Z"
+  },
+  {
+    "id": "flow_1783183997244_uj1a",
+    "name": "BI-Rule_晚间推送日报_1783183997241",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783183997244",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783183997244",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:53:17.244Z",
+    "updatedAt": "2026-07-04T16:53:17.244Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:53:17.250Z"
+  },
+  {
+    "id": "flow_1783183997447_191u",
+    "name": "BI-Rule_每小时健康检查_1783183997444",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783183997447",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783183997447",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:53:17.447Z",
+    "updatedAt": "2026-07-04T16:53:17.447Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:53:17.453Z"
+  },
+  {
+    "id": "flow_1783184033940_tsn0",
+    "name": "BI-Rule_每日推送日报_1783184033936",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184033940",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184033940",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:53:53.940Z",
+    "updatedAt": "2026-07-04T16:53:53.940Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:53:53.946Z"
+  },
+  {
+    "id": "flow_1783184033963_opzq",
+    "name": "BI-Rule_晚间推送日报_1783184033961",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184033963",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184033963",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:53:53.963Z",
+    "updatedAt": "2026-07-04T16:53:53.963Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:53:53.982Z"
+  },
+  {
+    "id": "flow_1783184033995_6lb2",
+    "name": "BI-Rule_每小时健康检查_1783184033992",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783184033995",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783184033995",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:53:53.995Z",
+    "updatedAt": "2026-07-04T16:53:53.995Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:53:54.004Z"
+  },
+  {
+    "id": "flow_1783184297236_51vr",
+    "name": "BI-Rule_每日推送日报_1783184297233",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184297236",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184297236",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:58:17.236Z",
+    "updatedAt": "2026-07-04T16:58:17.236Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:58:17.242Z"
+  },
+  {
+    "id": "flow_1783184297256_fi34",
+    "name": "BI-Rule_晚间推送日报_1783184297254",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184297256",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184297256",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:58:17.256Z",
+    "updatedAt": "2026-07-04T16:58:17.256Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:58:17.264Z"
+  },
+  {
+    "id": "flow_1783184297279_k129",
+    "name": "BI-Rule_每小时健康检查_1783184297275",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783184297279",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783184297279",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:58:17.279Z",
+    "updatedAt": "2026-07-04T16:58:17.279Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:58:17.286Z"
+  },
+  {
+    "id": "flow_1783184333947_752y",
+    "name": "BI-Rule_每日推送日报_1783184333942",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184333947",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184333947",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:58:53.947Z",
+    "updatedAt": "2026-07-04T16:58:53.947Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:58:53.955Z"
+  },
+  {
+    "id": "flow_1783184333969_smvg",
+    "name": "BI-Rule_晚间推送日报_1783184333966",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184333969",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184333969",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:58:53.969Z",
+    "updatedAt": "2026-07-04T16:58:53.969Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:58:53.976Z"
+  },
+  {
+    "id": "flow_1783184333990_a0z3",
+    "name": "BI-Rule_每小时健康检查_1783184333985",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783184333990",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783184333990",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T16:58:53.990Z",
+    "updatedAt": "2026-07-04T16:58:53.990Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T16:58:53.996Z"
+  },
+  {
+    "id": "flow_1783184597455_b18h",
+    "name": "BI-Rule_每日推送日报_1783184597437",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184597455",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184597455",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T17:03:17.455Z",
+    "updatedAt": "2026-07-04T17:03:17.455Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T17:03:17.473Z"
+  },
+  {
+    "id": "flow_1783184597516_eq8t",
+    "name": "BI-Rule_晚间推送日报_1783184597513",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184597516",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184597516",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T17:03:17.516Z",
+    "updatedAt": "2026-07-04T17:03:17.516Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T17:03:17.522Z"
+  },
+  {
+    "id": "flow_1783184597536_88m2",
+    "name": "BI-Rule_每小时健康检查_1783184597533",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783184597536",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783184597536",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T17:03:17.536Z",
+    "updatedAt": "2026-07-04T17:03:17.536Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T17:03:17.545Z"
+  },
+  {
+    "id": "flow_1783184633997_z0ms",
+    "name": "BI-Rule_每日推送日报_1783184633972",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184633997",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184633997",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T17:03:53.997Z",
+    "updatedAt": "2026-07-04T17:03:53.997Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T17:03:54.004Z"
+  },
+  {
+    "id": "flow_1783184634016_8u7c",
+    "name": "BI-Rule_晚间推送日报_1783184634013",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783184634016",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783184634016",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T17:03:54.016Z",
+    "updatedAt": "2026-07-04T17:03:54.016Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T17:03:54.025Z"
+  },
+  {
+    "id": "flow_1783184634040_jqdu",
+    "name": "BI-Rule_每小时健康检查_1783184634036",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783184634040",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783184634040",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-04T17:03:54.040Z",
+    "updatedAt": "2026-07-04T17:03:54.040Z",
+    "runCount": 1,
+    "lastRun": "2026-07-04T17:03:54.046Z"
+  },
+  {
+    "id": "flow_1783272098473_39p6",
+    "name": "BI-Rule_每日推送日报_1783272098460",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272098473",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272098473",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:21:38.473Z",
+    "updatedAt": "2026-07-05T17:21:38.473Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:21:38.487Z"
+  },
+  {
+    "id": "flow_1783272098507_sylh",
+    "name": "BI-Rule_晚间推送日报_1783272098501",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272098507",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272098507",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:21:38.507Z",
+    "updatedAt": "2026-07-05T17:21:38.507Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:21:38.516Z"
+  },
+  {
+    "id": "flow_1783272098537_h5z4",
+    "name": "BI-Rule_每小时健康检查_1783272098531",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783272098537",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783272098537",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:21:38.537Z",
+    "updatedAt": "2026-07-05T17:21:38.537Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:21:38.546Z"
+  },
+  {
+    "id": "flow_1783272232120_3cig",
+    "name": "BI-Rule_每日推送日报_1783272232112",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272232120",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272232120",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:23:52.120Z",
+    "updatedAt": "2026-07-05T17:23:52.120Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:23:52.128Z"
+  },
+  {
+    "id": "flow_1783272232146_b9b8",
+    "name": "BI-Rule_晚间推送日报_1783272232142",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272232146",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272232146",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:23:52.146Z",
+    "updatedAt": "2026-07-05T17:23:52.146Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:23:52.154Z"
+  },
+  {
+    "id": "flow_1783272232170_djo6",
+    "name": "BI-Rule_每小时健康检查_1783272232166",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783272232170",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783272232170",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:23:52.170Z",
+    "updatedAt": "2026-07-05T17:23:52.170Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:23:52.177Z"
+  },
+  {
+    "id": "flow_1783272398386_vxv7",
+    "name": "BI-Rule_每日推送日报_1783272398378",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272398386",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272398386",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:26:38.386Z",
+    "updatedAt": "2026-07-05T17:26:38.386Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:26:38.395Z"
+  },
+  {
+    "id": "flow_1783272398415_qf9n",
+    "name": "BI-Rule_晚间推送日报_1783272398409",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272398415",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272398415",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:26:38.415Z",
+    "updatedAt": "2026-07-05T17:26:38.415Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:26:38.425Z"
+  },
+  {
+    "id": "flow_1783272398444_u4yf",
+    "name": "BI-Rule_每小时健康检查_1783272398440",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783272398444",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783272398444",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:26:38.444Z",
+    "updatedAt": "2026-07-05T17:26:38.444Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:26:38.454Z"
+  },
+  {
+    "id": "flow_1783272532038_v1uc",
+    "name": "BI-Rule_每日推送日报_1783272532032",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272532038",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272532038",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:28:52.038Z",
+    "updatedAt": "2026-07-05T17:28:52.038Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:28:52.045Z"
+  },
+  {
+    "id": "flow_1783272532063_m4jo",
+    "name": "BI-Rule_晚间推送日报_1783272532060",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783272532063",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783272532063",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:28:52.063Z",
+    "updatedAt": "2026-07-05T17:28:52.063Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:28:52.070Z"
+  },
+  {
+    "id": "flow_1783272532216_7h0x",
+    "name": "BI-Rule_每小时健康检查_1783272532211",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783272532216",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783272532216",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:28:52.216Z",
+    "updatedAt": "2026-07-05T17:28:52.216Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:28:52.223Z"
+  },
+  {
+    "id": "flow_1783273468156_gpyh",
+    "name": "BI-Rule_每日推送日报_1783273468143",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783273468156",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783273468156",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:44:28.156Z",
+    "updatedAt": "2026-07-05T17:44:28.156Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:44:28.171Z"
+  },
+  {
+    "id": "flow_1783273468191_7vxd",
+    "name": "BI-Rule_晚间推送日报_1783273468187",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783273468191",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783273468191",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:44:28.191Z",
+    "updatedAt": "2026-07-05T17:44:28.191Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:44:28.201Z"
+  },
+  {
+    "id": "flow_1783273468220_yhem",
+    "name": "BI-Rule_每小时健康检查_1783273468214",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783273468220",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783273468220",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T17:44:28.220Z",
+    "updatedAt": "2026-07-05T17:44:28.220Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T17:44:28.229Z"
+  },
+  {
+    "id": "flow_1783276005391_qw1h",
+    "name": "BI-Rule_每日推送日报_1783276005382",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783276005391",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783276005391",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T18:26:45.391Z",
+    "updatedAt": "2026-07-05T18:26:45.391Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T18:26:45.404Z"
+  },
+  {
+    "id": "flow_1783276005426_ak87",
+    "name": "BI-Rule_晚间推送日报_1783276005422",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783276005426",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783276005426",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T18:26:45.426Z",
+    "updatedAt": "2026-07-05T18:26:45.426Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T18:26:45.434Z"
+  },
+  {
+    "id": "flow_1783276005453_2e9g",
+    "name": "BI-Rule_每小时健康检查_1783276005450",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8005/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783276005453",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783276005453",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-05T18:26:45.453Z",
+    "updatedAt": "2026-07-05T18:26:45.453Z",
+    "runCount": 1,
+    "lastRun": "2026-07-05T18:26:45.461Z"
+  },
+  {
+    "id": "flow_1783313089145_tiul",
+    "name": "BI-Rule_每日推送日报_1783313089142",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313089145",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313089145",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:44:49.145Z",
+    "updatedAt": "2026-07-06T04:44:49.145Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:44:49.151Z"
+  },
+  {
+    "id": "flow_1783313089178_n9br",
+    "name": "BI-Rule_晚间推送日报_1783313089176",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313089178",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313089178",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:44:49.178Z",
+    "updatedAt": "2026-07-06T04:44:49.178Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:44:49.184Z"
+  },
+  {
+    "id": "flow_1783313089202_8xti",
+    "name": "BI-Rule_每小时健康检查_1783313089200",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783313089202",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783313089202",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:44:49.202Z",
+    "updatedAt": "2026-07-06T04:44:49.202Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:44:49.208Z"
+  },
+  {
+    "id": "flow_1783313389395_avnh",
+    "name": "BI-Rule_每日推送日报_1783313389392",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313389395",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313389395",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:49:49.395Z",
+    "updatedAt": "2026-07-06T04:49:49.395Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:49:49.400Z"
+  },
+  {
+    "id": "flow_1783313389415_oz64",
+    "name": "BI-Rule_晚间推送日报_1783313389413",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313389415",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313389415",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:49:49.415Z",
+    "updatedAt": "2026-07-06T04:49:49.415Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:49:49.420Z"
+  },
+  {
+    "id": "flow_1783313389435_vt0z",
+    "name": "BI-Rule_每小时健康检查_1783313389433",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783313389435",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783313389435",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:49:49.435Z",
+    "updatedAt": "2026-07-06T04:49:49.435Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:49:49.440Z"
+  },
+  {
+    "id": "flow_1783313689273_mrhp",
+    "name": "BI-Rule_每日推送日报_1783313689270",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313689273",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313689273",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:54:49.273Z",
+    "updatedAt": "2026-07-06T04:54:49.273Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:54:49.291Z"
+  },
+  {
+    "id": "flow_1783313689334_n2vh",
+    "name": "BI-Rule_晚间推送日报_1783313689332",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313689334",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313689334",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:54:49.334Z",
+    "updatedAt": "2026-07-06T04:54:49.334Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:54:49.341Z"
+  },
+  {
+    "id": "flow_1783313689396_bzkk",
+    "name": "BI-Rule_每小时健康检查_1783313689394",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783313689396",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783313689396",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:54:49.396Z",
+    "updatedAt": "2026-07-06T04:54:49.396Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:54:49.414Z"
+  },
+  {
+    "id": "flow_1783313989393_jn7i",
+    "name": "BI-Rule_每日推送日报_1783313989390",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313989393",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313989393",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:59:49.393Z",
+    "updatedAt": "2026-07-06T04:59:49.393Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:59:49.398Z"
+  },
+  {
+    "id": "flow_1783313989411_i26t",
+    "name": "BI-Rule_晚间推送日报_1783313989409",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783313989411",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783313989411",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:59:49.411Z",
+    "updatedAt": "2026-07-06T04:59:49.411Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:59:49.417Z"
+  },
+  {
+    "id": "flow_1783313989432_kk00",
+    "name": "BI-Rule_每小时健康检查_1783313989429",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783313989432",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783313989432",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T04:59:49.432Z",
+    "updatedAt": "2026-07-06T04:59:49.432Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T04:59:49.438Z"
+  },
+  {
+    "id": "flow_1783314289598_t15x",
+    "name": "BI-Rule_每日推送日报_1783314289583",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783314289598",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783314289598",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T05:04:49.598Z",
+    "updatedAt": "2026-07-06T05:04:49.598Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T05:04:49.608Z"
+  },
+  {
+    "id": "flow_1783314289648_8huz",
+    "name": "BI-Rule_晚间推送日报_1783314289646",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783314289648",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783314289648",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T05:04:49.648Z",
+    "updatedAt": "2026-07-06T05:04:49.648Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T05:04:49.669Z"
+  },
+  {
+    "id": "flow_1783314289715_7rdf",
+    "name": "BI-Rule_每小时健康检查_1783314289712",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783314289715",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783314289715",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T05:04:49.715Z",
+    "updatedAt": "2026-07-06T05:04:49.715Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T05:04:49.772Z"
+  },
+  {
+    "id": "flow_1783314594467_5bzd",
+    "name": "BI-Rule_每日推送日报_1783314594456",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783314594467",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783314594467",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T05:09:54.467Z",
+    "updatedAt": "2026-07-06T05:09:54.467Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T05:09:54.475Z"
+  },
+  {
+    "id": "flow_1783314594491_1yt1",
+    "name": "BI-Rule_晚间推送日报_1783314594489",
+    "steps": [
+      {
+        "name": "获取日报",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/report?type=daily",
+          "method": "GET"
+        },
+        "id": "step_0_1783314594491",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "通知",
+        "type": "notify",
+        "params": {
+          "message": "📊 BI 日报已生成"
+        },
+        "id": "step_1_1783314594491",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T05:09:54.491Z",
+    "updatedAt": "2026-07-06T05:09:54.491Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T05:09:54.497Z"
+  },
+  {
+    "id": "flow_1783314594515_ybqn",
+    "name": "BI-Rule_每小时健康检查_1783314594513",
+    "steps": [
+      {
+        "name": "健康检查",
+        "type": "api_call",
+        "params": {
+          "url": "http://127.0.0.1:8002/api/bi/overview",
+          "method": "GET"
+        },
+        "id": "step_0_1783314594515",
+        "index": 0,
+        "status": "pending"
+      },
+      {
+        "name": "条件判断",
+        "type": "condition",
+        "params": {
+          "fromData": "ok",
+          "operator": "is_true",
+          "failOnFalse": false
+        },
+        "id": "step_1_1783314594515",
+        "index": 1,
+        "status": "pending"
+      }
+    ],
+    "status": "active",
+    "trigger": "bi_rule",
+    "schedule": null,
+    "maxRetries": 0,
+    "notifyOnFail": false,
+    "createdAt": "2026-07-06T05:09:54.515Z",
+    "updatedAt": "2026-07-06T05:09:54.515Z",
+    "runCount": 1,
+    "lastRun": "2026-07-06T05:09:54.521Z"
+  }
+]

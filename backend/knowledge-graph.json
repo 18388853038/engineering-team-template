@@ -1,0 +1,1194 @@
+{
+  "nodes": [
+    {
+      "id": "929cce1d-9798-4c81-b67c-0c7839956a26",
+      "label": "OpenClaw 平台定位",
+      "category": "系统配置",
+      "tags": [
+        "OpenClaw",
+        "平台架构",
+        "基础设施",
+        "eCompany",
+        "技术架构",
+        "配置",
+        "系统"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "727daf7f-6225-444f-8190-a6ce3f8f87e6",
+      "label": "OpenClaw 与 eCompany 架构关系",
+      "category": "未分类",
+      "tags": [
+        "架构",
+        "OpenClaw",
+        "eCompany",
+        "平台",
+        "基础设施",
+        "其他"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "08f0a1e1-83b0-4a07-8726-5b7797b3954e",
+      "label": "OpenClaw 与 eCompany 架构关系",
+      "category": "未分类",
+      "tags": [
+        "架构",
+        "OpenClaw",
+        "eCompany",
+        "平台",
+        "底层",
+        "其他"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "33313aca-a048-4a43-bd54-ade75a817880",
+      "label": "OpenClaw 与 eCompany 架构关系",
+      "category": "未分类",
+      "tags": [
+        "架构",
+        "OpenClaw",
+        "eCompany",
+        "平台",
+        "其他"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "098ba65d-9394-492b-9503-18471b692afb",
+      "label": "OpenClaw学习笔记 - TTS提供商与Persona人设机制",
+      "category": "技术-API",
+      "tags": [
+        "openclaw",
+        "TTS",
+        "语音合成",
+        "Persona",
+        "人设",
+        "提供商配置",
+        "技术借鉴",
+        "api",
+        "技术"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "886a0971-d0f4-4509-914c-3ab36e4029d4",
+      "label": "OpenClaw学习笔记 - 架构与微信渠道",
+      "category": "技术-API",
+      "tags": [
+        "openclaw",
+        "语音",
+        "架构",
+        "微信桥接",
+        "STT",
+        "TTS",
+        "api",
+        "技术"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb-task-flow-20260529",
+      "label": "员工任务分配流程",
+      "category": "项目管理",
+      "tags": [
+        "管理",
+        "流程",
+        "任务",
+        "标准作业"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb-code-review-process-20260529",
+      "label": "代码审查流程-邱晓琳",
+      "category": "项目管理",
+      "tags": [
+        "管理",
+        "流程",
+        "QA",
+        "代码审查"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb-task-callback-hook-20260529",
+      "label": "任务完成回调通知机制",
+      "category": "技术-架构",
+      "tags": [
+        "技术",
+        "系统",
+        "任务",
+        "通知"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb-agent-executor-v3-20260529",
+      "label": "Agent执行器v3-文件系统能力注入",
+      "category": "技术-架构",
+      "tags": [
+        "技术",
+        "系统",
+        "架构",
+        "agent"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb-team-matrix-20260529",
+      "label": "AI员工技能矩阵-12条职能线",
+      "category": "项目管理",
+      "tags": [
+        "管理",
+        "团队",
+        "技能",
+        "组织架构"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "a1aa970c-7f8c-40b1-ab8f-1b91931724b7",
+      "label": "DeepSeek API配置指南",
+      "category": "技术-API",
+      "tags": [
+        "AI",
+        "配置",
+        "api",
+        "技术"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "30878a1b-2c11-4c62-a49d-4b9099b554b6",
+      "label": "多模型路由配置说明",
+      "category": "项目管理",
+      "tags": [
+        "技术",
+        "配置",
+        "AI",
+        "项目",
+        "管理"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780029916200_xn5f",
+      "label": "语音对话渠道集成 - 对接微信/Web渠道",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780030548420_achc",
+      "label": "语音对话核心模块 voice-dialogue.js",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780031973763_p4gm",
+      "label": "配置 sherpa-onnx TTS 语音模型",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780031975374_cl02",
+      "label": "从国内镜像下载 whisper 模型文件",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780031992680_7hns",
+      "label": "安装 ffmpeg 并配置系统环境",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780175463693_93e5",
+      "label": "排查 index-DFBPh7Eh.js 模板字符串语法错误",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780175492719_76qs",
+      "label": "排查修复 index-DFBPh7Eh.js SyntaxError: Unexpected tem",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780222063871_ov73",
+      "label": "【验证测试】调度器 substring bug 回归验证",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780222522486_ct19",
+      "label": "🔴 [高优] 修复员工任务结果推送CEO链路",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780222524661_h80d",
+      "label": "🟡 [中优] 修复Harness调用计数统计异常",
+      "category": "未分类",
+      "tags": [
+        "priority:medium",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780402785721_qps4",
+      "label": "写一个贪吃蛇小游戏 — 心跳唤醒测试 v3",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780487569340_zefg",
+      "label": "创建一个贪吃蛇小游戏HTML文件",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "kb_1780730681592_8dxp",
+      "label": "【调度链路测试】系统时间戳验证",
+      "category": "未分类",
+      "tags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "477ad495-d0de-42ec-9ade-ba11db54585d",
+      "label": "功能摸底测试记录",
+      "category": "测试质量",
+      "tags": [
+        "测试",
+        "系统摸底",
+        "功能验证",
+        "质量"
+      ],
+      "type": "entry"
+    },
+    {
+      "id": "13c56704-aa62-4435-88db-8f1bbf1e73a6",
+      "label": "功能摸底测试记录",
+      "category": "测试质量",
+      "tags": [
+        "测试",
+        "系统摸底",
+        "功能验证",
+        "质量"
+      ],
+      "type": "entry"
+    }
+  ],
+  "edges": [
+    {
+      "source": "929cce1d-9798-4c81-b67c-0c7839956a26",
+      "target": "727daf7f-6225-444f-8190-a6ce3f8f87e6",
+      "weight": 1,
+      "sharedTags": [
+        "OpenClaw",
+        "基础设施",
+        "eCompany"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "929cce1d-9798-4c81-b67c-0c7839956a26",
+      "target": "08f0a1e1-83b0-4a07-8726-5b7797b3954e",
+      "weight": 1,
+      "sharedTags": [
+        "OpenClaw",
+        "eCompany"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "929cce1d-9798-4c81-b67c-0c7839956a26",
+      "target": "33313aca-a048-4a43-bd54-ade75a817880",
+      "weight": 1,
+      "sharedTags": [
+        "OpenClaw",
+        "eCompany"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "727daf7f-6225-444f-8190-a6ce3f8f87e6",
+      "target": "08f0a1e1-83b0-4a07-8726-5b7797b3954e",
+      "weight": 1,
+      "sharedTags": [
+        "架构",
+        "OpenClaw",
+        "eCompany",
+        "平台",
+        "其他"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "727daf7f-6225-444f-8190-a6ce3f8f87e6",
+      "target": "33313aca-a048-4a43-bd54-ade75a817880",
+      "weight": 1,
+      "sharedTags": [
+        "架构",
+        "OpenClaw",
+        "eCompany",
+        "平台",
+        "其他"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "08f0a1e1-83b0-4a07-8726-5b7797b3954e",
+      "target": "33313aca-a048-4a43-bd54-ade75a817880",
+      "weight": 1,
+      "sharedTags": [
+        "架构",
+        "OpenClaw",
+        "eCompany",
+        "平台",
+        "其他"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "098ba65d-9394-492b-9503-18471b692afb",
+      "target": "886a0971-d0f4-4509-914c-3ab36e4029d4",
+      "weight": 1,
+      "sharedTags": [
+        "openclaw",
+        "TTS",
+        "api",
+        "技术"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "098ba65d-9394-492b-9503-18471b692afb",
+      "target": "a1aa970c-7f8c-40b1-ab8f-1b91931724b7",
+      "weight": 1,
+      "sharedTags": [
+        "api",
+        "技术"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "886a0971-d0f4-4509-914c-3ab36e4029d4",
+      "target": "kb-agent-executor-v3-20260529",
+      "weight": 0.6,
+      "sharedTags": [
+        "架构",
+        "技术"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "886a0971-d0f4-4509-914c-3ab36e4029d4",
+      "target": "a1aa970c-7f8c-40b1-ab8f-1b91931724b7",
+      "weight": 1,
+      "sharedTags": [
+        "api",
+        "技术"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "kb-task-flow-20260529",
+      "target": "kb-code-review-process-20260529",
+      "weight": 1,
+      "sharedTags": [
+        "管理",
+        "流程"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "kb-task-flow-20260529",
+      "target": "kb-team-matrix-20260529",
+      "weight": 0.7,
+      "sharedTags": [
+        "管理"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb-task-flow-20260529",
+      "target": "30878a1b-2c11-4c62-a49d-4b9099b554b6",
+      "weight": 0.7,
+      "sharedTags": [
+        "管理"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb-code-review-process-20260529",
+      "target": "kb-team-matrix-20260529",
+      "weight": 0.7,
+      "sharedTags": [
+        "管理"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb-code-review-process-20260529",
+      "target": "30878a1b-2c11-4c62-a49d-4b9099b554b6",
+      "weight": 0.7,
+      "sharedTags": [
+        "管理"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb-task-callback-hook-20260529",
+      "target": "kb-agent-executor-v3-20260529",
+      "weight": 1,
+      "sharedTags": [
+        "技术",
+        "系统"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "kb-team-matrix-20260529",
+      "target": "30878a1b-2c11-4c62-a49d-4b9099b554b6",
+      "weight": 0.7,
+      "sharedTags": [
+        "管理"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "a1aa970c-7f8c-40b1-ab8f-1b91931724b7",
+      "target": "30878a1b-2c11-4c62-a49d-4b9099b554b6",
+      "weight": 0.8999999999999999,
+      "sharedTags": [
+        "AI",
+        "配置",
+        "技术"
+      ],
+      "type": "strong"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780030548420_achc",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780031973763_p4gm",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780031975374_cl02",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780031992680_7hns",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780175463693_93e5",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780175492719_76qs",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780029916200_xn5f",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780031973763_p4gm",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780031975374_cl02",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780031992680_7hns",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780175463693_93e5",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780175492719_76qs",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780030548420_achc",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780031975374_cl02",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780031992680_7hns",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780175463693_93e5",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780175492719_76qs",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031973763_p4gm",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780031992680_7hns",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780175463693_93e5",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780175492719_76qs",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031975374_cl02",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780175463693_93e5",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780175492719_76qs",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780031992680_7hns",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175463693_93e5",
+      "target": "kb_1780175492719_76qs",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175463693_93e5",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175463693_93e5",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175463693_93e5",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175463693_93e5",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175463693_93e5",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175492719_76qs",
+      "target": "kb_1780222063871_ov73",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175492719_76qs",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175492719_76qs",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175492719_76qs",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780175492719_76qs",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222063871_ov73",
+      "target": "kb_1780222522486_ct19",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222063871_ov73",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222063871_ov73",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222063871_ov73",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222522486_ct19",
+      "target": "kb_1780402785721_qps4",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222522486_ct19",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780222522486_ct19",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780402785721_qps4",
+      "target": "kb_1780487569340_zefg",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780402785721_qps4",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "kb_1780487569340_zefg",
+      "target": "kb_1780730681592_8dxp",
+      "weight": 0.6,
+      "sharedTags": [
+        "priority:high",
+        "scheduled"
+      ],
+      "type": "medium"
+    },
+    {
+      "source": "477ad495-d0de-42ec-9ade-ba11db54585d",
+      "target": "13c56704-aa62-4435-88db-8f1bbf1e73a6",
+      "weight": 1,
+      "sharedTags": [
+        "测试",
+        "系统摸底",
+        "功能验证",
+        "质量"
+      ],
+      "type": "strong"
+    }
+  ]
+}

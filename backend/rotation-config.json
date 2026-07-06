@@ -1,0 +1,9 @@
+{
+  "strategy": "fallback",
+  "providers": ["deepseek", "tongyi", "hunyuan"],
+  "fallbackProvider": "tongyi",
+  "fallbackModel": "qwen-max",
+  "visionProvider": "tongyi",
+  "visionModel": "qwen-vl-max",
+  "description": "主用用D: DeepSeek → 备用: 通义千问 → 三线: 腾讯混元"
+}

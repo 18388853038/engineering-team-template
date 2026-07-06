@@ -1,0 +1,82 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+frontend/dist/
+dist-desktop-dev/
+release/
+
+# Runtime data (persistent state, not in repo)
+*.log
+backend/ecompany.db
+backend/ecompany.db-wal
+backend/ecompany.db-shm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backups
+_backup_*/
+*.bak
+*.bak_failed
+*.base
+*.fixed
+
+# Temp analysis/repair scripts
+backend/_*.txt
+backend/_*.skip
+backend/_*.js
+backend/_*.cjs
+backend/_*.mjs
+frontend/_*.js
+frontend/_*.txt
+frontend/*.txt
+frontend/ceo_block.txt
+frontend/report.txt
+
+# Standalone HTML pages (dev/debug)
+frontend/agent-models.html
+frontend/tencent-config.html
+frontend/wechat-bind.html
+frontend/wechat-qr.html
+frontend/qqbot-bind.html
+
+# Legacy loader
+frontend/lock.js
+frontend/i18n-loader.js
+
+# Test results
+backend/测试成果/
+
+# Nested memory dir
+memory/memory/
+
+# Large history/evolution data
+backend/evolution-history.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar.gz
+
+# API Keys (sensitive)
+backend/provider-keys.json
+backend/provider-keys.json.local
+backend/.master-key
+backend/tencent-config.json

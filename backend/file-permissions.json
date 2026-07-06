@@ -1,0 +1,259 @@
+{
+  "rolePermissions": {
+    "ceo": {
+      "description": "CEO - 最高权限",
+      "readPaths": [
+        "/backend",
+        "/frontend"
+      ],
+      "writePaths": [
+        "/backend"
+      ],
+      "allowedExtensions": [
+        "*"
+      ],
+      "maxFileSize": null,
+      "canDelete": true,
+      "canCreateDir": true,
+      "canExecute": true
+    },
+    "c_suite": {
+      "description": "C-Suite 高管",
+      "readPaths": [
+        "*"
+      ],
+      "writePaths": [
+        "/data",
+        "/logs",
+        "/config"
+      ],
+      "allowedExtensions": [
+        ".json",
+        ".txt",
+        ".log",
+        ".md",
+        ".yaml",
+        ".yml"
+      ],
+      "maxFileSize": 104857600,
+      "canDelete": false,
+      "canCreateDir": false,
+      "canExecute": false,
+      "allowedPaths": [
+        "/backend/*"
+      ],
+      "blockedPaths": [
+        "/backend/*.key"
+      ]
+    },
+    "director": {
+      "description": "部门总监",
+      "readPaths": [
+        "/data",
+        "/logs",
+        "/config",
+        "/projects"
+      ],
+      "writePaths": [
+        "/data",
+        "/logs"
+      ],
+      "allowedExtensions": [
+        ".json",
+        ".txt",
+        ".log",
+        ".md"
+      ],
+      "maxFileSize": 52428800,
+      "canDelete": false,
+      "canCreateDir": false,
+      "canExecute": false
+    },
+    "senior": {
+      "description": "资深工程师",
+      "readPaths": [
+        "/data",
+        "/logs",
+        "/projects",
+        "/src"
+      ],
+      "writePaths": [
+        "/data/output",
+        "/projects/*/src"
+      ],
+      "allowedExtensions": [
+        ".js",
+        ".ts",
+        ".vue",
+        ".css",
+        ".html",
+        ".json",
+        ".txt",
+        ".md",
+        ".py",
+        ".go",
+        ".rs"
+      ],
+      "maxFileSize": 10485760,
+      "canDelete": false,
+      "canCreateDir": false,
+      "canExecute": true
+    },
+    "staff": {
+      "description": "普通工程师",
+      "readPaths": [
+        "/data",
+        "/projects"
+      ],
+      "writePaths": [
+        "/data/output"
+      ],
+      "allowedExtensions": [
+        ".js",
+        ".ts",
+        ".vue",
+        ".css",
+        ".json",
+        ".txt",
+        ".md"
+      ],
+      "maxFileSize": 5242880,
+      "canDelete": false,
+      "canCreateDir": false,
+      "canExecute": false
+    },
+    "fullstack": {
+      "description": "全栈工程师",
+      "readPaths": [
+        "/data",
+        "/logs",
+        "/projects",
+        "/src",
+        "/backend",
+        "/frontend"
+      ],
+      "writePaths": [
+        "/data",
+        "/projects",
+        "/backend",
+        "/frontend"
+      ],
+      "allowedExtensions": [
+        ".js",
+        ".ts",
+        ".vue",
+        ".css",
+        ".html",
+        ".json",
+        ".txt",
+        ".md",
+        ".py",
+        ".go",
+        ".sh",
+        ".bat"
+      ],
+      "maxFileSize": 20971520,
+      "canDelete": true,
+      "canCreateDir": true,
+      "canExecute": true
+    },
+    "testing": {
+      "description": "测试工程师",
+      "readPaths": [
+        "/data",
+        "/logs",
+        "/projects",
+        "/src"
+      ],
+      "writePaths": [
+        "/data/test-results"
+      ],
+      "allowedExtensions": [
+        ".js",
+        ".json",
+        ".txt",
+        ".log",
+        ".xml",
+        ".html"
+      ],
+      "maxFileSize": 52428800,
+      "canDelete": false,
+      "canCreateDir": false,
+      "canExecute": false
+    },
+    "devops": {
+      "description": "运维工程师",
+      "readPaths": [
+        "*"
+      ],
+      "writePaths": [
+        "/logs",
+        "/config",
+        "/deploy"
+      ],
+      "allowedExtensions": [
+        ".sh",
+        ".bat",
+        ".ps1",
+        ".yaml",
+        ".yml",
+        ".json",
+        ".txt",
+        ".log"
+      ],
+      "maxFileSize": 104857600,
+      "canDelete": true,
+      "canCreateDir": true,
+      "canExecute": true
+    },
+    "security": {
+      "description": "安全工程师",
+      "readPaths": [
+        "*"
+      ],
+      "writePaths": [
+        "/logs",
+        "/security"
+      ],
+      "allowedExtensions": [
+        ".json",
+        ".txt",
+        ".log",
+        ".yaml",
+        ".yml",
+        ".html"
+      ],
+      "maxFileSize": 52428800,
+      "canDelete": false,
+      "canCreateDir": false,
+      "canExecute": false
+    }
+  },
+  "globalPaths": {
+    "workspace": "/workspace",
+    "data": "/data",
+    "logs": "/logs",
+    "projects": "/projects",
+    "src": "/src",
+    "backend": "/backend",
+    "frontend": "/frontend",
+    "config": "/config",
+    "security": "/security",
+    "deploy": "/deploy"
+  },
+  "rateLimits": {
+    "readPerMinute": 100,
+    "writePerMinute": 50,
+    "deletePerHour": 10
+  },
+  "agentOverrides": {
+    "ai_staff": {
+      "readPaths": [
+        "/home"
+      ],
+      "writePaths": [
+        "/home"
+      ]
+    }
+  }
+}

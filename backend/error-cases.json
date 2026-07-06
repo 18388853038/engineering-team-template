@@ -1,0 +1,33 @@
+{
+  "cases": [
+    {
+      "id": "case_1778372421236",
+      "code": "E1",
+      "name": "TestPattern",
+      "severity": 4,
+      "patterns": [
+        "CompletelyUnknownError123xyz"
+      ],
+      "description": "test",
+      "hitCount": 1,
+      "createdAt": 1778372421236,
+      "lastHit": 1778372421237
+    }
+  ],
+  "pending": [
+    {
+      "ts": 1778372421234,
+      "error": {
+        "message": "CompletelyUnknownError123xyz",
+        "toolName": "test",
+        "stack": ""
+      }
+    }
+  ],
+  "stats": {
+    "total": 0,
+    "byType": {},
+    "byTool": {}
+  },
+  "lastUpdated": "2026-05-10T00:20:21.237Z"
+}
