@@ -3721,6 +3721,35 @@ registerRoute(['POST'], /^\/api\/bridges\/restart-all$/, async (req, res) => {
   }
 });
 
+
+// QQ 机器人绑定状态查询
+registerRoute(['GET'], /^\/api\/qqbot\/bind\/status$/, async (req, res) => {
+  try {
+    var cfgFile = path.join(require('os').homedir(), '.openclaw', 'openclaw.json');
+    var bound = false, account = '';
+    try {
+      if (fs.existsSync(cfgFile)) {
+        var raw = fs.readFileSync(cfgFile, 'utf-8');
+        if (raw.charCodeAt(0) === 0xFEFF) raw = raw.substring(1);
+        var cfg = JSON.parse(raw);
+        var qq = cfg && cfg.channels && cfg.channels.qqbot;
+        if (qq && qq.appId) {
+          bound = true;
+          account = qq.appId;
+        }
+      }
+    } catch(e) {}
+    json(res, { ok: true, bound: bound, account: account });
+  } catch(err) {
+    json(res, { ok: false, error: err.message });
+  }
+});
+
+// QQ 机器人二维码（返回提示信息，QQ 没有扫码二维码）
+registerRoute(['GET'], /^\/api\/qqbot\/qrcode$/, async (req, res) => {
+  json(res, { ok: false, error: 'QQ 机器人无扫码二维码。请在 QQ 开放平台创建机器人后，在设置页填写 AppID 和 Secret。', hint: 'open_qq_console' });
+});
+
 // 自动部署 ClawBot 微信桥
 // 新版 wx-bind.js 不再自启动 ws-server,改用 OpenClaw CLI 方式
 registerRoute(['POST'], /^\/api\/wechat\/deploy$/, async (req, res) => {
