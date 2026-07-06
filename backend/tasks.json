@@ -1,11 +1,11 @@
 [
   {
-    "id": "job_1783312638998_ccfv",
+    "id": "job_1783344070580_04x8",
     "name": "health_check:健康检查",
     "type": "builtin",
     "status": "active",
-    "createdAt": "2026-07-06T04:37:18.998Z",
-    "lastRun": "2026-07-06T05:10:24.394Z",
+    "createdAt": "2026-07-06T13:21:10.580Z",
+    "lastRun": "2026-07-06T13:51:41.568Z",
     "runs": 2,
     "config": {
       "name": "健康检查",
@@ -20,12 +20,12 @@
     "source_status": "⏳ 待调度"
   },
   {
-    "id": "job_1783312639000_krhr",
+    "id": "job_1783344070582_s4ct",
     "name": "p95_monitor:P95延迟监控",
     "type": "builtin",
     "status": "active",
-    "createdAt": "2026-07-06T04:37:19.000Z",
-    "lastRun": "2026-07-06T05:10:24.981Z",
+    "createdAt": "2026-07-06T13:21:10.582Z",
+    "lastRun": "2026-07-06T13:51:41.571Z",
     "runs": 7,
     "config": {
       "name": "P95延迟监控",
@@ -38,11 +38,11 @@
     "source_status": "⏳ 待调度"
   },
   {
-    "id": "job_1783312639001_b6qw",
+    "id": "job_1783344070583_6mli",
     "name": "nightly_audit:全系统摸底",
     "type": "builtin",
     "status": "active",
-    "createdAt": "2026-07-06T04:37:19.001Z",
+    "createdAt": "2026-07-06T13:21:10.583Z",
     "lastRun": null,
     "runs": 0,
     "config": {
@@ -53,11 +53,11 @@
     "source_status": "⏳ 待调度"
   },
   {
-    "id": "job_1783312639003_vk7p",
+    "id": "job_1783344070585_5zdz",
     "name": "quiet_p95:夜间P95监控",
     "type": "builtin",
     "status": "active",
-    "createdAt": "2026-07-06T04:37:19.003Z",
+    "createdAt": "2026-07-06T13:21:10.585Z",
     "lastRun": null,
     "runs": 0,
     "config": {
@@ -77,24 +77,10 @@
     "assignedAt": "2026-07-06T04:42:00.563Z",
     "creator": "ai_ceo",
     "createdAt": "2026-07-06T04:42:00.563Z",
-    "updatedAt": "2026-07-06T04:44:49.189Z",
+    "updatedAt": "2026-07-06T13:26:11.063Z",
     "deadline": "2026-07-06",
     "queueEntryAt": "2026-07-06T04:42:00.570Z",
     "_queueAgent": "employee_001",
-    "_autoRescheduled": true
-  },
-  {
-    "id": "840b488e-e197-45f1-9f60-2e66fbeb374c",
-    "title": "系统健康检查报告生成",
-    "description": "1. 调用 system_health 工具获取当前系统健康状态数据\n2. 整理成结构化报告，包含：服务器状态、API端点状态、通讯桥接状态、定时任务状态\n3. 输出一份简洁的健康检查报告\n4. 截止时间：今天内完成",
-    "status": "todo",
-    "priority": "medium",
-    "assigneeId": "ai_coo",
-    "assignedAt": "2026-07-06T04:42:00.572Z",
-    "creator": "ai_ceo",
-    "createdAt": "2026-07-06T04:42:00.572Z",
-    "updatedAt": "2026-07-06T04:44:49.189Z",
-    "deadline": "2026-07-06",
     "_autoRescheduled": true
   },
   {
@@ -110,23 +96,6 @@
     "updatedAt": "2026-07-06T04:45:06.854Z",
     "deadline": "2026-07-07",
     "queueEntryAt": "2026-07-06T04:45:07.038Z",
-    "_queueAgent": "ai_fe_dir",
-    "source_status": "⚠️ 旧系统-实际已执行"
-  },
-  {
-    "id": "95f33252-800f-4ecf-b73b-2f71c60da03c",
-    "title": "小游戏开发：贪吃蛇网页版",
-    "description": "开发一个贪吃蛇小游戏的HTML页面，要求：\n1. 纯前端实现，单个HTML文件，无需后端\n2. 游戏规则：键盘方向键控制蛇移动，吃到食物变长，撞墙或撞自己游戏结束\n3. 界面美观，有得分显示和游戏结束提示\n4. 支持重新开始功能\n5. 代码注释完整，可直接在浏览器中运行\n\n验收标准：\n- 打开HTML文件即可玩\n- 方向键控制正常\n- 计分功能正常\n- 游戏结束有提示并可重新开始",
-    "status": "todo",
-    "priority": "medium",
-    "assigneeId": "ai_fe_dir",
-    "assignedAt": "2026-07-06T04:45:07.039Z",
-    "creator": "ai_ceo",
-    "createdAt": "2026-07-06T04:45:07.039Z",
-    "updatedAt": "2026-07-06T04:45:07.039Z",
-    "deadline": "2026-07-07",
-    "queueEntryAt": "2026-07-06T04:45:07.133Z",
-    "_queueAgent": "ai_fe_dir",
-    "source_status": "⚠️ 旧系统-实际已执行"
+    "_queueAgent": "ai_fe_dir"
   }
 ]
