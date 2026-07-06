@@ -4,7 +4,7 @@
  */
 
 const ZH = {
-  "app.name": "eCompany", "app.sub": "{n} 名员工",
+  "app.name": "eCompany", "app.sub": "{0} 名员工",
   "nav": { "dashboard": "仪表盘", "chat": "工作台", "employees": "员工", "tasks": "任务",
     "profile": "个人账户", "settings": "系统设置", "skills": "技能系统",
     "files": "文件管理", "automation": "自动化设置", "health": "系统健康",

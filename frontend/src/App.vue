@@ -3,7 +3,7 @@
     <aside class="sidebar" v-if="isLoggedIn" :class="{ collapsed: sidebarCollapsed }" @mouseenter="onSidebarEnter" @mouseleave="onSidebarLeave">
       <div class="sb-header">
         <img src="/logo.jpg" class="sb-logo-img" alt="eCompany" width="28" height="28" />
-        <div v-show="!sidebarCollapsed"><h1 style="font-size:14px">🐉 eCompany</h1><span class="sb-sub">{{ __('appSub', empCount) }}</span></div>
+        <div v-show="!sidebarCollapsed"><h1 style="font-size:14px">🐉 eCompany</h1><span class="sb-sub">{{ empCount + ' 名员工' }}</span></div>
         <button class="sidebar-toggle" @click="toggleSidebar" :title="sidebarCollapsed ? '展开导航' : '收缩导航'">
           {{ sidebarCollapsed ? '▶' : '◀' }}
         </button>
@@ -95,9 +95,7 @@
         <a href="/wechat-bind.html" class="nav-item ext-nav-item" title="微信绑定">
           <span class="nav-icon">💬</span><span>微信绑定</span>
         </a>
-        <a href="/qqbot-bind.html" class="nav-item ext-nav-item" title="QQ绑定">
-          <span class="nav-icon">🐧</span><span>QQ绑定</span>
-        </a>
+        
         <a href="/tencent-config.html" class="nav-item ext-nav-item" title="腾讯云">
           <span class="nav-icon">☁️</span><span>腾讯云</span>
         </a>
