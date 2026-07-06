@@ -3997,7 +3997,7 @@ setInterval(() => {
 }, 60000);
 console.log('[heartbeat] 心跳守护已启动(每60秒)');
 
-// CEO心跳自动巡检(每5分钟): 巡查任务状态 → 写CEO记忆 → CEO下次对话自动看到
+// CEO心跳自动巡检(每30分钟): 巡查任务状态 → 写CEO记忆 → CEO下次对话自动看到
 setInterval(() => {
   try {
     var now = new Date().toISOString();
@@ -4013,27 +4013,15 @@ setInterval(() => {
       }
     } catch(_pe) {}
     
-    // 2. 扫描 tasks.json 检查 stuck 任务 + 自动重试
+    // 2. 扫描 tasks.json 检查 stuck 任务（仅记录，不自动重试）
     try {
       var tj = path.join(BASE, 'tasks.json');
       if (fs.existsSync(tj)) {
         var t = JSON.parse(fs.readFileSync(tj, 'utf-8') || '[]');
-        var stuck = t.filter(function(x) { return x.status === 'in_progress' && x.assignedAt && (Date.now() - new Date(x.assignedAt).getTime()) > 300000; });
+        var stuck = t.filter(function(x) { return x.status === 'in_progress' && x.assignedAt && (Date.now() - new Date(x.assignedAt).getTime()) > 600000; });
         if (stuck.length > 0) {
-          findings.push(stuck.length + '个任务卡住超5分钟，正在重试拉起');
-          // 自动重试：再次拉起 Agent
-          stuck.forEach(function(st) {
-            if (st.assigneeId) {
-              try {
-                var ae = require('./modules/agent-executor');
-                var retryMsg = '【重试通知】你有一个任务卡住了还没有执行：「' + st.title + '」\n' + (st.description ? '描述：' + st.description + '\n' : '') + '请立即用 write_file 将成果写入 AI团队/工作成果/ 目录下的文件中，文件名包含你的名字。完成后调用 complete_claimed_task 提交。这是系统自动重试，请务必执行。';
-                ae.executeAgent(st.assigneeId, retryMsg, { taskId: st.id, taskTitle: st.title, timeout: 120000 });
-                console.log('[CEOPatrol] 重试拉起 ' + st.assigneeId + ' 执行: ' + st.title);
-              } catch(_re) {
-                findings.push('重试 ' + st.title + ' 失败: ' + _re.message);
-              }
-            }
-          });
+          findings.push(stuck.length + '个任务卡住超10分钟（仅记录，未自动重试）');
+          console.log('[CEOPatrol] 发现卡住任务，等待人工处理: ' + stuck.map(function(st){return st.title;}).join(', '));
         }
         var done = t.filter(function(x) { return x.status === 'completed' && !x.reviewedAt; });
         if (done.length > 0) findings.push(done.length + '个已完成任务待审阅');
@@ -4058,7 +4046,7 @@ setInterval(() => {
       console.log('[CEOPatrol] ' + findings.join(' | '));
     }
   } catch(_pe) {}
-}, 300000);
+}, 1800000);
 
 // Webhook 端点 - 多渠道消息接入
 registerRoute(['POST'], /^\/api\/v4\/webhook$/, async (req, res) => {
@@ -6339,12 +6327,7 @@ server.listen(PORT, '0.0.0.0', () => {
     var generateDailyReport = function() {
       fetch('http://127.0.0.1:' + PORT + '/api/v4/reports/generate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ types: ['summaryReport'] }) }).catch(function(e){console.log('[DailyReport] 生成失败:', e.message)});
     };
-    var scheduleDailyReport = function() {
-      var now = new Date();
-      var t1 = new Date(now); t1.setHours(8, 0, 0, 0); if (t1 <= now) t1.setDate(t1.getDate() + 1);
-      setTimeout(function() { generateDailyReport(); setInterval(generateDailyReport, 43200000); }, t1.getTime() - now.getTime());
-      console.log('  [DailyReport] 日报自动生成已配置，下次执行: ' + t1.toLocaleString());
-    };
+    var scheduleDailyReport = undefined;
     scheduleDailyReport();
   } catch(e) { console.log('  [DailyReport] 启动失败:', e.message); }
   // 初始化任务队列（WAL 回放）
