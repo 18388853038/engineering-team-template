@@ -150,6 +150,10 @@ export default {
         { id:'dingtalk', name:'钉钉', icon:'📱', desc:'消息推送', port:18003, connected:false, loading:true },
         { id:'wecom', name:'企业微信', icon:'🏢', desc:'企业通讯', port:18004, connected:false, loading:true },
         { id:'qqbot', name:'QQ 机器人', icon:'🐧', desc:'QQ 群消息', connected:false, loading:true },
+        { id:'telegram', name:'Telegram', icon:'✈️', desc:'国际消息', port:28011, connected:false, loading:true },
+        { id:'whatsapp', name:'WhatsApp', icon:'📞', desc:'国际消息', port:28012, connected:false, loading:true },
+        { id:'discord', name:'Discord', icon:'🎮', desc:'国际消息', port:28013, connected:false, loading:true },
+        { id:'slack', name:'Slack', icon:'💠', desc:'国际消息', port:28014, connected:false, loading:true },
       ]
     }
   },
